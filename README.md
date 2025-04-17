@@ -5,11 +5,17 @@ Primary Contacts: Maddie Betts (madison.betts@noaa.gov)
                   Krista Nichols (krista.nichols@noaa.gov)
                   Mia Nahom (mia.nahom@noaa.gov)
 
+## Background
+
+Eulachon (*Thaleichthys pacificus*, Osmeridae) are anadromous smelts that are endemic to the North Pacific Ocean, with a range that stretches from northern California to the southeastern Bering Sea along the coast of Alaska. Eulachon are an important prey species for birds, marine mammals, and fishes, and culturally important for First Nation and American Indigenous peoples. Recent studies of the population structure of eulachon have identified a number of distinct populations. The southern population of eulachon (ranging from the Nass River in BC, Canada, to the Mad River in CA, USA) has faced sharp population declines in recent decades and was listed as threatened under the Endangered Species Act in 2010. 
+
 ## Objective
 
-Eulachon (*Thaleichthys pacificus*, Osmeridae) are anadromous smelts that inhabit the North Pacific Ocean, from northern California to the southeastern Bering Sea along the coast of Alaska (Gustafson et al. 2012). Eulachon are an important food source for First Nation people (Kuhnlein et al. 1982; Joyce et al. 2004). A SNP panel was 
+In collaboration with Fisheries and Oceans Canada (DFO), the primary objective of this project was to identify what genetic stock eulachon bycatch samples caught by the West Coast Ocean Shrimp Fishery belong to, and to what extent the fishery is impacting the threatened Southern population. Specifically, we utilized high-throughput sequencing technologies and the genetic baseline designed by Sutherland et al. (2012), which included 521 variant single nucleotide polymorphisms (SNPs), to  assign each of ~1600 eulachon bycatch samples to a specific genetic stock.
 
-In collaboration with Fisheries and Oceans Canada (DFO), the primary objective of this project was to identify what genetic stock eulachon bycatch samples caught by the pink shrimp fishery belong to. Specifically, we (1) selected a subset of ~1600 samples from bycatch caught from 2013-2022 for genetic stock ID (GSI), (2) refined  used GTseq (Genotyping-in-Thousands Sequencing)
+## Methods
+
+
 
 ## Disclaimer
 
