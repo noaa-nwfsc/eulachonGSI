@@ -9,7 +9,7 @@ Eulachon (*Thaleichthys pacificus*, Osmeridae) are anadromous smelts that are en
 
 ## Objective
 
-In collaboration with Fisheries and Oceans Canada (DFO), the primary objective of this project was to identify what genetic stock eulachon bycatch samples caught by the West Coast Ocean Shrimp Fishery belong to, and to what extent the fishery is impacting the threatened Southern population. Specifically, we utilized high-throughput sequencing technologies and the genetic baseline designed by Sutherland et al. (2012), which included 521 variant single nucleotide polymorphisms (SNPs), to  assign each of ~1600 eulachon bycatch samples to a specific genetic stock.
+In collaboration with Fisheries and Oceans Canada (DFO), the primary objective of this project was to identify what genetic stock eulachon bycatch samples caught by the West Coast Ocean Shrimp Fishery belong to, and to what extent the fishery is impacting the threatened Southern population. To do this, we utilized high-throughput sequencing technologies and the genetic baseline designed by Sutherland et al. (2012), which included 521 variant single nucleotide polymorphisms (SNPs), to  assign each of ~1600 eulachon bycatch samples to a specific genetic stock.
 
 ## Methods
 
