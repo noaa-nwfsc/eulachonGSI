@@ -13,7 +13,9 @@ In collaboration with Fisheries and Oceans Canada (DFO), the primary objective o
 
 ## Methods
 
+### 1. Sample Selection and Preparation for Sequencing
 
+We selected 1,632 eulachon bycatch fin clip samples from a total of --- samples collected between 2013 and 2022. Samples were preserved in 95% ethanol. Samples were extracted using the DNeasy Blood and Tissue kit on a QIAcube high-throughput automated extraction machine. DNA was eluted in 200 uL EB and stored at -20 degrees C. 
 
 ## Disclaimer
 
