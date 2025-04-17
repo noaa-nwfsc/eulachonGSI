@@ -1,9 +1,7 @@
 
 # NWFSC Eulachon GSI Project
 
-Primary Contacts: Maddie Betts (madison.betts@noaa.gov)
-                  Krista Nichols (krista.nichols@noaa.gov)
-                  Mia Nahom (mia.nahom@noaa.gov)
+Primary Contacts: Maddie Betts (madison.betts@noaa.gov), Krista Nichols (krista.nichols@noaa.gov), Mia Nahom (mia.nahom@noaa.gov)
 
 ## Background
 
