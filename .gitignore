@@ -1,6 +1,9 @@
 # fastq files
 *.fastq
 
+# basecalls folders
+**/basecalls
+
 # History files
 .Rhistory
 .Rapp.history
