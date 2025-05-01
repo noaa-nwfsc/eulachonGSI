@@ -1,3 +1,6 @@
+# fastq files
+*.fastq
+
 # History files
 .Rhistory
 .Rapp.history
