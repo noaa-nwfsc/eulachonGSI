@@ -1,5 +1,12 @@
 # fastq files
 *.fastq
+*fastq.gz
+*xml
+*jpg
+*jpeg
+*pdf
+*csv
+*txt
 
 # basecalls folders
 **/basecalls
