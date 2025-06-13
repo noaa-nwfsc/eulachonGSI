@@ -1,7 +1,7 @@
 ---
-title: "GTscore_modprimerprobe2"
+title: "eulachon_test"
 author: "MB"
-date: "2024-12-18"
+date: "2024-11-04"
 output: html_document
 ---
 
@@ -19,8 +19,10 @@ dir.create("scatterPlots_samples")
 #primerProbeFile.txt
 #AmpliconReadCounter.pl
 #sampleList.txt
-#run AmpliconReadCounter.pl in perl
-#took 394 seconds 
+#run the perl script from R
+
+system2("perl", args="AmpliconReadCounter.pl -p primerProbeFile.txt --files sampleList.txt --alleleOrder original")
+ #took 505 seconds 
 
 #Load McKinney's GTscore functions and tools
 #Be sure you have the latest version of this file, when in doubt, re-download from Garrett's github page:
@@ -52,7 +54,7 @@ singleSNP_alleleReads<-read.delim("AlleleReads_singleSNPs.txt",header=TRUE,row.n
 #we don't have any correction factors to apply, but run this code anyways to keep file name consistency
 #Adjust read counts
 singleSNP_alleleReads_adjusted<-correctReads(singleSNP_locusTable,singleSNP_alleleReads)
-#2s on dell PC
+#02s on the Mac20
 
 #singleSNP_alleleReads_adjusted[1:5,1:5]
 #write adjusted counts to file
@@ -69,7 +71,7 @@ write.table(singleSNP_alleleReads_adjusted,"singleSNP_alleleReads_adjusted.txt",
 
 #generate single-SNP genotypes using the polyGen function
 polyGenResults_singleSNP<-polyGen(singleSNP_locusTable,singleSNP_alleleReads_adjusted)
-#40s on dell PC
+#15s on the Mac20
 
 #view first five rows and columns of single-SNP genotypes
 polyGenResults_singleSNP[1:5,1:5]
@@ -79,7 +81,7 @@ write.table(polyGenResults_singleSNP,"polyGenResults_singleSNP.txt",quote=FALSE,
 ##Genotype Plots
 #Scatter Plots--samples
 plotGenotypes_sample(singleSNP_locusTable, singleSNP_alleleReads_adjusted, polyGenResults_singleSNP, type='scatter', savePlot="Y", saveDir="scatterPlots_samples")
-#26s on dell PC
+#46s on Mac20
 
 #Scatter Plots--loci
 plotGenotypes(singleSNP_locusTable, singleSNP_alleleReads_adjusted, polyGenResults_singleSNP, type='scatter', savePlot="Y", saveDir="scatterPlots_loci")
