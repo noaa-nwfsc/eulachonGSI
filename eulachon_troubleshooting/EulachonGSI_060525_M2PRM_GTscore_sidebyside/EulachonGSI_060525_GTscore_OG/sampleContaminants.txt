@@ -1,0 +1,4 @@
+Sample	Total.Reads	Off.target.Reads	Primer.Only.Reads	Primer.Probe.Reads	Off.target.Proportion	Primer.Only.Proportion	Primer.Probe.Proportion	GenotypeRate	Heterozygosity	conScore
+52507_212_S28_L001_R1_001	828887	44745	103606	680536	0.05	0.12	0.82	0.956	0.152	0.303
+52507_356_S32_L001_R1_001	289620	24457	57891	207272	0.08	0.2	0.72	0.908	0.132	0.348
+52508_174_S89_L001_R1_001	241968	37668	86594	117706	0.16	0.36	0.49	0.884	0.122	0.311
