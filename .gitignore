@@ -2,7 +2,6 @@
 *.fastq
 *fastq.gz
 *xml
-*pdf
 *csv
 
 # basecalls folders
