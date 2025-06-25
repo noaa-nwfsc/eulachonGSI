@@ -1,0 +1,7 @@
+   Sample	 Total.Reads	Off.target.Reads	Primer.Only.Reads	Primer.Probe.Reads	Off.target.Proportion	Primer.Only.Proportion	Primer.Probe.Proportion	 GenotypeRate	Heterozygosity	   conScore
+	Length:0          	Min.   : NA  	Min.   : NA  	Min.   : NA  	Min.   : NA  	Min.   : NA  	Min.   : NA  	Min.   : NA  	Min.   : NA  	Min.   : NA  	Min.   : NA  
+	Class :character  	1st Qu.: NA  	1st Qu.: NA  	1st Qu.: NA  	1st Qu.: NA  	1st Qu.: NA  	1st Qu.: NA  	1st Qu.: NA  	1st Qu.: NA  	1st Qu.: NA  	1st Qu.: NA  
+	Mode  :character  	Median : NA  	Median : NA  	Median : NA  	Median : NA  	Median : NA  	Median : NA  	Median : NA  	Median : NA  	Median : NA  	Median : NA  
+	NA	Mean   :NaN  	Mean   :NaN  	Mean   :NaN  	Mean   :NaN  	Mean   :NaN  	Mean   :NaN  	Mean   :NaN  	Mean   :NaN  	Mean   :NaN  	Mean   :NaN  
+	NA	3rd Qu.: NA  	3rd Qu.: NA  	3rd Qu.: NA  	3rd Qu.: NA  	3rd Qu.: NA  	3rd Qu.: NA  	3rd Qu.: NA  	3rd Qu.: NA  	3rd Qu.: NA  	3rd Qu.: NA  
+	NA	Max.   : NA  	Max.   : NA  	Max.   : NA  	Max.   : NA  	Max.   : NA  	Max.   : NA  	Max.   : NA  	Max.   : NA  	Max.   : NA  	Max.   : NA  

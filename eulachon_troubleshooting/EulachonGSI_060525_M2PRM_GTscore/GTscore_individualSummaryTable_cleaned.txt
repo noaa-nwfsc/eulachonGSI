@@ -1,0 +1,7 @@
+   Sample	 Total.Reads	Off.target.Reads	Primer.Only.Reads	Primer.Probe.Reads	Off.target.Proportion	Primer.Only.Proportion	Primer.Probe.Proportion	 GenotypeRate	Heterozygosity	   conScore
+	Length:13         	Min.   :113003  	Min.   :24457  	Min.   : 50029  	Min.   : 23012  	Min.   :0.0500  	Min.   :0.0900  	Min.   :0.1900  	Min.   :0.8080  	Min.   :0.1000  	Min.   :0.0820  
+	Class :character  	1st Qu.:182383  	1st Qu.:30194  	1st Qu.: 57891  	1st Qu.: 99615  	1st Qu.:0.0900  	1st Qu.:0.2000  	1st Qu.:0.4300  	1st Qu.:0.8300  	1st Qu.:0.1200  	1st Qu.:0.1600  
+	Mode  :character  	Median :242328  	Median :35060  	Median : 66336  	Median :119634  	Median :0.1300  	Median :0.2900  	Median :0.5800  	Median :0.8540  	Median :0.1220  	Median :0.2420  
+	NA	Mean   :341738  	Mean   :34378  	Mean   : 76334  	Mean   :231027  	Mean   :0.1392  	Mean   :0.2962  	Mean   :0.5654  	Mean   :0.8654  	Mean   :0.1255  	Mean   :0.2277  
+	NA	3rd Qu.:410685  	3rd Qu.:38480  	3rd Qu.: 91267  	3rd Qu.:280938  	3rd Qu.:0.1700  	3rd Qu.:0.4000  	3rd Qu.:0.7200  	3rd Qu.:0.8840  	3rd Qu.:0.1320  	3rd Qu.:0.2970  
+	NA	Max.   :830873  	Max.   :44745  	Max.   :127537  	Max.   :716187  	Max.   :0.3000  	Max.   :0.5100  	Max.   :0.8600  	Max.   :0.9560  	Max.   :0.1520  	Max.   :0.3480  
