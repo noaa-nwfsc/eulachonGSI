@@ -28,21 +28,29 @@ highlight_loci <- inner_join(data, to_remove, by = "locus")
 highlight_long <- inner_join(highlight_loci, data_long, by = "locus")
 
 #Let's create a histogram overlaying the proportion of primer probe reads captured by each locus for both methods (EH and OG)
-histogram_loci <-ggplot(data_long, aes(x = Proportion, fill = GenotypeType)) +
+histogram_loci <- ggplot(data_long, aes(x = Proportion, fill = GenotypeType)) +
   geom_histogram(position = "identity", bins = 30, alpha = 0.6, color = "black") +
-  geom_rug(data = highlight_long, aes(x = Proportion, color = GenotypeType),
-           sides = "b", size = 0.7, inherit.aes = FALSE) +
+  
+  # Black base for outline
+  geom_rug(data = highlight_long, aes(x = Proportion),
+           sides = "b", size = 1.5, color = "black", inherit.aes = FALSE) +
+  
+  # Goldenrod overlay for visibility
+  geom_rug(data = highlight_long, aes(x = Proportion),
+           sides = "b", size = 0.8, color = "goldenrod", inherit.aes = FALSE) +
+  
   scale_fill_manual(values = c("primerprobeprop_EH" = "red", "primerprobeprop_OG" = "blue"),
                     labels = c("EH", "OG")) +
-  scale_color_manual(values = c("primerprobeprop_EH" = "red", "primerprobeprop_OG" = "blue")) +
   labs(
     title = "Histogram of Target Capture Rates (Proportions) across Loci",
     x = "Primer Probe Proportion",
     y = "Count (# of loci)",
-    fill = "Method",
-    color = "Method"
+    fill = "Method"
   ) +
   theme_minimal()#This figure shows us that EH methods performed poorly compared to OG methods
+
+histogram_loci
+
 ggsave(filename = "histogram_loci.jpeg", plot = histogram_loci, dpi = 300, width = 8, height = 6, units = "in")
 
 

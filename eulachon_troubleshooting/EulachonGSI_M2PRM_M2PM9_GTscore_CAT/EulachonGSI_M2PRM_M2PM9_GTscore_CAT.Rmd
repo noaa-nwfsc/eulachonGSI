@@ -1,7 +1,7 @@
 ---
-title: "eulachon_test"
+title: "EulachonGSI_M2PRM_M2PM9_GTscore_CAT"
 author: "MB"
-date: "2024-11-04"
+date: "2024-06-18"
 output: html_document
 ---
 
@@ -20,9 +20,7 @@ dir.create("scatterPlots_samples")
 #AmpliconReadCounter.pl
 #sampleList.txt
 #run the perl script from R
-
-system2("perl", args="AmpliconReadCounter.pl -p primerProbeFile.txt --files sampleList.txt --alleleOrder original")
- #took 505 seconds 
+#took 723 seconds 
 
 #Load McKinney's GTscore functions and tools
 #Be sure you have the latest version of this file, when in doubt, re-download from Garrett's github page:
@@ -38,7 +36,6 @@ library(pbapply)
 library(BiocGenerics)
 library(Biostrings)
 library(BiocManager)
-
 ```
 
 ```{r}
@@ -79,6 +76,14 @@ polyGenResults_singleSNP[1:5,1:5]
 write.table(polyGenResults_singleSNP,"polyGenResults_singleSNP.txt",quote=FALSE,sep="\t")
 
 ##Genotype Plots
+# Clean column names: keep only the filename part, not full paths
+clean_names <- function(names_vec) {
+  return(basename(gsub("\\\\", "/", names_vec)))  # convert backslashes to slashes, then strip path
+}
+
+colnames(singleSNP_alleleReads_adjusted) <- clean_names(colnames(singleSNP_alleleReads_adjusted))
+colnames(polyGenResults_singleSNP) <- clean_names(colnames(polyGenResults_singleSNP))
+
 #Scatter Plots--samples
 plotGenotypes_sample(singleSNP_locusTable, singleSNP_alleleReads_adjusted, polyGenResults_singleSNP, type='scatter', savePlot="Y", saveDir="scatterPlots_samples")
 #46s on Mac20
@@ -145,8 +150,7 @@ write.table(summary(GTscore_individualSummary),"GTscore_individualSummaryTable.t
 
 ##Sample filters - again, these are panel and population specific. Use the plots to evaluate.
 #remove likely poor quality samples, more prone to genotyping errors
-#minGenotypeRate <- 0.73
-minGenotypeRate <- 0.8
+minGenotypeRate <- 0.73
 #remove likely wrong species
 minHeterozygosity <- 0.1
 #remove likely cross-contaminated samples
@@ -155,7 +159,6 @@ maxconScore <- 0.3
 #remove very low conScores that are invariably failed samples
 minconScore <- 0.01
 #flag likely duplicated samples (matching multilocus genotypes)
-#setting to 0, since I have a lot of duplication in this first run of samples (same sample, different library prep conditions)
 matchThresh <- 0.8
 commonThresh <- 0.6
 #ie, if two tissue samples were genotyped for 60% or more loci in common - how many loci were they both genotyped at successfully
@@ -218,6 +221,7 @@ ggsave("hist-HetPerSample.pdf", path="./QCplots",width=30,height=20,units="cm")
 sampleWrongSpp<-GTscore_individualSummary %>% filter(Heterozygosity<minHeterozygosity)
 sampleWrongSpp
 write.table(sampleWrongSpp,"sampleWrongSpp.txt",quote=FALSE,sep="\t",row.names=FALSE)
+
 
 
 ##Cross-contaminated samples
@@ -295,7 +299,7 @@ write.table(sampleDups,"sampleDuplicates.txt",quote=FALSE,sep="\t",row.names=FAL
 #apparent pairs of duplicated multilocus genotypes, 
 #these are likely samples obtained from the same fish
 #USER INTERVENTION REQUIRED - one or both members of the pair might be removed
-View(sampleDups)
+print(sampleDups)
 
 
 #summarize problem samples for blacklisting
@@ -307,11 +311,11 @@ sampleBlacklist <- sampleFails
 #sampleBlacklist<-full_join(sampleFails,sampleContaminants)
 #sampleBlacklist<-full_join(sampleBlacklist,sampleWrongSpp)
 #review 
-View(sampleFails)
-View(sampleContaminant)
-View(sampleWrongSpp)
+print(sampleFails)
+print(sampleContaminant)
+print(sampleWrongSpp)
 #all problem samples combined
-View(sampleBlacklist)
+print(sampleBlacklist)
 
 #write sampleBlacklist to a text file
 write.table(format(sampleBlacklist, digits=4, scientific=FALSE),"sampleBlacklist.txt",quote=FALSE,sep="\t",row.names=FALSE)
@@ -362,4 +366,6 @@ write.table(summary(GTscore_individualSummary_cleaned),"GTscore_individualSummar
 #   theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))
 # ggsave("GTrate-AveDepthSNP.pdf", path="./QCplots",width=30,height=20,units="cm")
 ```
+
+
 
