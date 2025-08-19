@@ -1,0 +1,8836 @@
+Primer Pooler v1.89 (c) 2016-25 Silas S. Brown.  For Wen.
+Now licensed under the Apache License, Version 2.0
+Compiled on Jan 30 2025 for 64-bit multi-core CPUs.
+
+You did not specify any command-line arguments.
+Would you like to run interactively? (y/n): y
+
+Please enter the name of the primers file to read.
+I'm expecting a text file in multiple-sequence FASTA format;
+it is allowed to use degenerate bases.
+Names of amplicons' primers should end with F or R, and otherwise match.
+(Optionally include Taq probes etc ending with P/Q/etc.
+All names differing in only the last letter will be kept in the same pool.
+To force a pool choice, put @2: at start of primer name for pool 2.)
+Optionally include tags to apply to all primers: >tagF and >tagR
+(you can change these mid-file if you want to vary your tags)
+Do you want to find the file in Windows instead of typing it here? (y/n): y
+
+OK, I'm starting the Windows file finder.
+If you don't see it, check BEHIND this window
+(some versions of Windows don't put it in front; blame Microsoft not me)
+
+Successfully opened C:\Users\Madison.Betts\Downloads\all_primers.fasta
+952 primers + 0 tags
+Shortest primer length is 48 bases; longest is 62
+To sort by deltaG, I'll need temperature and concentration settings.
+Or we can skip it and use score (faster and simpler but less accurate).
+Do you want to use deltaG? (y/n): y
+
+OK, please enter the deltaG settings:
+deltaG temperature (at annealing e.g. 45): 65
+
+Is that C ? (y/n): y
+
+Magnesium concentration mM/L (0 for no correction): 0
+
+Monovalent cation (e.g. sodium) concentration mM/L (e.g. 50): 3
+
+dNTP concentration mM/L (0 for no correction): .25
+
+Shall I count how many pairs have what deltaG range? (y/n): y
+
+OK, just a sec...
+Precalculating dG... done (1 second)
+ 0.0    453628   (score 1-22)
+
+Do you want to save this to a file? (y/n): y
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+File name: deltag
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+Precalculating dG... done (1 second)
+Do you want to see the highest bonds of the whole file? (y/n): y
+
+What dG threshold shall we go for? 18
+
+You entered a positive number.  Shall I negate it? (y/n): y
+
+Do you want to see the results on the screen now?
+(Answer 'no' if you want to save them to a file instead.)
+Show on screen? (y/n): n
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+Name of new results file: outputprimerpool
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+Sorting... done (1 second)
+Outputting... done (1 second)
+Do you want to try another threshold? (y/n): n
+
+Shall I split this into pools for you? (y/n): y
+
+Shall I check the amplicons for overlaps in the genome? (y/n): n
+
+Precalculating dG... done (1 second)
+Preliminary pooling by threshold...
+Computer suggestion is only 1 pool.
+Do you still want to divide into multiple pools? (y/n): n
+
+OK, I'll forget about those primers.
+You have answered 22 questions.  Well done :-)
+Would you like another go? (y/n):
+Would you like another go? (y/n): y
+
+Please enter the name of the primers file to read.
+I'm expecting a text file in multiple-sequence FASTA format;
+it is allowed to use degenerate bases.
+Names of amplicons' primers should end with F or R, and otherwise match.
+(Optionally include Taq probes etc ending with P/Q/etc.
+All names differing in only the last letter will be kept in the same pool.
+To force a pool choice, put @2: at start of primer name for pool 2.)
+Optionally include tags to apply to all primers: >tagF and >tagR
+(you can change these mid-file if you want to vary your tags)
+Do you want to find the file in Windows instead of typing it here? (y/n): y
+
+OK, I'm starting the Windows file finder.
+If you don't see it, check BEHIND this window
+(some versions of Windows don't put it in front; blame Microsoft not me)
+
+Successfully opened C:\Users\Madison.Betts\Downloads\all_primers.fasta
+952 primers + 0 tags
+Shortest primer length is 48 bases; longest is 62
+To sort by deltaG, I'll need temperature and concentration settings.
+Or we can skip it and use score (faster and simpler but less accurate).
+Do you want to use deltaG? (y/n): y
+
+OK, please enter the deltaG settings:
+deltaG temperature (at annealing e.g. 45): 65
+
+Is that C ? (y/n): y
+
+Magnesium concentration mM/L (0 for no correction): 0
+
+Monovalent cation (e.g. sodium) concentration mM/L (e.g. 50): 3
+
+dNTP concentration mM/L (0 for no correction): .25
+
+Shall I count how many pairs have what deltaG range? (y/n): y
+
+OK, just a sec...
+Precalculating dG... done (1 second)
+ 0.0    453628   (score 1-22)
+
+Do you want to save this to a file? (y/n): y
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+File name: deltag2
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+Precalculating dG... done (1 second)
+Do you want to see the highest bonds of the whole file? (y/n): y
+
+What dG threshold shall we go for? 18
+
+You entered a positive number.  Shall I negate it? (y/n): y
+
+Do you want to see the results on the screen now?
+(Answer 'no' if you want to save them to a file instead.)
+Show on screen? (y/n): n
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+Name of new results file: output2
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+Sorting... done (1 second)
+Outputting... done (1 second)
+Do you want to try another threshold? (y/n): n
+
+Shall I split this into pools for you? (y/n): y
+
+Shall I check the amplicons for overlaps in the genome? (y/n): y
+
+OK, I need to see a genome file in .2bit or .fa format.
+You might be able to find an appropriate file at
+http://hgdownload.cse.ucsc.edu/downloads.html
+Would you like me to point your browser there? (y/n): y
+
+I've tried to open a browser so you can download a file like hg38.2bit
+If the browser doesn't open, please open one yourself and go to
+http://hgdownload.cse.ucsc.edu/downloads.html
+Once downloaded, please tell me where you put it.
+Do you want to find the file in Windows instead of typing it here? (y/n): y
+
+OK, I'm starting the Windows file finder.
+If you don't see it, check BEHIND this window
+(some versions of Windows don't put it in front; blame Microsoft not me)
+
+Successfully opened C:\Users\Madison.Betts\Downloads\ncbi_dataset.zip
+Do you want me to ignore variant chromosomes
+i.e. sequences with _ or - in their names? (y/n): y
+
+Please enter the maximum amplicon length (bp), for example 220
+
+Maximum amplicon length: 200
+
+Do you want to write a file of amplicons for MultiPLX as well? (y/n): y
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+File name for all amplicon locations: ampliconlocations
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+476 primer-sets found
+The genome-overlap search function currently supports max 32 bases,
+so it'll look at only the last 32 bases of longer primers:
+Tpa_5565-R
+Tpa_5565-F
+Tpa_5636-R
+Tpa_5636-F
+Tpa_5838-R
+Tpa_5838-F
+Tpa_5980-R
+Tpa_5980-F
+Tpa_6224-R
+Tpa_6224-F
+Tpa_6355-R
+Tpa_6355-F
+Tpa_6422-R
+Tpa_6422-F
+Tpa_6511-R
+Tpa_6511-F
+Tpa_6604-R
+Tpa_6604-F
+Tpa_5570-R
+Tpa_5570-F
+Tpa_5651-R
+Tpa_5651-F
+Tpa_5913-R
+Tpa_5913-F
+Tpa_6150-R
+Tpa_6150-F
+Tpa_6384-R
+Tpa_6384-F
+Tpa_6442-R
+Tpa_6442-F
+Tpa_6611-R
+Tpa_6611-F
+Tpa_5574-R
+Tpa_5574-F
+Tpa_5679-R
+Tpa_5679-F
+Tpa_5795-R
+Tpa_5795-F
+Tpa_5854-R
+Tpa_5854-F
+Tpa_6016-R
+Tpa_6016-F
+Tpa_6158-R
+Tpa_6158-F
+Tpa_6265-R
+Tpa_6265-F
+Tpa_6385-R
+Tpa_6385-F
+Tpa_6543-R
+Tpa_6543-F
+Tpa_6630-R
+Tpa_6630-F
+Tpa_5588-R
+Tpa_5588-F
+Tpa_5796-R
+Tpa_5796-F
+Tpa_5917-R
+Tpa_5917-F
+Tpa_6076-R
+Tpa_6076-F
+Tpa_6169-R
+Tpa_6169-F
+Tpa_6270-R
+Tpa_6270-F
+Tpa_6388-R
+Tpa_6388-F
+Tpa_6449-R
+Tpa_6449-F
+Tpa_6654-R
+Tpa_6654-F
+Tpa_5594-R
+Tpa_5594-F
+Tpa_5741-R
+Tpa_5741-F
+Tpa_5856-R
+Tpa_5856-F
+Tpa_5942-R
+Tpa_5942-F
+Tpa_6083-R
+Tpa_6083-F
+Tpa_6172-R
+Tpa_6172-F
+Tpa_6391-R
+Tpa_6391-F
+Tpa_6451-R
+Tpa_6451-F
+Tpa_6562-R
+Tpa_6562-F
+Tpa_6683-R
+Tpa_6683-F
+Tpa_5601-R
+Tpa_5601-F
+Tpa_5823-R
+Tpa_5823-F
+Tpa_5863-R
+Tpa_5863-F
+Tpa_5951-R
+Tpa_5951-F
+Tpa_6204-R
+Tpa_6204-F
+Tpa_6321-R
+Tpa_6321-F
+Tpa_6453-R
+Tpa_6453-F
+Tpa_6565-R
+Tpa_6565-F
+Tpa_6687-R
+Tpa_6687-F
+Tpa_5609-R
+Tpa_5609-F
+Tpa_5761-R
+Tpa_5761-F
+Tpa_5827-R
+Tpa_5827-F
+Tpa_5868-R
+Tpa_5868-F
+Tpa_5961-R
+Tpa_5961-F
+Tpa_6137-R
+Tpa_6137-F
+Tpa_6220-R
+Tpa_6220-F
+Tpa_6487-R
+Tpa_6487-F
+Tpa_6586-R
+Tpa_6586-F
+Tpa_5623-R
+Tpa_5623-F
+Tpa_5774-R
+Tpa_5774-F
+Tpa_5829-R
+Tpa_5829-F
+Tpa_5878-R
+Tpa_5878-F
+Tpa_5978-R
+Tpa_5978-F
+Tpa_6139-R
+Tpa_6139-F
+Tpa_6222-R
+Tpa_6222-F
+Tpa_6352-R
+Tpa_6352-F
+Tpa_6411-R
+Tpa_6411-F
+Tpa_6493-R
+Tpa_6493-F
+Tpa_6591-R
+Tpa_6591-F
+Tpa_4380-R
+Tpa_4380-F
+Tpa_4467-R
+Tpa_4467-F
+Tpa_4582-R
+Tpa_4582-F
+Tpa_4637-R
+Tpa_4637-F
+Tpa_4804-R
+Tpa_4804-F
+Tpa_4936-R
+Tpa_4936-F
+Tpa_5075-R
+Tpa_5075-F
+Tpa_5241-R
+Tpa_5241-F
+Tpa_5292-R
+Tpa_5292-F
+Tpa_5418-R
+Tpa_5418-F
+Tpa_5501-R
+Tpa_5501-F
+Tpa_4384-R
+Tpa_4384-F
+Tpa_4495-R
+Tpa_4495-F
+Tpa_4590-R
+Tpa_4590-F
+Tpa_4668-R
+Tpa_4668-F
+Tpa_4849-R
+Tpa_4849-F
+Tpa_4985-R
+Tpa_4985-F
+Tpa_5167-R
+Tpa_5167-F
+Tpa_5242-R
+Tpa_5242-F
+Tpa_5298-R
+Tpa_5298-F
+Tpa_5441-R
+Tpa_5441-F
+Tpa_4394-R
+Tpa_4394-F
+Tpa_4506-R
+Tpa_4506-F
+Tpa_4591-R
+Tpa_4591-F
+Tpa_4678-R
+Tpa_4678-F
+Tpa_5002-R
+Tpa_5002-F
+Tpa_5104-R
+Tpa_5104-F
+Tpa_5196-R
+Tpa_5196-F
+Tpa_5244-R
+Tpa_5244-F
+Tpa_5327-R
+Tpa_5327-F
+Tpa_5445-R
+Tpa_5445-F
+Tpa_5525-R
+Tpa_5525-F
+Tpa_4416-R
+Tpa_4416-F
+Tpa_4511-R
+Tpa_4511-F
+Tpa_4592-R
+Tpa_4592-F
+Tpa_4697-R
+Tpa_4697-F
+Tpa_4885-R
+Tpa_4885-F
+Tpa_5015-R
+Tpa_5015-F
+Tpa_5106-R
+Tpa_5106-F
+Tpa_5205-R
+Tpa_5205-F
+Tpa_5249-R
+Tpa_5249-F
+Tpa_5360-R
+Tpa_5360-F
+Tpa_5446-R
+Tpa_5446-F
+Tpa_5538-R
+Tpa_5538-F
+Tpa_4549-R
+Tpa_4549-F
+Tpa_4593-R
+Tpa_4593-F
+Tpa_4713-R
+Tpa_4713-F
+Tpa_4886-R
+Tpa_4886-F
+Tpa_5022-R
+Tpa_5022-F
+Tpa_5206-R
+Tpa_5206-F
+Tpa_5270-R
+Tpa_5270-F
+Tpa_5361-R
+Tpa_5361-F
+Tpa_5454-R
+Tpa_5454-F
+Tpa_5540-R
+Tpa_5540-F
+Tpa_4425-R
+Tpa_4425-F
+Tpa_4595-R
+Tpa_4595-F
+Tpa_4731-R
+Tpa_4731-F
+Tpa_4900-R
+Tpa_4900-F
+Tpa_5057-R
+Tpa_5057-F
+Tpa_5118-R
+Tpa_5118-F
+Tpa_5218-R
+Tpa_5218-F
+Tpa_5278-R
+Tpa_5278-F
+Tpa_5373-R
+Tpa_5373-F
+Tpa_5542-R
+Tpa_5542-F
+Tpa_4443-R
+Tpa_4443-F
+Tpa_4556-R
+Tpa_4556-F
+Tpa_4599-R
+Tpa_4599-F
+Tpa_4747-R
+Tpa_4747-F
+Tpa_4920-R
+Tpa_4920-F
+Tpa_5138-R
+Tpa_5138-F
+Tpa_5222-R
+Tpa_5222-F
+Tpa_5279-R
+Tpa_5279-F
+Tpa_5379-R
+Tpa_5379-F
+Tpa_5471-R
+Tpa_5471-F
+Tpa_4454-R
+Tpa_4454-F
+Tpa_4569-R
+Tpa_4569-F
+Tpa_4633-R
+Tpa_4633-F
+Tpa_4749-R
+Tpa_4749-F
+Tpa_4928-R
+Tpa_4928-F
+Tpa_5144-R
+Tpa_5144-F
+Tpa_5228-R
+Tpa_5228-F
+Tpa_5382-R
+Tpa_5382-F
+Tpa_5485-R
+Tpa_5485-F
+Tpa_5563-R
+Tpa_5563-F
+Tpa_7798-R
+Tpa_7798-F
+Tpa_7799-R
+Tpa_7799-F
+Tpa_7910-R
+Tpa_7910-F
+Tpa_7805-R
+Tpa_7805-F
+Tpa_7807-R
+Tpa_7807-F
+Tpa_7814-R
+Tpa_7814-F
+Tpa_7825-R
+Tpa_7825-F
+Tpa_7848-R
+Tpa_7848-F
+Tpa_2763-R
+Tpa_2763-F
+Tpa_2907-R
+Tpa_2907-F
+Tpa_3047-R
+Tpa_3047-F
+Tpa_3197-R
+Tpa_3197-F
+Tpa_3263-R
+Tpa_3263-F
+Tpa_3439-R
+Tpa_3439-F
+Tpa_3674-R
+Tpa_3674-F
+Tpa_3795-R
+Tpa_3795-F
+Tpa_3962-R
+Tpa_3962-F
+Tpa_4178-R
+Tpa_4178-F
+Tpa_2845-R
+Tpa_2845-F
+Tpa_3055-R
+Tpa_3055-F
+Tpa_3200-R
+Tpa_3200-F
+Tpa_3310-R
+Tpa_3310-F
+Tpa_3502-R
+Tpa_3502-F
+Tpa_3676-R
+Tpa_3676-F
+Tpa_3846-R
+Tpa_3846-F
+Tpa_3974-R
+Tpa_3974-F
+Tpa_4120-R
+Tpa_4120-F
+Tpa_4209-R
+Tpa_4209-F
+Tpa_4268-R
+Tpa_4268-F
+Tpa_2854-R
+Tpa_2854-F
+Tpa_2961-R
+Tpa_2961-F
+Tpa_3063-R
+Tpa_3063-F
+Tpa_3561-R
+Tpa_3561-F
+Tpa_3679-R
+Tpa_3679-F
+Tpa_3862-R
+Tpa_3862-F
+Tpa_4020-R
+Tpa_4020-F
+Tpa_4126-R
+Tpa_4126-F
+Tpa_4221-R
+Tpa_4221-F
+Tpa_4291-R
+Tpa_4291-F
+Tpa_2856-R
+Tpa_2856-F
+Tpa_2970-R
+Tpa_2970-F
+Tpa_3347-R
+Tpa_3347-F
+Tpa_3569-R
+Tpa_3569-F
+Tpa_3684-R
+Tpa_3684-F
+Tpa_3871-R
+Tpa_3871-F
+Tpa_4021-R
+Tpa_4021-F
+Tpa_4137-R
+Tpa_4137-F
+Tpa_4230-R
+Tpa_4230-F
+Tpa_4295-R
+Tpa_4295-F
+Tpa_2861-R
+Tpa_2861-F
+Tpa_3129-R
+Tpa_3129-F
+Tpa_3248-R
+Tpa_3248-F
+Tpa_3354-R
+Tpa_3354-F
+Tpa_3705-R
+Tpa_3705-F
+Tpa_3879-R
+Tpa_3879-F
+Tpa_4022-R
+Tpa_4022-F
+Tpa_4148-R
+Tpa_4148-F
+Tpa_4310-R
+Tpa_4310-F
+Tpa_2868-R
+Tpa_2868-F
+Tpa_3004-R
+Tpa_3004-F
+Tpa_3149-R
+Tpa_3149-F
+Tpa_3254-R
+Tpa_3254-F
+Tpa_3364-R
+Tpa_3364-F
+Tpa_3583-R
+Tpa_3583-F
+Tpa_3723-R
+Tpa_3723-F
+Tpa_3905-R
+Tpa_3905-F
+Tpa_4168-R
+Tpa_4168-F
+Tpa_4245-R
+Tpa_4245-F
+Tpa_4316-R
+Tpa_4316-F
+Tpa_3011-R
+Tpa_3011-F
+Tpa_3385-R
+Tpa_3385-F
+Tpa_3616-R
+Tpa_3616-F
+Tpa_3737-R
+Tpa_3737-F
+Tpa_3926-R
+Tpa_3926-F
+Tpa_4055-R
+Tpa_4055-F
+Tpa_4246-R
+Tpa_4246-F
+Tpa_4353-R
+Tpa_4353-F
+Tpa_2900-R
+Tpa_2900-F
+Tpa_3018-R
+Tpa_3018-F
+Tpa_3193-R
+Tpa_3193-F
+Tpa_3262-R
+Tpa_3262-F
+Tpa_3745-R
+Tpa_3745-F
+Tpa_3937-R
+Tpa_3937-F
+Tpa_4077-R
+Tpa_4077-F
+Tpa_4176-R
+Tpa_4176-F
+Tpa_4247-R
+Tpa_4247-F
+Tpa_4356-R
+Tpa_4356-F
+Tpa_1357-R
+Tpa_1357-F
+Tpa_1585-R
+Tpa_1585-F
+Tpa_1818-R
+Tpa_1818-F
+Tpa_2034-R
+Tpa_2034-F
+Tpa_2157-R
+Tpa_2157-F
+Tpa_2453-R
+Tpa_2453-F
+Tpa_2519-R
+Tpa_2519-F
+Tpa_2639-R
+Tpa_2639-F
+Tpa_1359-R
+Tpa_1359-F
+Tpa_1486-R
+Tpa_1486-F
+Tpa_1593-R
+Tpa_1593-F
+Tpa_1689-R
+Tpa_1689-F
+Tpa_1831-R
+Tpa_1831-F
+Tpa_1930-R
+Tpa_1930-F
+Tpa_2040-R
+Tpa_2040-F
+Tpa_2334-R
+Tpa_2334-F
+Tpa_2458-R
+Tpa_2458-F
+Tpa_2523-R
+Tpa_2523-F
+Tpa_2664-R
+Tpa_2664-F
+Tpa_1515-R
+Tpa_1515-F
+Tpa_1606-R
+Tpa_1606-F
+Tpa_1703-R
+Tpa_1703-F
+Tpa_1832-R
+Tpa_1832-F
+Tpa_2041-R
+Tpa_2041-F
+Tpa_2180-R
+Tpa_2180-F
+Tpa_2344-R
+Tpa_2344-F
+Tpa_2460-R
+Tpa_2460-F
+Tpa_2702-R
+Tpa_2702-F
+Tpa_1394-R
+Tpa_1394-F
+Tpa_1528-R
+Tpa_1528-F
+Tpa_1638-R
+Tpa_1638-F
+Tpa_1731-R
+Tpa_1731-F
+Tpa_1843-R
+Tpa_1843-F
+Tpa_1966-R
+Tpa_1966-F
+Tpa_2194-R
+Tpa_2194-F
+Tpa_2353-R
+Tpa_2353-F
+Tpa_2470-R
+Tpa_2470-F
+Tpa_1646-R
+Tpa_1646-F
+Tpa_2073-R
+Tpa_2073-F
+Tpa_2207-R
+Tpa_2207-F
+Tpa_2483-R
+Tpa_2483-F
+Tpa_2581-R
+Tpa_2581-F
+Tpa_2712-R
+Tpa_2712-F
+Tpa_1542-R
+Tpa_1542-F
+Tpa_1774-R
+Tpa_1774-F
+Tpa_1891-R
+Tpa_1891-F
+Tpa_2006-R
+Tpa_2006-F
+Tpa_2076-R
+Tpa_2076-F
+Tpa_2254-R
+Tpa_2254-F
+Tpa_2368-R
+Tpa_2368-F
+Tpa_2498-R
+Tpa_2498-F
+Tpa_2601-R
+Tpa_2601-F
+Tpa_2734-R
+Tpa_2734-F
+Tpa_1548-R
+Tpa_1548-F
+Tpa_1662-R
+Tpa_1662-F
+Tpa_1775-R
+Tpa_1775-F
+Tpa_1896-R
+Tpa_1896-F
+Tpa_2010-R
+Tpa_2010-F
+Tpa_2096-R
+Tpa_2096-F
+Tpa_2278-R
+Tpa_2278-F
+Tpa_2412-R
+Tpa_2412-F
+Tpa_2509-R
+Tpa_2509-F
+Tpa_2608-R
+Tpa_2608-F
+Tpa_2741-R
+Tpa_2741-F
+Tpa_1443-R
+Tpa_1443-F
+Tpa_1550-R
+Tpa_1550-F
+Tpa_1678-R
+Tpa_1678-F
+Tpa_1917-R
+Tpa_1917-F
+Tpa_2021-R
+Tpa_2021-F
+Tpa_2128-R
+Tpa_2128-F
+Tpa_2417-R
+Tpa_2417-F
+Tpa_2518-R
+Tpa_2518-F
+Tpa_2636-R
+Tpa_2636-F
+Tpa_2745-R
+Tpa_2745-F
+Tpa_6713-R
+Tpa_6713-F
+Tpa_6853-R
+Tpa_6853-F
+Tpa_7080-R
+Tpa_7080-F
+Tpa_7204-R
+Tpa_7204-F
+Tpa_7406-R
+Tpa_7406-F
+Tpa_7461-R
+Tpa_7461-F
+Tpa_7586-R
+Tpa_7586-F
+Tpa_7703-R
+Tpa_7703-F
+Tpa_6733-R
+Tpa_6733-F
+Tpa_6887-R
+Tpa_6887-F
+Tpa_7082-R
+Tpa_7082-F
+Tpa_7210-R
+Tpa_7210-F
+Tpa_7331-R
+Tpa_7331-F
+Tpa_7413-R
+Tpa_7413-F
+Tpa_7477-R
+Tpa_7477-F
+Tpa_7533-R
+Tpa_7533-F
+Tpa_7594-R
+Tpa_7594-F
+Tpa_7652-R
+Tpa_7652-F
+Tpa_6768-R
+Tpa_6768-F
+Tpa_7007-R
+Tpa_7007-F
+Tpa_7090-R
+Tpa_7090-F
+Tpa_7213-R
+Tpa_7213-F
+Tpa_7417-R
+Tpa_7417-F
+Tpa_7479-R
+Tpa_7479-F
+Tpa_7540-R
+Tpa_7540-F
+Tpa_7597-R
+Tpa_7597-F
+Tpa_7653-R
+Tpa_7653-F
+Tpa_6773-R
+Tpa_6773-F
+Tpa_7010-R
+Tpa_7010-F
+Tpa_7221-R
+Tpa_7221-F
+Tpa_7348-R
+Tpa_7348-F
+Tpa_7425-R
+Tpa_7425-F
+Tpa_7483-R
+Tpa_7483-F
+Tpa_7553-R
+Tpa_7553-F
+Tpa_7657-R
+Tpa_7657-F
+Tpa_7757-R
+Tpa_7757-F
+Tpa_6774-R
+Tpa_6774-F
+Tpa_6922-R
+Tpa_6922-F
+Tpa_7018-R
+Tpa_7018-F
+Tpa_7153-R
+Tpa_7153-F
+Tpa_7240-R
+Tpa_7240-F
+Tpa_7352-R
+Tpa_7352-F
+Tpa_7447-R
+Tpa_7447-F
+Tpa_7560-R
+Tpa_7560-F
+Tpa_7601-R
+Tpa_7601-F
+Tpa_7665-R
+Tpa_7665-F
+Tpa_7764-R
+Tpa_7764-F
+Tpa_6786-R
+Tpa_6786-F
+Tpa_6937-R
+Tpa_6937-F
+Tpa_7052-R
+Tpa_7052-F
+Tpa_7157-R
+Tpa_7157-F
+Tpa_7289-R
+Tpa_7289-F
+Tpa_7367-R
+Tpa_7367-F
+Tpa_7450-R
+Tpa_7450-F
+Tpa_7566-R
+Tpa_7566-F
+Tpa_7604-R
+Tpa_7604-F
+Tpa_7686-R
+Tpa_7686-F
+Tpa_7765-R
+Tpa_7765-F
+Tpa_6814-R
+Tpa_6814-F
+Tpa_6963-R
+Tpa_6963-F
+Tpa_7058-R
+Tpa_7058-F
+Tpa_7291-R
+Tpa_7291-F
+Tpa_7375-R
+Tpa_7375-F
+Tpa_7452-R
+Tpa_7452-F
+Tpa_7495-R
+Tpa_7495-F
+Tpa_7567-R
+Tpa_7567-F
+Tpa_7605-R
+Tpa_7605-F
+Tpa_7690-R
+Tpa_7690-F
+Tpa_7769-R
+Tpa_7769-F
+Tpa_6816-R
+Tpa_6816-F
+Tpa_6973-R
+Tpa_6973-F
+Tpa_7062-R
+Tpa_7062-F
+Tpa_7201-R
+Tpa_7201-F
+Tpa_7293-R
+Tpa_7293-F
+Tpa_7454-R
+Tpa_7454-F
+Tpa_7571-R
+Tpa_7571-F
+Tpa_7615-R
+Tpa_7615-F
+Tpa_7691-R
+Tpa_7691-F
+Tpa_7772-R
+Tpa_7772-F
+Tpa_0010-R
+Tpa_0010-F
+Tpa_0186-R
+Tpa_0186-F
+Tpa_0342-R
+Tpa_0342-F
+Tpa_0427-R
+Tpa_0427-F
+Tpa_0500-R
+Tpa_0500-F
+Tpa_0743-R
+Tpa_0743-F
+Tpa_0868-R
+Tpa_0868-F
+Tpa_0929-R
+Tpa_0929-F
+Tpa_1042-R
+Tpa_1042-F
+Tpa_0012-R
+Tpa_0012-F
+Tpa_0215-R
+Tpa_0215-F
+Tpa_0346-R
+Tpa_0346-F
+Tpa_0429-R
+Tpa_0429-F
+Tpa_0540-R
+Tpa_0540-F
+Tpa_0650-R
+Tpa_0650-F
+Tpa_0763-R
+Tpa_0763-F
+Tpa_0882-R
+Tpa_0882-F
+Tpa_0936-R
+Tpa_0936-F
+Tpa_1136-R
+Tpa_1136-F
+Tpa_1304-R
+Tpa_1304-F
+Tpa_0024-R
+Tpa_0024-F
+Tpa_0226-R
+Tpa_0226-F
+Tpa_0358-R
+Tpa_0358-F
+Tpa_0438-R
+Tpa_0438-F
+Tpa_0547-R
+Tpa_0547-F
+Tpa_0768-R
+Tpa_0768-F
+Tpa_0888-R
+Tpa_0888-F
+Tpa_0953-R
+Tpa_0953-F
+Tpa_1144-R
+Tpa_1144-F
+Tpa_1305-R
+Tpa_1305-F
+Tpa_0035-R
+Tpa_0035-F
+Tpa_0228-R
+Tpa_0228-F
+Tpa_0366-R
+Tpa_0366-F
+Tpa_0439-R
+Tpa_0439-F
+Tpa_0556-R
+Tpa_0556-F
+Tpa_0671-R
+Tpa_0671-F
+Tpa_0970-R
+Tpa_0970-F
+Tpa_1071-R
+Tpa_1071-F
+Tpa_1154-R
+Tpa_1154-F
+Tpa_1310-R
+Tpa_1310-F
+Tpa_0037-R
+Tpa_0037-F
+Tpa_0263-R
+Tpa_0263-F
+Tpa_0367-R
+Tpa_0367-F
+Tpa_0569-R
+Tpa_0569-F
+Tpa_0678-R
+Tpa_0678-F
+Tpa_0895-R
+Tpa_0895-F
+Tpa_0973-R
+Tpa_0973-F
+Tpa_1077-R
+Tpa_1077-F
+Tpa_1156-R
+Tpa_1156-F
+Tpa_1312-R
+Tpa_1312-F
+Tpa_0095-R
+Tpa_0095-F
+Tpa_0269-R
+Tpa_0269-F
+Tpa_0371-R
+Tpa_0371-F
+Tpa_0826-R
+Tpa_0826-F
+Tpa_0905-R
+Tpa_0905-F
+Tpa_0979-R
+Tpa_0979-F
+Tpa_1082-R
+Tpa_1082-F
+Tpa_1187-R
+Tpa_1187-F
+Tpa_1320-R
+Tpa_1320-F
+Tpa_0151-R
+Tpa_0151-F
+Tpa_0272-R
+Tpa_0272-F
+Tpa_0395-R
+Tpa_0395-F
+Tpa_0474-R
+Tpa_0474-F
+Tpa_0592-R
+Tpa_0592-F
+Tpa_1007-R
+Tpa_1007-F
+Tpa_1098-R
+Tpa_1098-F
+Tpa_1268-R
+Tpa_1268-F
+Tpa_0183-R
+Tpa_0183-F
+Tpa_0301-R
+Tpa_0301-F
+Tpa_0409-R
+Tpa_0409-F
+Tpa_0492-R
+Tpa_0492-F
+Tpa_0730-R
+Tpa_0730-F
+Tpa_0866-R
+Tpa_0866-F
+Tpa_0912-R
+Tpa_0912-F
+Tpa_1022-R
+Tpa_1022-F
+Tpa_1112-R
+Tpa_1112-F
+Tpa_1290-R
+Tpa_1290-F
+Tpa_1341-R
+Tpa_1341-F
+Invalid signature (is this really a .2bit genome file?)
+The following primers were not found in the genome:
+Tpa_5565-F
+Tpa_5565-R
+Tpa_5636-R
+Tpa_5636-F
+Tpa_5838-F
+Tpa_5838-R
+Tpa_5980-R
+Tpa_5980-F
+Tpa_6224-R
+Tpa_6224-F
+Tpa_6355-R
+Tpa_6355-F
+Tpa_6422-R
+Tpa_6422-F
+Tpa_6511-F
+Tpa_6511-R
+Tpa_6604-R
+Tpa_6604-F
+Tpa_5570-F
+Tpa_5570-R
+Tpa_5651-F
+Tpa_5651-R
+Tpa_5913-F
+Tpa_5913-R
+Tpa_6150-R
+Tpa_6150-F
+Tpa_6384-R
+Tpa_6384-F
+Tpa_6442-R
+Tpa_6442-F
+Tpa_6611-R
+Tpa_6611-F
+Tpa_5574-F
+Tpa_5574-R
+Tpa_5679-R
+Tpa_5679-F
+Tpa_5795-F
+Tpa_5795-R
+Tpa_5854-F
+Tpa_5854-R
+Tpa_6016-R
+Tpa_6016-F
+Tpa_6158-R
+Tpa_6158-F
+Tpa_6265-R
+Tpa_6265-F
+Tpa_6385-R
+Tpa_6385-F
+Tpa_6543-R
+Tpa_6543-F
+Tpa_6630-R
+Tpa_6630-F
+Tpa_5588-F
+Tpa_5588-R
+Tpa_5796-F
+Tpa_5796-R
+Tpa_5917-R
+Tpa_5917-F
+Tpa_6076-R
+Tpa_6076-F
+Tpa_6169-R
+Tpa_6169-F
+Tpa_6270-R
+Tpa_6270-F
+Tpa_6388-F
+Tpa_6388-R
+Tpa_6449-R
+Tpa_6449-F
+Tpa_6654-R
+Tpa_6654-F
+Tpa_5594-F
+Tpa_5594-R
+Tpa_5741-F
+Tpa_5741-R
+Tpa_5856-F
+Tpa_5856-R
+Tpa_5942-R
+Tpa_5942-F
+Tpa_6083-R
+Tpa_6083-F
+Tpa_6172-R
+Tpa_6172-F
+Tpa_6391-R
+Tpa_6391-F
+Tpa_6451-R
+Tpa_6451-F
+Tpa_6562-R
+Tpa_6562-F
+Tpa_6683-R
+Tpa_6683-F
+Tpa_5601-F
+Tpa_5601-R
+Tpa_5823-F
+Tpa_5823-R
+Tpa_5863-F
+Tpa_5863-R
+Tpa_5951-R
+Tpa_5951-F
+Tpa_6204-R
+Tpa_6204-F
+Tpa_6321-R
+Tpa_6321-F
+Tpa_6453-R
+Tpa_6453-F
+Tpa_6565-R
+Tpa_6565-F
+Tpa_6687-R
+Tpa_6687-F
+Tpa_5609-F
+Tpa_5609-R
+Tpa_5761-F
+Tpa_5761-R
+Tpa_5827-F
+Tpa_5827-R
+Tpa_5868-F
+Tpa_5868-R
+Tpa_5961-R
+Tpa_5961-F
+Tpa_6137-R
+Tpa_6137-F
+Tpa_6220-R
+Tpa_6220-F
+Tpa_6487-R
+Tpa_6487-F
+Tpa_6586-R
+Tpa_6586-F
+Tpa_5623-F
+Tpa_5623-R
+Tpa_5774-F
+Tpa_5774-R
+Tpa_5829-F
+Tpa_5829-R
+Tpa_5878-F
+Tpa_5878-R
+Tpa_5978-R
+Tpa_5978-F
+Tpa_6139-R
+Tpa_6139-F
+Tpa_6222-R
+Tpa_6222-F
+Tpa_6352-R
+Tpa_6352-F
+Tpa_6411-R
+Tpa_6411-F
+Tpa_6493-R
+Tpa_6493-F
+Tpa_6591-R
+Tpa_6591-F
+Tpa_4380-R
+Tpa_4380-F
+Tpa_4467-R
+Tpa_4467-F
+Tpa_4582-F
+Tpa_4582-R
+Tpa_4637-F
+Tpa_4637-R
+Tpa_4804-F
+Tpa_4804-R
+Tpa_4936-F
+Tpa_4936-R
+Tpa_5075-F
+Tpa_5075-R
+Tpa_5241-F
+Tpa_5241-R
+Tpa_5292-F
+Tpa_5292-R
+Tpa_5418-F
+Tpa_5418-R
+Tpa_5501-F
+Tpa_5501-R
+Tpa_4384-R
+Tpa_4384-F
+Tpa_4495-R
+Tpa_4495-F
+Tpa_4590-F
+Tpa_4590-R
+Tpa_4668-F
+Tpa_4668-R
+Tpa_4849-F
+Tpa_4849-R
+Tpa_4985-F
+Tpa_4985-R
+Tpa_5167-F
+Tpa_5167-R
+Tpa_5242-F
+Tpa_5242-R
+Tpa_5298-F
+Tpa_5298-R
+Tpa_5441-F
+Tpa_5441-R
+Tpa_4394-F
+Tpa_4394-R
+Tpa_4506-R
+Tpa_4506-F
+Tpa_4591-F
+Tpa_4591-R
+Tpa_4678-F
+Tpa_4678-R
+Tpa_5002-F
+Tpa_5002-R
+Tpa_5104-F
+Tpa_5104-R
+Tpa_5196-F
+Tpa_5196-R
+Tpa_5244-F
+Tpa_5244-R
+Tpa_5327-F
+Tpa_5327-R
+Tpa_5445-F
+Tpa_5445-R
+Tpa_5525-F
+Tpa_5525-R
+Tpa_4416-R
+Tpa_4416-F
+Tpa_4511-R
+Tpa_4511-F
+Tpa_4592-F
+Tpa_4592-R
+Tpa_4697-F
+Tpa_4697-R
+Tpa_4885-F
+Tpa_4885-R
+Tpa_5015-F
+Tpa_5015-R
+Tpa_5106-F
+Tpa_5106-R
+Tpa_5205-F
+Tpa_5205-R
+Tpa_5249-F
+Tpa_5249-R
+Tpa_5360-F
+Tpa_5360-R
+Tpa_5446-F
+Tpa_5446-R
+Tpa_5538-F
+Tpa_5538-R
+Tpa_4549-R
+Tpa_4549-F
+Tpa_4593-F
+Tpa_4593-R
+Tpa_4713-F
+Tpa_4713-R
+Tpa_4886-F
+Tpa_4886-R
+Tpa_5022-F
+Tpa_5022-R
+Tpa_5206-F
+Tpa_5206-R
+Tpa_5270-F
+Tpa_5270-R
+Tpa_5361-F
+Tpa_5361-R
+Tpa_5454-F
+Tpa_5454-R
+Tpa_5540-F
+Tpa_5540-R
+Tpa_4425-R
+Tpa_4425-F
+Tpa_4595-F
+Tpa_4595-R
+Tpa_4731-F
+Tpa_4731-R
+Tpa_4900-F
+Tpa_4900-R
+Tpa_5057-F
+Tpa_5057-R
+Tpa_5118-F
+Tpa_5118-R
+Tpa_5218-F
+Tpa_5218-R
+Tpa_5278-F
+Tpa_5278-R
+Tpa_5373-F
+Tpa_5373-R
+Tpa_5542-F
+Tpa_5542-R
+Tpa_4443-R
+Tpa_4443-F
+Tpa_4556-R
+Tpa_4556-F
+Tpa_4599-F
+Tpa_4599-R
+Tpa_4747-F
+Tpa_4747-R
+Tpa_4920-R
+Tpa_4920-F
+Tpa_5138-F
+Tpa_5138-R
+Tpa_5222-F
+Tpa_5222-R
+Tpa_5279-F
+Tpa_5279-R
+Tpa_5379-F
+Tpa_5379-R
+Tpa_5471-F
+Tpa_5471-R
+Tpa_4454-R
+Tpa_4454-F
+Tpa_4569-R
+Tpa_4569-F
+Tpa_4633-F
+Tpa_4633-R
+Tpa_4749-F
+Tpa_4749-R
+Tpa_4928-F
+Tpa_4928-R
+Tpa_5144-F
+Tpa_5144-R
+Tpa_5228-F
+Tpa_5228-R
+Tpa_5382-F
+Tpa_5382-R
+Tpa_5485-F
+Tpa_5485-R
+Tpa_5563-F
+Tpa_5563-R
+Tpa_7798-R
+Tpa_7798-F
+Tpa_7799-R
+Tpa_7799-F
+Tpa_7910-F
+Tpa_7910-R
+Tpa_7805-R
+Tpa_7805-F
+Tpa_7807-R
+Tpa_7807-F
+Tpa_7814-R
+Tpa_7814-F
+Tpa_7825-R
+Tpa_7825-F
+Tpa_7848-R
+Tpa_7848-F
+Tpa_2763-R
+Tpa_2763-F
+Tpa_2907-F
+Tpa_2907-R
+Tpa_3047-F
+Tpa_3047-R
+Tpa_3197-F
+Tpa_3197-R
+Tpa_3263-F
+Tpa_3263-R
+Tpa_3439-F
+Tpa_3439-R
+Tpa_3674-F
+Tpa_3674-R
+Tpa_3795-F
+Tpa_3795-R
+Tpa_3962-F
+Tpa_3962-R
+Tpa_4178-F
+Tpa_4178-R
+Tpa_2845-R
+Tpa_2845-F
+Tpa_3055-F
+Tpa_3055-R
+Tpa_3200-F
+Tpa_3200-R
+Tpa_3310-R
+Tpa_3310-F
+Tpa_3502-F
+Tpa_3502-R
+Tpa_3676-R
+Tpa_3676-F
+Tpa_3846-F
+Tpa_3846-R
+Tpa_3974-F
+Tpa_3974-R
+Tpa_4120-F
+Tpa_4120-R
+Tpa_4209-F
+Tpa_4209-R
+Tpa_4268-F
+Tpa_4268-R
+Tpa_2854-R
+Tpa_2854-F
+Tpa_2961-F
+Tpa_2961-R
+Tpa_3063-F
+Tpa_3063-R
+Tpa_3561-F
+Tpa_3561-R
+Tpa_3679-F
+Tpa_3679-R
+Tpa_3862-F
+Tpa_3862-R
+Tpa_4020-F
+Tpa_4020-R
+Tpa_4126-F
+Tpa_4126-R
+Tpa_4221-F
+Tpa_4221-R
+Tpa_4291-F
+Tpa_4291-R
+Tpa_2856-R
+Tpa_2856-F
+Tpa_2970-F
+Tpa_2970-R
+Tpa_3347-R
+Tpa_3347-F
+Tpa_3569-F
+Tpa_3569-R
+Tpa_3684-F
+Tpa_3684-R
+Tpa_3871-F
+Tpa_3871-R
+Tpa_4021-F
+Tpa_4021-R
+Tpa_4137-F
+Tpa_4137-R
+Tpa_4230-F
+Tpa_4230-R
+Tpa_4295-F
+Tpa_4295-R
+Tpa_2861-R
+Tpa_2861-F
+Tpa_3129-F
+Tpa_3129-R
+Tpa_3248-F
+Tpa_3248-R
+Tpa_3354-F
+Tpa_3354-R
+Tpa_3705-F
+Tpa_3705-R
+Tpa_3879-F
+Tpa_3879-R
+Tpa_4022-F
+Tpa_4022-R
+Tpa_4148-R
+Tpa_4148-F
+Tpa_4310-F
+Tpa_4310-R
+Tpa_2868-R
+Tpa_2868-F
+Tpa_3004-F
+Tpa_3004-R
+Tpa_3149-F
+Tpa_3149-R
+Tpa_3254-F
+Tpa_3254-R
+Tpa_3364-F
+Tpa_3364-R
+Tpa_3583-F
+Tpa_3583-R
+Tpa_3723-F
+Tpa_3723-R
+Tpa_3905-F
+Tpa_3905-R
+Tpa_4168-F
+Tpa_4168-R
+Tpa_4245-F
+Tpa_4245-R
+Tpa_4316-F
+Tpa_4316-R
+Tpa_3011-F
+Tpa_3011-R
+Tpa_3385-F
+Tpa_3385-R
+Tpa_3616-F
+Tpa_3616-R
+Tpa_3737-F
+Tpa_3737-R
+Tpa_3926-F
+Tpa_3926-R
+Tpa_4055-F
+Tpa_4055-R
+Tpa_4246-R
+Tpa_4246-F
+Tpa_4353-F
+Tpa_4353-R
+Tpa_2900-F
+Tpa_2900-R
+Tpa_3018-F
+Tpa_3018-R
+Tpa_3193-F
+Tpa_3193-R
+Tpa_3262-F
+Tpa_3262-R
+Tpa_3745-F
+Tpa_3745-R
+Tpa_3937-F
+Tpa_3937-R
+Tpa_4077-F
+Tpa_4077-R
+Tpa_4176-F
+Tpa_4176-R
+Tpa_4247-F
+Tpa_4247-R
+Tpa_4356-F
+Tpa_4356-R
+Tpa_1357-R
+Tpa_1357-F
+Tpa_1585-R
+Tpa_1585-F
+Tpa_1818-R
+Tpa_1818-F
+Tpa_2034-R
+Tpa_2034-F
+Tpa_2157-R
+Tpa_2157-F
+Tpa_2453-R
+Tpa_2453-F
+Tpa_2519-R
+Tpa_2519-F
+Tpa_2639-R
+Tpa_2639-F
+Tpa_1359-R
+Tpa_1359-F
+Tpa_1486-R
+Tpa_1486-F
+Tpa_1593-R
+Tpa_1593-F
+Tpa_1689-R
+Tpa_1689-F
+Tpa_1831-R
+Tpa_1831-F
+Tpa_1930-R
+Tpa_1930-F
+Tpa_2040-R
+Tpa_2040-F
+Tpa_2334-R
+Tpa_2334-F
+Tpa_2458-R
+Tpa_2458-F
+Tpa_2523-R
+Tpa_2523-F
+Tpa_2664-R
+Tpa_2664-F
+Tpa_1515-R
+Tpa_1515-F
+Tpa_1606-R
+Tpa_1606-F
+Tpa_1703-R
+Tpa_1703-F
+Tpa_1832-R
+Tpa_1832-F
+Tpa_2041-R
+Tpa_2041-F
+Tpa_2180-R
+Tpa_2180-F
+Tpa_2344-R
+Tpa_2344-F
+Tpa_2460-R
+Tpa_2460-F
+Tpa_2702-R
+Tpa_2702-F
+Tpa_1394-R
+Tpa_1394-F
+Tpa_1528-R
+Tpa_1528-F
+Tpa_1638-R
+Tpa_1638-F
+Tpa_1731-R
+Tpa_1731-F
+Tpa_1843-R
+Tpa_1843-F
+Tpa_1966-R
+Tpa_1966-F
+Tpa_2194-R
+Tpa_2194-F
+Tpa_2353-R
+Tpa_2353-F
+Tpa_2470-R
+Tpa_2470-F
+Tpa_1646-R
+Tpa_1646-F
+Tpa_2073-R
+Tpa_2073-F
+Tpa_2207-R
+Tpa_2207-F
+Tpa_2483-R
+Tpa_2483-F
+Tpa_2581-R
+Tpa_2581-F
+Tpa_2712-R
+Tpa_2712-F
+Tpa_1542-R
+Tpa_1542-F
+Tpa_1774-R
+Tpa_1774-F
+Tpa_1891-R
+Tpa_1891-F
+Tpa_2006-R
+Tpa_2006-F
+Tpa_2076-R
+Tpa_2076-F
+Tpa_2254-R
+Tpa_2254-F
+Tpa_2368-R
+Tpa_2368-F
+Tpa_2498-R
+Tpa_2498-F
+Tpa_2601-R
+Tpa_2601-F
+Tpa_2734-R
+Tpa_2734-F
+Tpa_1548-R
+Tpa_1548-F
+Tpa_1662-R
+Tpa_1662-F
+Tpa_1775-R
+Tpa_1775-F
+Tpa_1896-R
+Tpa_1896-F
+Tpa_2010-R
+Tpa_2010-F
+Tpa_2096-R
+Tpa_2096-F
+Tpa_2278-R
+Tpa_2278-F
+Tpa_2412-R
+Tpa_2412-F
+Tpa_2509-R
+Tpa_2509-F
+Tpa_2608-R
+Tpa_2608-F
+Tpa_2741-R
+Tpa_2741-F
+Tpa_1443-R
+Tpa_1443-F
+Tpa_1550-R
+Tpa_1550-F
+Tpa_1678-R
+Tpa_1678-F
+Tpa_1917-R
+Tpa_1917-F
+Tpa_2021-R
+Tpa_2021-F
+Tpa_2128-R
+Tpa_2128-F
+Tpa_2417-R
+Tpa_2417-F
+Tpa_2518-R
+Tpa_2518-F
+Tpa_2636-R
+Tpa_2636-F
+Tpa_2745-F
+Tpa_2745-R
+Tpa_6713-R
+Tpa_6713-F
+Tpa_6853-R
+Tpa_6853-F
+Tpa_7080-R
+Tpa_7080-F
+Tpa_7204-R
+Tpa_7204-F
+Tpa_7406-R
+Tpa_7406-F
+Tpa_7461-F
+Tpa_7461-R
+Tpa_7586-R
+Tpa_7586-F
+Tpa_7703-R
+Tpa_7703-F
+Tpa_6733-R
+Tpa_6733-F
+Tpa_6887-R
+Tpa_6887-F
+Tpa_7082-R
+Tpa_7082-F
+Tpa_7210-R
+Tpa_7210-F
+Tpa_7331-R
+Tpa_7331-F
+Tpa_7413-R
+Tpa_7413-F
+Tpa_7477-R
+Tpa_7477-F
+Tpa_7533-R
+Tpa_7533-F
+Tpa_7594-R
+Tpa_7594-F
+Tpa_7652-R
+Tpa_7652-F
+Tpa_6768-R
+Tpa_6768-F
+Tpa_7007-R
+Tpa_7007-F
+Tpa_7090-R
+Tpa_7090-F
+Tpa_7213-R
+Tpa_7213-F
+Tpa_7417-R
+Tpa_7417-F
+Tpa_7479-R
+Tpa_7479-F
+Tpa_7540-R
+Tpa_7540-F
+Tpa_7597-F
+Tpa_7597-R
+Tpa_7653-R
+Tpa_7653-F
+Tpa_6773-R
+Tpa_6773-F
+Tpa_7010-F
+Tpa_7010-R
+Tpa_7221-R
+Tpa_7221-F
+Tpa_7348-R
+Tpa_7348-F
+Tpa_7425-R
+Tpa_7425-F
+Tpa_7483-F
+Tpa_7483-R
+Tpa_7553-R
+Tpa_7553-F
+Tpa_7657-R
+Tpa_7657-F
+Tpa_7757-F
+Tpa_7757-R
+Tpa_6774-R
+Tpa_6774-F
+Tpa_6922-R
+Tpa_6922-F
+Tpa_7018-R
+Tpa_7018-F
+Tpa_7153-R
+Tpa_7153-F
+Tpa_7240-R
+Tpa_7240-F
+Tpa_7352-R
+Tpa_7352-F
+Tpa_7447-R
+Tpa_7447-F
+Tpa_7560-R
+Tpa_7560-F
+Tpa_7601-R
+Tpa_7601-F
+Tpa_7665-R
+Tpa_7665-F
+Tpa_7764-R
+Tpa_7764-F
+Tpa_6786-R
+Tpa_6786-F
+Tpa_6937-R
+Tpa_6937-F
+Tpa_7052-R
+Tpa_7052-F
+Tpa_7157-R
+Tpa_7157-F
+Tpa_7289-R
+Tpa_7289-F
+Tpa_7367-F
+Tpa_7367-R
+Tpa_7450-R
+Tpa_7450-F
+Tpa_7566-R
+Tpa_7566-F
+Tpa_7604-R
+Tpa_7604-F
+Tpa_7686-R
+Tpa_7686-F
+Tpa_7765-R
+Tpa_7765-F
+Tpa_6814-R
+Tpa_6814-F
+Tpa_6963-R
+Tpa_6963-F
+Tpa_7058-R
+Tpa_7058-F
+Tpa_7291-R
+Tpa_7291-F
+Tpa_7375-R
+Tpa_7375-F
+Tpa_7452-R
+Tpa_7452-F
+Tpa_7495-R
+Tpa_7495-F
+Tpa_7567-R
+Tpa_7567-F
+Tpa_7605-F
+Tpa_7605-R
+Tpa_7690-R
+Tpa_7690-F
+Tpa_7769-R
+Tpa_7769-F
+Tpa_6816-R
+Tpa_6816-F
+Tpa_6973-R
+Tpa_6973-F
+Tpa_7062-R
+Tpa_7062-F
+Tpa_7201-R
+Tpa_7201-F
+Tpa_7293-R
+Tpa_7293-F
+Tpa_7454-R
+Tpa_7454-F
+Tpa_7571-R
+Tpa_7571-F
+Tpa_7615-R
+Tpa_7615-F
+Tpa_7691-R
+Tpa_7691-F
+Tpa_7772-R
+Tpa_7772-F
+Tpa_0010-R
+Tpa_0010-F
+Tpa_0186-R
+Tpa_0186-F
+Tpa_0342-R
+Tpa_0342-F
+Tpa_0427-F
+Tpa_0427-R
+Tpa_0500-R
+Tpa_0500-F
+Tpa_0743-R
+Tpa_0743-F
+Tpa_0868-F
+Tpa_0868-R
+Tpa_0929-F
+Tpa_0929-R
+Tpa_1042-R
+Tpa_1042-F
+Tpa_0012-R
+Tpa_0012-F
+Tpa_0215-R
+Tpa_0215-F
+Tpa_0346-R
+Tpa_0346-F
+Tpa_0429-R
+Tpa_0429-F
+Tpa_0540-R
+Tpa_0540-F
+Tpa_0650-R
+Tpa_0650-F
+Tpa_0763-R
+Tpa_0763-F
+Tpa_0882-R
+Tpa_0882-F
+Tpa_0936-R
+Tpa_0936-F
+Tpa_1136-R
+Tpa_1136-F
+Tpa_1304-R
+Tpa_1304-F
+Tpa_0024-R
+Tpa_0024-F
+Tpa_0226-R
+Tpa_0226-F
+Tpa_0358-R
+Tpa_0358-F
+Tpa_0438-R
+Tpa_0438-F
+Tpa_0547-R
+Tpa_0547-F
+Tpa_0768-R
+Tpa_0768-F
+Tpa_0888-R
+Tpa_0888-F
+Tpa_0953-F
+Tpa_0953-R
+Tpa_1144-R
+Tpa_1144-F
+Tpa_1305-R
+Tpa_1305-F
+Tpa_0035-R
+Tpa_0035-F
+Tpa_0228-R
+Tpa_0228-F
+Tpa_0366-R
+Tpa_0366-F
+Tpa_0439-R
+Tpa_0439-F
+Tpa_0556-R
+Tpa_0556-F
+Tpa_0671-R
+Tpa_0671-F
+Tpa_0970-R
+Tpa_0970-F
+Tpa_1071-R
+Tpa_1071-F
+Tpa_1154-R
+Tpa_1154-F
+Tpa_1310-R
+Tpa_1310-F
+Tpa_0037-R
+Tpa_0037-F
+Tpa_0263-R
+Tpa_0263-F
+Tpa_0367-R
+Tpa_0367-F
+Tpa_0569-R
+Tpa_0569-F
+Tpa_0678-R
+Tpa_0678-F
+Tpa_0895-R
+Tpa_0895-F
+Tpa_0973-R
+Tpa_0973-F
+Tpa_1077-R
+Tpa_1077-F
+Tpa_1156-R
+Tpa_1156-F
+Tpa_1312-R
+Tpa_1312-F
+Tpa_0095-R
+Tpa_0095-F
+Tpa_0269-R
+Tpa_0269-F
+Tpa_0371-R
+Tpa_0371-F
+Tpa_0826-R
+Tpa_0826-F
+Tpa_0905-R
+Tpa_0905-F
+Tpa_0979-R
+Tpa_0979-F
+Tpa_1082-R
+Tpa_1082-F
+Tpa_1187-R
+Tpa_1187-F
+Tpa_1320-R
+Tpa_1320-F
+Tpa_0151-R
+Tpa_0151-F
+Tpa_0272-R
+Tpa_0272-F
+Tpa_0395-R
+Tpa_0395-F
+Tpa_0474-R
+Tpa_0474-F
+Tpa_0592-R
+Tpa_0592-F
+Tpa_1007-R
+Tpa_1007-F
+Tpa_1098-R
+Tpa_1098-F
+Tpa_1268-R
+Tpa_1268-F
+Tpa_0183-R
+Tpa_0183-F
+Tpa_0301-R
+Tpa_0301-F
+Tpa_0409-R
+Tpa_0409-F
+Tpa_0492-R
+Tpa_0492-F
+Tpa_0730-F
+Tpa_0730-R
+Tpa_0866-R
+Tpa_0866-F
+Tpa_0912-R
+Tpa_0912-F
+Tpa_1022-R
+Tpa_1022-F
+Tpa_1112-R
+Tpa_1112-F
+Tpa_1290-R
+Tpa_1290-F
+Tpa_1341-R
+Tpa_1341-F
+0 of 952 primers were found in the genome
+Amplicons not found in genome:
+Tpa_5565-F/Tpa_5565-R
+Tpa_5636-F/Tpa_5636-R
+Tpa_5838-F/Tpa_5838-R
+Tpa_5980-F/Tpa_5980-R
+Tpa_6224-F/Tpa_6224-R
+Tpa_6355-F/Tpa_6355-R
+Tpa_6422-F/Tpa_6422-R
+Tpa_6511-F/Tpa_6511-R
+Tpa_6604-F/Tpa_6604-R
+Tpa_5570-F/Tpa_5570-R
+Tpa_5651-F/Tpa_5651-R
+Tpa_5913-F/Tpa_5913-R
+Tpa_6150-F/Tpa_6150-R
+Tpa_6384-F/Tpa_6384-R
+Tpa_6442-F/Tpa_6442-R
+Tpa_6611-F/Tpa_6611-R
+Tpa_5574-F/Tpa_5574-R
+Tpa_5679-F/Tpa_5679-R
+Tpa_5795-F/Tpa_5795-R
+Tpa_5854-F/Tpa_5854-R
+Tpa_6016-F/Tpa_6016-R
+Tpa_6158-F/Tpa_6158-R
+Tpa_6265-F/Tpa_6265-R
+Tpa_6385-F/Tpa_6385-R
+Tpa_6543-F/Tpa_6543-R
+Tpa_6630-F/Tpa_6630-R
+Tpa_5588-F/Tpa_5588-R
+Tpa_5796-F/Tpa_5796-R
+Tpa_5917-F/Tpa_5917-R
+Tpa_6076-F/Tpa_6076-R
+Tpa_6169-F/Tpa_6169-R
+Tpa_6270-F/Tpa_6270-R
+Tpa_6388-F/Tpa_6388-R
+Tpa_6449-F/Tpa_6449-R
+Tpa_6654-F/Tpa_6654-R
+Tpa_5594-F/Tpa_5594-R
+Tpa_5741-F/Tpa_5741-R
+Tpa_5856-F/Tpa_5856-R
+Tpa_5942-F/Tpa_5942-R
+Tpa_6083-F/Tpa_6083-R
+Tpa_6172-F/Tpa_6172-R
+Tpa_6391-F/Tpa_6391-R
+Tpa_6451-F/Tpa_6451-R
+Tpa_6562-F/Tpa_6562-R
+Tpa_6683-F/Tpa_6683-R
+Tpa_5601-F/Tpa_5601-R
+Tpa_5823-F/Tpa_5823-R
+Tpa_5863-F/Tpa_5863-R
+Tpa_5951-F/Tpa_5951-R
+Tpa_6204-F/Tpa_6204-R
+Tpa_6321-F/Tpa_6321-R
+Tpa_6453-F/Tpa_6453-R
+Tpa_6565-F/Tpa_6565-R
+Tpa_6687-F/Tpa_6687-R
+Tpa_5609-F/Tpa_5609-R
+Tpa_5761-F/Tpa_5761-R
+Tpa_5827-F/Tpa_5827-R
+Tpa_5868-F/Tpa_5868-R
+Tpa_5961-F/Tpa_5961-R
+Tpa_6137-F/Tpa_6137-R
+Tpa_6220-F/Tpa_6220-R
+Tpa_6487-F/Tpa_6487-R
+Tpa_6586-F/Tpa_6586-R
+Tpa_5623-F/Tpa_5623-R
+Tpa_5774-F/Tpa_5774-R
+Tpa_5829-F/Tpa_5829-R
+Tpa_5878-F/Tpa_5878-R
+Tpa_5978-F/Tpa_5978-R
+Tpa_6139-F/Tpa_6139-R
+Tpa_6222-F/Tpa_6222-R
+Tpa_6352-F/Tpa_6352-R
+Tpa_6411-F/Tpa_6411-R
+Tpa_6493-F/Tpa_6493-R
+Tpa_6591-F/Tpa_6591-R
+Tpa_4380-F/Tpa_4380-R
+Tpa_4467-F/Tpa_4467-R
+Tpa_4582-F/Tpa_4582-R
+Tpa_4637-F/Tpa_4637-R
+Tpa_4804-F/Tpa_4804-R
+Tpa_4936-F/Tpa_4936-R
+Tpa_5075-F/Tpa_5075-R
+Tpa_5241-F/Tpa_5241-R
+Tpa_5292-F/Tpa_5292-R
+Tpa_5418-F/Tpa_5418-R
+Tpa_5501-F/Tpa_5501-R
+Tpa_4384-F/Tpa_4384-R
+Tpa_4495-F/Tpa_4495-R
+Tpa_4590-F/Tpa_4590-R
+Tpa_4668-F/Tpa_4668-R
+Tpa_4849-F/Tpa_4849-R
+Tpa_4985-F/Tpa_4985-R
+Tpa_5167-F/Tpa_5167-R
+Tpa_5242-F/Tpa_5242-R
+Tpa_5298-F/Tpa_5298-R
+Tpa_5441-F/Tpa_5441-R
+Tpa_4394-F/Tpa_4394-R
+Tpa_4506-F/Tpa_4506-R
+Tpa_4591-F/Tpa_4591-R
+Tpa_4678-F/Tpa_4678-R
+Tpa_5002-F/Tpa_5002-R
+Tpa_5104-F/Tpa_5104-R
+Tpa_5196-F/Tpa_5196-R
+Tpa_5244-F/Tpa_5244-R
+Tpa_5327-F/Tpa_5327-R
+Tpa_5445-F/Tpa_5445-R
+Tpa_5525-F/Tpa_5525-R
+Tpa_4416-F/Tpa_4416-R
+Tpa_4511-F/Tpa_4511-R
+Tpa_4592-F/Tpa_4592-R
+Tpa_4697-F/Tpa_4697-R
+Tpa_4885-F/Tpa_4885-R
+Tpa_5015-F/Tpa_5015-R
+Tpa_5106-F/Tpa_5106-R
+Tpa_5205-F/Tpa_5205-R
+Tpa_5249-F/Tpa_5249-R
+Tpa_5360-F/Tpa_5360-R
+Tpa_5446-F/Tpa_5446-R
+Tpa_5538-F/Tpa_5538-R
+Tpa_4549-F/Tpa_4549-R
+Tpa_4593-F/Tpa_4593-R
+Tpa_4713-F/Tpa_4713-R
+Tpa_4886-F/Tpa_4886-R
+Tpa_5022-F/Tpa_5022-R
+Tpa_5206-F/Tpa_5206-R
+Tpa_5270-F/Tpa_5270-R
+Tpa_5361-F/Tpa_5361-R
+Tpa_5454-F/Tpa_5454-R
+Tpa_5540-F/Tpa_5540-R
+Tpa_4425-F/Tpa_4425-R
+Tpa_4595-F/Tpa_4595-R
+Tpa_4731-F/Tpa_4731-R
+Tpa_4900-F/Tpa_4900-R
+Tpa_5057-F/Tpa_5057-R
+Tpa_5118-F/Tpa_5118-R
+Tpa_5218-F/Tpa_5218-R
+Tpa_5278-F/Tpa_5278-R
+Tpa_5373-F/Tpa_5373-R
+Tpa_5542-F/Tpa_5542-R
+Tpa_4443-F/Tpa_4443-R
+Tpa_4556-F/Tpa_4556-R
+Tpa_4599-F/Tpa_4599-R
+Tpa_4747-F/Tpa_4747-R
+Tpa_4920-F/Tpa_4920-R
+Tpa_5138-F/Tpa_5138-R
+Tpa_5222-F/Tpa_5222-R
+Tpa_5279-F/Tpa_5279-R
+Tpa_5379-F/Tpa_5379-R
+Tpa_5471-F/Tpa_5471-R
+Tpa_4454-F/Tpa_4454-R
+Tpa_4569-F/Tpa_4569-R
+Tpa_4633-F/Tpa_4633-R
+Tpa_4749-F/Tpa_4749-R
+Tpa_4928-F/Tpa_4928-R
+Tpa_5144-F/Tpa_5144-R
+Tpa_5228-F/Tpa_5228-R
+Tpa_5382-F/Tpa_5382-R
+Tpa_5485-F/Tpa_5485-R
+Tpa_5563-F/Tpa_5563-R
+Tpa_7798-F/Tpa_7798-R
+Tpa_7799-F/Tpa_7799-R
+Tpa_7910-F/Tpa_7910-R
+Tpa_7805-F/Tpa_7805-R
+Tpa_7807-F/Tpa_7807-R
+Tpa_7814-F/Tpa_7814-R
+Tpa_7825-F/Tpa_7825-R
+Tpa_7848-F/Tpa_7848-R
+Tpa_2763-F/Tpa_2763-R
+Tpa_2907-F/Tpa_2907-R
+Tpa_3047-F/Tpa_3047-R
+Tpa_3197-F/Tpa_3197-R
+Tpa_3263-F/Tpa_3263-R
+Tpa_3439-F/Tpa_3439-R
+Tpa_3674-F/Tpa_3674-R
+Tpa_3795-F/Tpa_3795-R
+Tpa_3962-F/Tpa_3962-R
+Tpa_4178-F/Tpa_4178-R
+Tpa_2845-F/Tpa_2845-R
+Tpa_3055-F/Tpa_3055-R
+Tpa_3200-F/Tpa_3200-R
+Tpa_3310-F/Tpa_3310-R
+Tpa_3502-F/Tpa_3502-R
+Tpa_3676-F/Tpa_3676-R
+Tpa_3846-F/Tpa_3846-R
+Tpa_3974-F/Tpa_3974-R
+Tpa_4120-F/Tpa_4120-R
+Tpa_4209-F/Tpa_4209-R
+Tpa_4268-F/Tpa_4268-R
+Tpa_2854-F/Tpa_2854-R
+Tpa_2961-F/Tpa_2961-R
+Tpa_3063-F/Tpa_3063-R
+Tpa_3561-F/Tpa_3561-R
+Tpa_3679-F/Tpa_3679-R
+Tpa_3862-F/Tpa_3862-R
+Tpa_4020-F/Tpa_4020-R
+Tpa_4126-F/Tpa_4126-R
+Tpa_4221-F/Tpa_4221-R
+Tpa_4291-F/Tpa_4291-R
+Tpa_2856-F/Tpa_2856-R
+Tpa_2970-F/Tpa_2970-R
+Tpa_3347-F/Tpa_3347-R
+Tpa_3569-F/Tpa_3569-R
+Tpa_3684-F/Tpa_3684-R
+Tpa_3871-F/Tpa_3871-R
+Tpa_4021-F/Tpa_4021-R
+Tpa_4137-F/Tpa_4137-R
+Tpa_4230-F/Tpa_4230-R
+Tpa_4295-F/Tpa_4295-R
+Tpa_2861-F/Tpa_2861-R
+Tpa_3129-F/Tpa_3129-R
+Tpa_3248-F/Tpa_3248-R
+Tpa_3354-F/Tpa_3354-R
+Tpa_3705-F/Tpa_3705-R
+Tpa_3879-F/Tpa_3879-R
+Tpa_4022-F/Tpa_4022-R
+Tpa_4148-F/Tpa_4148-R
+Tpa_4310-F/Tpa_4310-R
+Tpa_2868-F/Tpa_2868-R
+Tpa_3004-F/Tpa_3004-R
+Tpa_3149-F/Tpa_3149-R
+Tpa_3254-F/Tpa_3254-R
+Tpa_3364-F/Tpa_3364-R
+Tpa_3583-F/Tpa_3583-R
+Tpa_3723-F/Tpa_3723-R
+Tpa_3905-F/Tpa_3905-R
+Tpa_4168-F/Tpa_4168-R
+Tpa_4245-F/Tpa_4245-R
+Tpa_4316-F/Tpa_4316-R
+Tpa_3011-F/Tpa_3011-R
+Tpa_3385-F/Tpa_3385-R
+Tpa_3616-F/Tpa_3616-R
+Tpa_3737-F/Tpa_3737-R
+Tpa_3926-F/Tpa_3926-R
+Tpa_4055-F/Tpa_4055-R
+Tpa_4246-F/Tpa_4246-R
+Tpa_4353-F/Tpa_4353-R
+Tpa_2900-F/Tpa_2900-R
+Tpa_3018-F/Tpa_3018-R
+Tpa_3193-F/Tpa_3193-R
+Tpa_3262-F/Tpa_3262-R
+Tpa_3745-F/Tpa_3745-R
+Tpa_3937-F/Tpa_3937-R
+Tpa_4077-F/Tpa_4077-R
+Tpa_4176-F/Tpa_4176-R
+Tpa_4247-F/Tpa_4247-R
+Tpa_4356-F/Tpa_4356-R
+Tpa_1357-F/Tpa_1357-R
+Tpa_1585-F/Tpa_1585-R
+Tpa_1818-F/Tpa_1818-R
+Tpa_2034-F/Tpa_2034-R
+Tpa_2157-F/Tpa_2157-R
+Tpa_2453-F/Tpa_2453-R
+Tpa_2519-F/Tpa_2519-R
+Tpa_2639-F/Tpa_2639-R
+Tpa_1359-F/Tpa_1359-R
+Tpa_1486-F/Tpa_1486-R
+Tpa_1593-F/Tpa_1593-R
+Tpa_1689-F/Tpa_1689-R
+Tpa_1831-F/Tpa_1831-R
+Tpa_1930-F/Tpa_1930-R
+Tpa_2040-F/Tpa_2040-R
+Tpa_2334-F/Tpa_2334-R
+Tpa_2458-F/Tpa_2458-R
+Tpa_2523-F/Tpa_2523-R
+Tpa_2664-F/Tpa_2664-R
+Tpa_1515-F/Tpa_1515-R
+Tpa_1606-F/Tpa_1606-R
+Tpa_1703-F/Tpa_1703-R
+Tpa_1832-F/Tpa_1832-R
+Tpa_2041-F/Tpa_2041-R
+Tpa_2180-F/Tpa_2180-R
+Tpa_2344-F/Tpa_2344-R
+Tpa_2460-F/Tpa_2460-R
+Tpa_2702-F/Tpa_2702-R
+Tpa_1394-F/Tpa_1394-R
+Tpa_1528-F/Tpa_1528-R
+Tpa_1638-F/Tpa_1638-R
+Tpa_1731-F/Tpa_1731-R
+Tpa_1843-F/Tpa_1843-R
+Tpa_1966-F/Tpa_1966-R
+Tpa_2194-F/Tpa_2194-R
+Tpa_2353-F/Tpa_2353-R
+Tpa_2470-F/Tpa_2470-R
+Tpa_1646-F/Tpa_1646-R
+Tpa_2073-F/Tpa_2073-R
+Tpa_2207-F/Tpa_2207-R
+Tpa_2483-F/Tpa_2483-R
+Tpa_2581-F/Tpa_2581-R
+Tpa_2712-F/Tpa_2712-R
+Tpa_1542-F/Tpa_1542-R
+Tpa_1774-F/Tpa_1774-R
+Tpa_1891-F/Tpa_1891-R
+Tpa_2006-F/Tpa_2006-R
+Tpa_2076-F/Tpa_2076-R
+Tpa_2254-F/Tpa_2254-R
+Tpa_2368-F/Tpa_2368-R
+Tpa_2498-F/Tpa_2498-R
+Tpa_2601-F/Tpa_2601-R
+Tpa_2734-F/Tpa_2734-R
+Tpa_1548-F/Tpa_1548-R
+Tpa_1662-F/Tpa_1662-R
+Tpa_1775-F/Tpa_1775-R
+Tpa_1896-F/Tpa_1896-R
+Tpa_2010-F/Tpa_2010-R
+Tpa_2096-F/Tpa_2096-R
+Tpa_2278-F/Tpa_2278-R
+Tpa_2412-F/Tpa_2412-R
+Tpa_2509-F/Tpa_2509-R
+Tpa_2608-F/Tpa_2608-R
+Tpa_2741-F/Tpa_2741-R
+Tpa_1443-F/Tpa_1443-R
+Tpa_1550-F/Tpa_1550-R
+Tpa_1678-F/Tpa_1678-R
+Tpa_1917-F/Tpa_1917-R
+Tpa_2021-F/Tpa_2021-R
+Tpa_2128-F/Tpa_2128-R
+Tpa_2417-F/Tpa_2417-R
+Tpa_2518-F/Tpa_2518-R
+Tpa_2636-F/Tpa_2636-R
+Tpa_2745-F/Tpa_2745-R
+Tpa_6713-F/Tpa_6713-R
+Tpa_6853-F/Tpa_6853-R
+Tpa_7080-F/Tpa_7080-R
+Tpa_7204-F/Tpa_7204-R
+Tpa_7406-F/Tpa_7406-R
+Tpa_7461-F/Tpa_7461-R
+Tpa_7586-F/Tpa_7586-R
+Tpa_7703-F/Tpa_7703-R
+Tpa_6733-F/Tpa_6733-R
+Tpa_6887-F/Tpa_6887-R
+Tpa_7082-F/Tpa_7082-R
+Tpa_7210-F/Tpa_7210-R
+Tpa_7331-F/Tpa_7331-R
+Tpa_7413-F/Tpa_7413-R
+Tpa_7477-F/Tpa_7477-R
+Tpa_7533-F/Tpa_7533-R
+Tpa_7594-F/Tpa_7594-R
+Tpa_7652-F/Tpa_7652-R
+Tpa_6768-F/Tpa_6768-R
+Tpa_7007-F/Tpa_7007-R
+Tpa_7090-F/Tpa_7090-R
+Tpa_7213-F/Tpa_7213-R
+Tpa_7417-F/Tpa_7417-R
+Tpa_7479-F/Tpa_7479-R
+Tpa_7540-F/Tpa_7540-R
+Tpa_7597-F/Tpa_7597-R
+Tpa_7653-F/Tpa_7653-R
+Tpa_6773-F/Tpa_6773-R
+Tpa_7010-F/Tpa_7010-R
+Tpa_7221-F/Tpa_7221-R
+Tpa_7348-F/Tpa_7348-R
+Tpa_7425-F/Tpa_7425-R
+Tpa_7483-F/Tpa_7483-R
+Tpa_7553-F/Tpa_7553-R
+Tpa_7657-F/Tpa_7657-R
+Tpa_7757-F/Tpa_7757-R
+Tpa_6774-F/Tpa_6774-R
+Tpa_6922-F/Tpa_6922-R
+Tpa_7018-F/Tpa_7018-R
+Tpa_7153-F/Tpa_7153-R
+Tpa_7240-F/Tpa_7240-R
+Tpa_7352-F/Tpa_7352-R
+Tpa_7447-F/Tpa_7447-R
+Tpa_7560-F/Tpa_7560-R
+Tpa_7601-F/Tpa_7601-R
+Tpa_7665-F/Tpa_7665-R
+Tpa_7764-F/Tpa_7764-R
+Tpa_6786-F/Tpa_6786-R
+Tpa_6937-F/Tpa_6937-R
+Tpa_7052-F/Tpa_7052-R
+Tpa_7157-F/Tpa_7157-R
+Tpa_7289-F/Tpa_7289-R
+Tpa_7367-F/Tpa_7367-R
+Tpa_7450-F/Tpa_7450-R
+Tpa_7566-F/Tpa_7566-R
+Tpa_7604-F/Tpa_7604-R
+Tpa_7686-F/Tpa_7686-R
+Tpa_7765-F/Tpa_7765-R
+Tpa_6814-F/Tpa_6814-R
+Tpa_6963-F/Tpa_6963-R
+Tpa_7058-F/Tpa_7058-R
+Tpa_7291-F/Tpa_7291-R
+Tpa_7375-F/Tpa_7375-R
+Tpa_7452-F/Tpa_7452-R
+Tpa_7495-F/Tpa_7495-R
+Tpa_7567-F/Tpa_7567-R
+Tpa_7605-F/Tpa_7605-R
+Tpa_7690-F/Tpa_7690-R
+Tpa_7769-F/Tpa_7769-R
+Tpa_6816-F/Tpa_6816-R
+Tpa_6973-F/Tpa_6973-R
+Tpa_7062-F/Tpa_7062-R
+Tpa_7201-F/Tpa_7201-R
+Tpa_7293-F/Tpa_7293-R
+Tpa_7454-F/Tpa_7454-R
+Tpa_7571-F/Tpa_7571-R
+Tpa_7615-F/Tpa_7615-R
+Tpa_7691-F/Tpa_7691-R
+Tpa_7772-F/Tpa_7772-R
+Tpa_0010-F/Tpa_0010-R
+Tpa_0186-F/Tpa_0186-R
+Tpa_0342-F/Tpa_0342-R
+Tpa_0427-F/Tpa_0427-R
+Tpa_0500-F/Tpa_0500-R
+Tpa_0743-F/Tpa_0743-R
+Tpa_0868-F/Tpa_0868-R
+Tpa_0929-F/Tpa_0929-R
+Tpa_1042-F/Tpa_1042-R
+Tpa_0012-F/Tpa_0012-R
+Tpa_0215-F/Tpa_0215-R
+Tpa_0346-F/Tpa_0346-R
+Tpa_0429-F/Tpa_0429-R
+Tpa_0540-F/Tpa_0540-R
+Tpa_0650-F/Tpa_0650-R
+Tpa_0763-F/Tpa_0763-R
+Tpa_0882-F/Tpa_0882-R
+Tpa_0936-F/Tpa_0936-R
+Tpa_1136-F/Tpa_1136-R
+Tpa_1304-F/Tpa_1304-R
+Tpa_0024-F/Tpa_0024-R
+Tpa_0226-F/Tpa_0226-R
+Tpa_0358-F/Tpa_0358-R
+Tpa_0438-F/Tpa_0438-R
+Tpa_0547-F/Tpa_0547-R
+Tpa_0768-F/Tpa_0768-R
+Tpa_0888-F/Tpa_0888-R
+Tpa_0953-F/Tpa_0953-R
+Tpa_1144-F/Tpa_1144-R
+Tpa_1305-F/Tpa_1305-R
+Tpa_0035-F/Tpa_0035-R
+Tpa_0228-F/Tpa_0228-R
+Tpa_0366-F/Tpa_0366-R
+Tpa_0439-F/Tpa_0439-R
+Tpa_0556-F/Tpa_0556-R
+Tpa_0671-F/Tpa_0671-R
+Tpa_0970-F/Tpa_0970-R
+Tpa_1071-F/Tpa_1071-R
+Tpa_1154-F/Tpa_1154-R
+Tpa_1310-F/Tpa_1310-R
+Tpa_0037-F/Tpa_0037-R
+Tpa_0263-F/Tpa_0263-R
+Tpa_0367-F/Tpa_0367-R
+Tpa_0569-F/Tpa_0569-R
+Tpa_0678-F/Tpa_0678-R
+Tpa_0895-F/Tpa_0895-R
+Tpa_0973-F/Tpa_0973-R
+Tpa_1077-F/Tpa_1077-R
+Tpa_1156-F/Tpa_1156-R
+Tpa_1312-F/Tpa_1312-R
+Tpa_0095-F/Tpa_0095-R
+Tpa_0269-F/Tpa_0269-R
+Tpa_0371-F/Tpa_0371-R
+Tpa_0826-F/Tpa_0826-R
+Tpa_0905-F/Tpa_0905-R
+Tpa_0979-F/Tpa_0979-R
+Tpa_1082-F/Tpa_1082-R
+Tpa_1187-F/Tpa_1187-R
+Tpa_1320-F/Tpa_1320-R
+Tpa_0151-F/Tpa_0151-R
+Tpa_0272-F/Tpa_0272-R
+Tpa_0395-F/Tpa_0395-R
+Tpa_0474-F/Tpa_0474-R
+Tpa_0592-F/Tpa_0592-R
+Tpa_1007-F/Tpa_1007-R
+Tpa_1098-F/Tpa_1098-R
+Tpa_1268-F/Tpa_1268-R
+Tpa_0183-F/Tpa_0183-R
+Tpa_0301-F/Tpa_0301-R
+Tpa_0409-F/Tpa_0409-R
+Tpa_0492-F/Tpa_0492-R
+Tpa_0730-F/Tpa_0730-R
+Tpa_0866-F/Tpa_0866-R
+Tpa_0912-F/Tpa_0912-R
+Tpa_1022-F/Tpa_1022-R
+Tpa_1112-F/Tpa_1112-R
+Tpa_1290-F/Tpa_1290-R
+Tpa_1341-F/Tpa_1341-R
+476 of 476 amplicons not found in genome (with length <=200)
+Longest amplicon found: 0 bp
+0 overlaps found
+This report has also been written to overlap-report-1.txt (1 second)
+SOME PRIMERS WERE NOT FOUND: see start of the above.
+Possible causes:
+  - Mistakes in the primer file?
+  - Wrong reference genome?
+  - Shouldn't be ignoring "variant" chromosome names in reference genome?
+  - Trying to use mRNA primers on a complete genome?
+    (If using mRNA, you'll need an exon-only version of the genome)
+Precalculating dG... done (1 second)
+Preliminary pooling by threshold...
+Computer suggestion is only 1 pool.
+Do you still want to divide into multiple pools? (y/n): n
+
+OK, I'll forget about those primers.
+You have answered 29 questions.  Well done :-)
+Would you like another go? (y/n): y
+
+Please enter the name of the primers file to read.
+I'm expecting a text file in multiple-sequence FASTA format;
+it is allowed to use degenerate bases.
+Names of amplicons' primers should end with F or R, and otherwise match.
+(Optionally include Taq probes etc ending with P/Q/etc.
+All names differing in only the last letter will be kept in the same pool.
+To force a pool choice, put @2: at start of primer name for pool 2.)
+Optionally include tags to apply to all primers: >tagF and >tagR
+(you can change these mid-file if you want to vary your tags)
+Do you want to find the file in Windows instead of typing it here? (y/n): y
+
+OK, I'm starting the Windows file finder.
+If you don't see it, check BEHIND this window
+(some versions of Windows don't put it in front; blame Microsoft not me)
+
+Successfully opened C:\Users\Madison.Betts\Downloads\all_primers.fasta
+952 primers + 0 tags
+Shortest primer length is 48 bases; longest is 62
+To sort by deltaG, I'll need temperature and concentration settings.
+Or we can skip it and use score (faster and simpler but less accurate).
+Do you want to use deltaG? (y/n): y
+
+OK, please enter the deltaG settings:
+deltaG temperature (at annealing e.g. 45): 65
+
+Is that C ? (y/n): y
+
+Magnesium concentration mM/L (0 for no correction): 0
+
+Monovalent cation (e.g. sodium) concentration mM/L (e.g. 50): 3
+
+dNTP concentration mM/L (0 for no correction): .25
+
+Shall I count how many pairs have what deltaG range? (y/n): y
+
+OK, just a sec...
+Precalculating dG... done (1 second)
+ 0.0    453628   (score 1-22)
+
+Do you want to save this to a file? (y/n): y
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+File name: deltag2
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+That file already exists.  Are you sure you want to overwrite it? (y/n): y
+
+Precalculating dG... done (1 second)
+Do you want to see the highest bonds of the whole file? (y/n): y
+
+What dG threshold shall we go for? 9
+
+You entered a positive number.  Shall I negate it? (y/n): y
+
+Do you want to see the results on the screen now?
+(Answer 'no' if you want to save them to a file instead.)
+Show on screen? (y/n): n
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+Name of new results file: output2
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+That file already exists.  Are you sure you want to overwrite it? (y/n): y
+
+Sorting... done (1 second)
+Outputting... done (1 second)
+Do you want to try another threshold? (y/n): n
+
+Shall I split this into pools for you? (y/n): y
+
+Shall I check the amplicons for overlaps in the genome? (y/n): y
+
+OK, I need to see a genome file in .2bit or .fa format.
+You might be able to find an appropriate file at
+http://hgdownload.cse.ucsc.edu/downloads.html
+Would you like me to point your browser there? (y/n): y
+
+I've tried to open a browser so you can download a file like hg38.2bit
+If the browser doesn't open, please open one yourself and go to
+http://hgdownload.cse.ucsc.edu/downloads.html
+Once downloaded, please tell me where you put it.
+Do you want to find the file in Windows instead of typing it here? (y/n): y
+
+OK, I'm starting the Windows file finder.
+If you don't see it, check BEHIND this window
+(some versions of Windows don't put it in front; blame Microsoft not me)
+
+Successfully opened C:\Users\Madison.Betts\Downloads\ncbi_dataset.zip
+Do you want me to ignore variant chromosomes
+i.e. sequences with _ or - in their names? (y/n): y
+
+Please enter the maximum amplicon length (bp), for example 220
+
+Maximum amplicon length: 1000
+
+Do you want to write a file of amplicons for MultiPLX as well? (y/n): y
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+File name for all amplicon locations: ampliconlocation
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+476 primer-sets found
+The genome-overlap search function currently supports max 32 bases,
+so it'll look at only the last 32 bases of longer primers:
+Tpa_5565-R
+Tpa_5565-F
+Tpa_5636-R
+Tpa_5636-F
+Tpa_5838-R
+Tpa_5838-F
+Tpa_5980-R
+Tpa_5980-F
+Tpa_6224-R
+Tpa_6224-F
+Tpa_6355-R
+Tpa_6355-F
+Tpa_6422-R
+Tpa_6422-F
+Tpa_6511-R
+Tpa_6511-F
+Tpa_6604-R
+Tpa_6604-F
+Tpa_5570-R
+Tpa_5570-F
+Tpa_5651-R
+Tpa_5651-F
+Tpa_5913-R
+Tpa_5913-F
+Tpa_6150-R
+Tpa_6150-F
+Tpa_6384-R
+Tpa_6384-F
+Tpa_6442-R
+Tpa_6442-F
+Tpa_6611-R
+Tpa_6611-F
+Tpa_5574-R
+Tpa_5574-F
+Tpa_5679-R
+Tpa_5679-F
+Tpa_5795-R
+Tpa_5795-F
+Tpa_5854-R
+Tpa_5854-F
+Tpa_6016-R
+Tpa_6016-F
+Tpa_6158-R
+Tpa_6158-F
+Tpa_6265-R
+Tpa_6265-F
+Tpa_6385-R
+Tpa_6385-F
+Tpa_6543-R
+Tpa_6543-F
+Tpa_6630-R
+Tpa_6630-F
+Tpa_5588-R
+Tpa_5588-F
+Tpa_5796-R
+Tpa_5796-F
+Tpa_5917-R
+Tpa_5917-F
+Tpa_6076-R
+Tpa_6076-F
+Tpa_6169-R
+Tpa_6169-F
+Tpa_6270-R
+Tpa_6270-F
+Tpa_6388-R
+Tpa_6388-F
+Tpa_6449-R
+Tpa_6449-F
+Tpa_6654-R
+Tpa_6654-F
+Tpa_5594-R
+Tpa_5594-F
+Tpa_5741-R
+Tpa_5741-F
+Tpa_5856-R
+Tpa_5856-F
+Tpa_5942-R
+Tpa_5942-F
+Tpa_6083-R
+Tpa_6083-F
+Tpa_6172-R
+Tpa_6172-F
+Tpa_6391-R
+Tpa_6391-F
+Tpa_6451-R
+Tpa_6451-F
+Tpa_6562-R
+Tpa_6562-F
+Tpa_6683-R
+Tpa_6683-F
+Tpa_5601-R
+Tpa_5601-F
+Tpa_5823-R
+Tpa_5823-F
+Tpa_5863-R
+Tpa_5863-F
+Tpa_5951-R
+Tpa_5951-F
+Tpa_6204-R
+Tpa_6204-F
+Tpa_6321-R
+Tpa_6321-F
+Tpa_6453-R
+Tpa_6453-F
+Tpa_6565-R
+Tpa_6565-F
+Tpa_6687-R
+Tpa_6687-F
+Tpa_5609-R
+Tpa_5609-F
+Tpa_5761-R
+Tpa_5761-F
+Tpa_5827-R
+Tpa_5827-F
+Tpa_5868-R
+Tpa_5868-F
+Tpa_5961-R
+Tpa_5961-F
+Tpa_6137-R
+Tpa_6137-F
+Tpa_6220-R
+Tpa_6220-F
+Tpa_6487-R
+Tpa_6487-F
+Tpa_6586-R
+Tpa_6586-F
+Tpa_5623-R
+Tpa_5623-F
+Tpa_5774-R
+Tpa_5774-F
+Tpa_5829-R
+Tpa_5829-F
+Tpa_5878-R
+Tpa_5878-F
+Tpa_5978-R
+Tpa_5978-F
+Tpa_6139-R
+Tpa_6139-F
+Tpa_6222-R
+Tpa_6222-F
+Tpa_6352-R
+Tpa_6352-F
+Tpa_6411-R
+Tpa_6411-F
+Tpa_6493-R
+Tpa_6493-F
+Tpa_6591-R
+Tpa_6591-F
+Tpa_4380-R
+Tpa_4380-F
+Tpa_4467-R
+Tpa_4467-F
+Tpa_4582-R
+Tpa_4582-F
+Tpa_4637-R
+Tpa_4637-F
+Tpa_4804-R
+Tpa_4804-F
+Tpa_4936-R
+Tpa_4936-F
+Tpa_5075-R
+Tpa_5075-F
+Tpa_5241-R
+Tpa_5241-F
+Tpa_5292-R
+Tpa_5292-F
+Tpa_5418-R
+Tpa_5418-F
+Tpa_5501-R
+Tpa_5501-F
+Tpa_4384-R
+Tpa_4384-F
+Tpa_4495-R
+Tpa_4495-F
+Tpa_4590-R
+Tpa_4590-F
+Tpa_4668-R
+Tpa_4668-F
+Tpa_4849-R
+Tpa_4849-F
+Tpa_4985-R
+Tpa_4985-F
+Tpa_5167-R
+Tpa_5167-F
+Tpa_5242-R
+Tpa_5242-F
+Tpa_5298-R
+Tpa_5298-F
+Tpa_5441-R
+Tpa_5441-F
+Tpa_4394-R
+Tpa_4394-F
+Tpa_4506-R
+Tpa_4506-F
+Tpa_4591-R
+Tpa_4591-F
+Tpa_4678-R
+Tpa_4678-F
+Tpa_5002-R
+Tpa_5002-F
+Tpa_5104-R
+Tpa_5104-F
+Tpa_5196-R
+Tpa_5196-F
+Tpa_5244-R
+Tpa_5244-F
+Tpa_5327-R
+Tpa_5327-F
+Tpa_5445-R
+Tpa_5445-F
+Tpa_5525-R
+Tpa_5525-F
+Tpa_4416-R
+Tpa_4416-F
+Tpa_4511-R
+Tpa_4511-F
+Tpa_4592-R
+Tpa_4592-F
+Tpa_4697-R
+Tpa_4697-F
+Tpa_4885-R
+Tpa_4885-F
+Tpa_5015-R
+Tpa_5015-F
+Tpa_5106-R
+Tpa_5106-F
+Tpa_5205-R
+Tpa_5205-F
+Tpa_5249-R
+Tpa_5249-F
+Tpa_5360-R
+Tpa_5360-F
+Tpa_5446-R
+Tpa_5446-F
+Tpa_5538-R
+Tpa_5538-F
+Tpa_4549-R
+Tpa_4549-F
+Tpa_4593-R
+Tpa_4593-F
+Tpa_4713-R
+Tpa_4713-F
+Tpa_4886-R
+Tpa_4886-F
+Tpa_5022-R
+Tpa_5022-F
+Tpa_5206-R
+Tpa_5206-F
+Tpa_5270-R
+Tpa_5270-F
+Tpa_5361-R
+Tpa_5361-F
+Tpa_5454-R
+Tpa_5454-F
+Tpa_5540-R
+Tpa_5540-F
+Tpa_4425-R
+Tpa_4425-F
+Tpa_4595-R
+Tpa_4595-F
+Tpa_4731-R
+Tpa_4731-F
+Tpa_4900-R
+Tpa_4900-F
+Tpa_5057-R
+Tpa_5057-F
+Tpa_5118-R
+Tpa_5118-F
+Tpa_5218-R
+Tpa_5218-F
+Tpa_5278-R
+Tpa_5278-F
+Tpa_5373-R
+Tpa_5373-F
+Tpa_5542-R
+Tpa_5542-F
+Tpa_4443-R
+Tpa_4443-F
+Tpa_4556-R
+Tpa_4556-F
+Tpa_4599-R
+Tpa_4599-F
+Tpa_4747-R
+Tpa_4747-F
+Tpa_4920-R
+Tpa_4920-F
+Tpa_5138-R
+Tpa_5138-F
+Tpa_5222-R
+Tpa_5222-F
+Tpa_5279-R
+Tpa_5279-F
+Tpa_5379-R
+Tpa_5379-F
+Tpa_5471-R
+Tpa_5471-F
+Tpa_4454-R
+Tpa_4454-F
+Tpa_4569-R
+Tpa_4569-F
+Tpa_4633-R
+Tpa_4633-F
+Tpa_4749-R
+Tpa_4749-F
+Tpa_4928-R
+Tpa_4928-F
+Tpa_5144-R
+Tpa_5144-F
+Tpa_5228-R
+Tpa_5228-F
+Tpa_5382-R
+Tpa_5382-F
+Tpa_5485-R
+Tpa_5485-F
+Tpa_5563-R
+Tpa_5563-F
+Tpa_7798-R
+Tpa_7798-F
+Tpa_7799-R
+Tpa_7799-F
+Tpa_7910-R
+Tpa_7910-F
+Tpa_7805-R
+Tpa_7805-F
+Tpa_7807-R
+Tpa_7807-F
+Tpa_7814-R
+Tpa_7814-F
+Tpa_7825-R
+Tpa_7825-F
+Tpa_7848-R
+Tpa_7848-F
+Tpa_2763-R
+Tpa_2763-F
+Tpa_2907-R
+Tpa_2907-F
+Tpa_3047-R
+Tpa_3047-F
+Tpa_3197-R
+Tpa_3197-F
+Tpa_3263-R
+Tpa_3263-F
+Tpa_3439-R
+Tpa_3439-F
+Tpa_3674-R
+Tpa_3674-F
+Tpa_3795-R
+Tpa_3795-F
+Tpa_3962-R
+Tpa_3962-F
+Tpa_4178-R
+Tpa_4178-F
+Tpa_2845-R
+Tpa_2845-F
+Tpa_3055-R
+Tpa_3055-F
+Tpa_3200-R
+Tpa_3200-F
+Tpa_3310-R
+Tpa_3310-F
+Tpa_3502-R
+Tpa_3502-F
+Tpa_3676-R
+Tpa_3676-F
+Tpa_3846-R
+Tpa_3846-F
+Tpa_3974-R
+Tpa_3974-F
+Tpa_4120-R
+Tpa_4120-F
+Tpa_4209-R
+Tpa_4209-F
+Tpa_4268-R
+Tpa_4268-F
+Tpa_2854-R
+Tpa_2854-F
+Tpa_2961-R
+Tpa_2961-F
+Tpa_3063-R
+Tpa_3063-F
+Tpa_3561-R
+Tpa_3561-F
+Tpa_3679-R
+Tpa_3679-F
+Tpa_3862-R
+Tpa_3862-F
+Tpa_4020-R
+Tpa_4020-F
+Tpa_4126-R
+Tpa_4126-F
+Tpa_4221-R
+Tpa_4221-F
+Tpa_4291-R
+Tpa_4291-F
+Tpa_2856-R
+Tpa_2856-F
+Tpa_2970-R
+Tpa_2970-F
+Tpa_3347-R
+Tpa_3347-F
+Tpa_3569-R
+Tpa_3569-F
+Tpa_3684-R
+Tpa_3684-F
+Tpa_3871-R
+Tpa_3871-F
+Tpa_4021-R
+Tpa_4021-F
+Tpa_4137-R
+Tpa_4137-F
+Tpa_4230-R
+Tpa_4230-F
+Tpa_4295-R
+Tpa_4295-F
+Tpa_2861-R
+Tpa_2861-F
+Tpa_3129-R
+Tpa_3129-F
+Tpa_3248-R
+Tpa_3248-F
+Tpa_3354-R
+Tpa_3354-F
+Tpa_3705-R
+Tpa_3705-F
+Tpa_3879-R
+Tpa_3879-F
+Tpa_4022-R
+Tpa_4022-F
+Tpa_4148-R
+Tpa_4148-F
+Tpa_4310-R
+Tpa_4310-F
+Tpa_2868-R
+Tpa_2868-F
+Tpa_3004-R
+Tpa_3004-F
+Tpa_3149-R
+Tpa_3149-F
+Tpa_3254-R
+Tpa_3254-F
+Tpa_3364-R
+Tpa_3364-F
+Tpa_3583-R
+Tpa_3583-F
+Tpa_3723-R
+Tpa_3723-F
+Tpa_3905-R
+Tpa_3905-F
+Tpa_4168-R
+Tpa_4168-F
+Tpa_4245-R
+Tpa_4245-F
+Tpa_4316-R
+Tpa_4316-F
+Tpa_3011-R
+Tpa_3011-F
+Tpa_3385-R
+Tpa_3385-F
+Tpa_3616-R
+Tpa_3616-F
+Tpa_3737-R
+Tpa_3737-F
+Tpa_3926-R
+Tpa_3926-F
+Tpa_4055-R
+Tpa_4055-F
+Tpa_4246-R
+Tpa_4246-F
+Tpa_4353-R
+Tpa_4353-F
+Tpa_2900-R
+Tpa_2900-F
+Tpa_3018-R
+Tpa_3018-F
+Tpa_3193-R
+Tpa_3193-F
+Tpa_3262-R
+Tpa_3262-F
+Tpa_3745-R
+Tpa_3745-F
+Tpa_3937-R
+Tpa_3937-F
+Tpa_4077-R
+Tpa_4077-F
+Tpa_4176-R
+Tpa_4176-F
+Tpa_4247-R
+Tpa_4247-F
+Tpa_4356-R
+Tpa_4356-F
+Tpa_1357-R
+Tpa_1357-F
+Tpa_1585-R
+Tpa_1585-F
+Tpa_1818-R
+Tpa_1818-F
+Tpa_2034-R
+Tpa_2034-F
+Tpa_2157-R
+Tpa_2157-F
+Tpa_2453-R
+Tpa_2453-F
+Tpa_2519-R
+Tpa_2519-F
+Tpa_2639-R
+Tpa_2639-F
+Tpa_1359-R
+Tpa_1359-F
+Tpa_1486-R
+Tpa_1486-F
+Tpa_1593-R
+Tpa_1593-F
+Tpa_1689-R
+Tpa_1689-F
+Tpa_1831-R
+Tpa_1831-F
+Tpa_1930-R
+Tpa_1930-F
+Tpa_2040-R
+Tpa_2040-F
+Tpa_2334-R
+Tpa_2334-F
+Tpa_2458-R
+Tpa_2458-F
+Tpa_2523-R
+Tpa_2523-F
+Tpa_2664-R
+Tpa_2664-F
+Tpa_1515-R
+Tpa_1515-F
+Tpa_1606-R
+Tpa_1606-F
+Tpa_1703-R
+Tpa_1703-F
+Tpa_1832-R
+Tpa_1832-F
+Tpa_2041-R
+Tpa_2041-F
+Tpa_2180-R
+Tpa_2180-F
+Tpa_2344-R
+Tpa_2344-F
+Tpa_2460-R
+Tpa_2460-F
+Tpa_2702-R
+Tpa_2702-F
+Tpa_1394-R
+Tpa_1394-F
+Tpa_1528-R
+Tpa_1528-F
+Tpa_1638-R
+Tpa_1638-F
+Tpa_1731-R
+Tpa_1731-F
+Tpa_1843-R
+Tpa_1843-F
+Tpa_1966-R
+Tpa_1966-F
+Tpa_2194-R
+Tpa_2194-F
+Tpa_2353-R
+Tpa_2353-F
+Tpa_2470-R
+Tpa_2470-F
+Tpa_1646-R
+Tpa_1646-F
+Tpa_2073-R
+Tpa_2073-F
+Tpa_2207-R
+Tpa_2207-F
+Tpa_2483-R
+Tpa_2483-F
+Tpa_2581-R
+Tpa_2581-F
+Tpa_2712-R
+Tpa_2712-F
+Tpa_1542-R
+Tpa_1542-F
+Tpa_1774-R
+Tpa_1774-F
+Tpa_1891-R
+Tpa_1891-F
+Tpa_2006-R
+Tpa_2006-F
+Tpa_2076-R
+Tpa_2076-F
+Tpa_2254-R
+Tpa_2254-F
+Tpa_2368-R
+Tpa_2368-F
+Tpa_2498-R
+Tpa_2498-F
+Tpa_2601-R
+Tpa_2601-F
+Tpa_2734-R
+Tpa_2734-F
+Tpa_1548-R
+Tpa_1548-F
+Tpa_1662-R
+Tpa_1662-F
+Tpa_1775-R
+Tpa_1775-F
+Tpa_1896-R
+Tpa_1896-F
+Tpa_2010-R
+Tpa_2010-F
+Tpa_2096-R
+Tpa_2096-F
+Tpa_2278-R
+Tpa_2278-F
+Tpa_2412-R
+Tpa_2412-F
+Tpa_2509-R
+Tpa_2509-F
+Tpa_2608-R
+Tpa_2608-F
+Tpa_2741-R
+Tpa_2741-F
+Tpa_1443-R
+Tpa_1443-F
+Tpa_1550-R
+Tpa_1550-F
+Tpa_1678-R
+Tpa_1678-F
+Tpa_1917-R
+Tpa_1917-F
+Tpa_2021-R
+Tpa_2021-F
+Tpa_2128-R
+Tpa_2128-F
+Tpa_2417-R
+Tpa_2417-F
+Tpa_2518-R
+Tpa_2518-F
+Tpa_2636-R
+Tpa_2636-F
+Tpa_2745-R
+Tpa_2745-F
+Tpa_6713-R
+Tpa_6713-F
+Tpa_6853-R
+Tpa_6853-F
+Tpa_7080-R
+Tpa_7080-F
+Tpa_7204-R
+Tpa_7204-F
+Tpa_7406-R
+Tpa_7406-F
+Tpa_7461-R
+Tpa_7461-F
+Tpa_7586-R
+Tpa_7586-F
+Tpa_7703-R
+Tpa_7703-F
+Tpa_6733-R
+Tpa_6733-F
+Tpa_6887-R
+Tpa_6887-F
+Tpa_7082-R
+Tpa_7082-F
+Tpa_7210-R
+Tpa_7210-F
+Tpa_7331-R
+Tpa_7331-F
+Tpa_7413-R
+Tpa_7413-F
+Tpa_7477-R
+Tpa_7477-F
+Tpa_7533-R
+Tpa_7533-F
+Tpa_7594-R
+Tpa_7594-F
+Tpa_7652-R
+Tpa_7652-F
+Tpa_6768-R
+Tpa_6768-F
+Tpa_7007-R
+Tpa_7007-F
+Tpa_7090-R
+Tpa_7090-F
+Tpa_7213-R
+Tpa_7213-F
+Tpa_7417-R
+Tpa_7417-F
+Tpa_7479-R
+Tpa_7479-F
+Tpa_7540-R
+Tpa_7540-F
+Tpa_7597-R
+Tpa_7597-F
+Tpa_7653-R
+Tpa_7653-F
+Tpa_6773-R
+Tpa_6773-F
+Tpa_7010-R
+Tpa_7010-F
+Tpa_7221-R
+Tpa_7221-F
+Tpa_7348-R
+Tpa_7348-F
+Tpa_7425-R
+Tpa_7425-F
+Tpa_7483-R
+Tpa_7483-F
+Tpa_7553-R
+Tpa_7553-F
+Tpa_7657-R
+Tpa_7657-F
+Tpa_7757-R
+Tpa_7757-F
+Tpa_6774-R
+Tpa_6774-F
+Tpa_6922-R
+Tpa_6922-F
+Tpa_7018-R
+Tpa_7018-F
+Tpa_7153-R
+Tpa_7153-F
+Tpa_7240-R
+Tpa_7240-F
+Tpa_7352-R
+Tpa_7352-F
+Tpa_7447-R
+Tpa_7447-F
+Tpa_7560-R
+Tpa_7560-F
+Tpa_7601-R
+Tpa_7601-F
+Tpa_7665-R
+Tpa_7665-F
+Tpa_7764-R
+Tpa_7764-F
+Tpa_6786-R
+Tpa_6786-F
+Tpa_6937-R
+Tpa_6937-F
+Tpa_7052-R
+Tpa_7052-F
+Tpa_7157-R
+Tpa_7157-F
+Tpa_7289-R
+Tpa_7289-F
+Tpa_7367-R
+Tpa_7367-F
+Tpa_7450-R
+Tpa_7450-F
+Tpa_7566-R
+Tpa_7566-F
+Tpa_7604-R
+Tpa_7604-F
+Tpa_7686-R
+Tpa_7686-F
+Tpa_7765-R
+Tpa_7765-F
+Tpa_6814-R
+Tpa_6814-F
+Tpa_6963-R
+Tpa_6963-F
+Tpa_7058-R
+Tpa_7058-F
+Tpa_7291-R
+Tpa_7291-F
+Tpa_7375-R
+Tpa_7375-F
+Tpa_7452-R
+Tpa_7452-F
+Tpa_7495-R
+Tpa_7495-F
+Tpa_7567-R
+Tpa_7567-F
+Tpa_7605-R
+Tpa_7605-F
+Tpa_7690-R
+Tpa_7690-F
+Tpa_7769-R
+Tpa_7769-F
+Tpa_6816-R
+Tpa_6816-F
+Tpa_6973-R
+Tpa_6973-F
+Tpa_7062-R
+Tpa_7062-F
+Tpa_7201-R
+Tpa_7201-F
+Tpa_7293-R
+Tpa_7293-F
+Tpa_7454-R
+Tpa_7454-F
+Tpa_7571-R
+Tpa_7571-F
+Tpa_7615-R
+Tpa_7615-F
+Tpa_7691-R
+Tpa_7691-F
+Tpa_7772-R
+Tpa_7772-F
+Tpa_0010-R
+Tpa_0010-F
+Tpa_0186-R
+Tpa_0186-F
+Tpa_0342-R
+Tpa_0342-F
+Tpa_0427-R
+Tpa_0427-F
+Tpa_0500-R
+Tpa_0500-F
+Tpa_0743-R
+Tpa_0743-F
+Tpa_0868-R
+Tpa_0868-F
+Tpa_0929-R
+Tpa_0929-F
+Tpa_1042-R
+Tpa_1042-F
+Tpa_0012-R
+Tpa_0012-F
+Tpa_0215-R
+Tpa_0215-F
+Tpa_0346-R
+Tpa_0346-F
+Tpa_0429-R
+Tpa_0429-F
+Tpa_0540-R
+Tpa_0540-F
+Tpa_0650-R
+Tpa_0650-F
+Tpa_0763-R
+Tpa_0763-F
+Tpa_0882-R
+Tpa_0882-F
+Tpa_0936-R
+Tpa_0936-F
+Tpa_1136-R
+Tpa_1136-F
+Tpa_1304-R
+Tpa_1304-F
+Tpa_0024-R
+Tpa_0024-F
+Tpa_0226-R
+Tpa_0226-F
+Tpa_0358-R
+Tpa_0358-F
+Tpa_0438-R
+Tpa_0438-F
+Tpa_0547-R
+Tpa_0547-F
+Tpa_0768-R
+Tpa_0768-F
+Tpa_0888-R
+Tpa_0888-F
+Tpa_0953-R
+Tpa_0953-F
+Tpa_1144-R
+Tpa_1144-F
+Tpa_1305-R
+Tpa_1305-F
+Tpa_0035-R
+Tpa_0035-F
+Tpa_0228-R
+Tpa_0228-F
+Tpa_0366-R
+Tpa_0366-F
+Tpa_0439-R
+Tpa_0439-F
+Tpa_0556-R
+Tpa_0556-F
+Tpa_0671-R
+Tpa_0671-F
+Tpa_0970-R
+Tpa_0970-F
+Tpa_1071-R
+Tpa_1071-F
+Tpa_1154-R
+Tpa_1154-F
+Tpa_1310-R
+Tpa_1310-F
+Tpa_0037-R
+Tpa_0037-F
+Tpa_0263-R
+Tpa_0263-F
+Tpa_0367-R
+Tpa_0367-F
+Tpa_0569-R
+Tpa_0569-F
+Tpa_0678-R
+Tpa_0678-F
+Tpa_0895-R
+Tpa_0895-F
+Tpa_0973-R
+Tpa_0973-F
+Tpa_1077-R
+Tpa_1077-F
+Tpa_1156-R
+Tpa_1156-F
+Tpa_1312-R
+Tpa_1312-F
+Tpa_0095-R
+Tpa_0095-F
+Tpa_0269-R
+Tpa_0269-F
+Tpa_0371-R
+Tpa_0371-F
+Tpa_0826-R
+Tpa_0826-F
+Tpa_0905-R
+Tpa_0905-F
+Tpa_0979-R
+Tpa_0979-F
+Tpa_1082-R
+Tpa_1082-F
+Tpa_1187-R
+Tpa_1187-F
+Tpa_1320-R
+Tpa_1320-F
+Tpa_0151-R
+Tpa_0151-F
+Tpa_0272-R
+Tpa_0272-F
+Tpa_0395-R
+Tpa_0395-F
+Tpa_0474-R
+Tpa_0474-F
+Tpa_0592-R
+Tpa_0592-F
+Tpa_1007-R
+Tpa_1007-F
+Tpa_1098-R
+Tpa_1098-F
+Tpa_1268-R
+Tpa_1268-F
+Tpa_0183-R
+Tpa_0183-F
+Tpa_0301-R
+Tpa_0301-F
+Tpa_0409-R
+Tpa_0409-F
+Tpa_0492-R
+Tpa_0492-F
+Tpa_0730-R
+Tpa_0730-F
+Tpa_0866-R
+Tpa_0866-F
+Tpa_0912-R
+Tpa_0912-F
+Tpa_1022-R
+Tpa_1022-F
+Tpa_1112-R
+Tpa_1112-F
+Tpa_1290-R
+Tpa_1290-F
+Tpa_1341-R
+Tpa_1341-F
+Invalid signature (is this really a .2bit genome file?)
+The following primers were not found in the genome:
+Tpa_5565-F
+Tpa_5565-R
+Tpa_5636-R
+Tpa_5636-F
+Tpa_5838-F
+Tpa_5838-R
+Tpa_5980-R
+Tpa_5980-F
+Tpa_6224-R
+Tpa_6224-F
+Tpa_6355-R
+Tpa_6355-F
+Tpa_6422-R
+Tpa_6422-F
+Tpa_6511-F
+Tpa_6511-R
+Tpa_6604-R
+Tpa_6604-F
+Tpa_5570-F
+Tpa_5570-R
+Tpa_5651-F
+Tpa_5651-R
+Tpa_5913-F
+Tpa_5913-R
+Tpa_6150-R
+Tpa_6150-F
+Tpa_6384-R
+Tpa_6384-F
+Tpa_6442-R
+Tpa_6442-F
+Tpa_6611-R
+Tpa_6611-F
+Tpa_5574-F
+Tpa_5574-R
+Tpa_5679-R
+Tpa_5679-F
+Tpa_5795-F
+Tpa_5795-R
+Tpa_5854-F
+Tpa_5854-R
+Tpa_6016-R
+Tpa_6016-F
+Tpa_6158-R
+Tpa_6158-F
+Tpa_6265-R
+Tpa_6265-F
+Tpa_6385-R
+Tpa_6385-F
+Tpa_6543-R
+Tpa_6543-F
+Tpa_6630-R
+Tpa_6630-F
+Tpa_5588-F
+Tpa_5588-R
+Tpa_5796-F
+Tpa_5796-R
+Tpa_5917-R
+Tpa_5917-F
+Tpa_6076-R
+Tpa_6076-F
+Tpa_6169-R
+Tpa_6169-F
+Tpa_6270-R
+Tpa_6270-F
+Tpa_6388-F
+Tpa_6388-R
+Tpa_6449-R
+Tpa_6449-F
+Tpa_6654-R
+Tpa_6654-F
+Tpa_5594-F
+Tpa_5594-R
+Tpa_5741-F
+Tpa_5741-R
+Tpa_5856-F
+Tpa_5856-R
+Tpa_5942-R
+Tpa_5942-F
+Tpa_6083-R
+Tpa_6083-F
+Tpa_6172-R
+Tpa_6172-F
+Tpa_6391-R
+Tpa_6391-F
+Tpa_6451-R
+Tpa_6451-F
+Tpa_6562-R
+Tpa_6562-F
+Tpa_6683-R
+Tpa_6683-F
+Tpa_5601-F
+Tpa_5601-R
+Tpa_5823-F
+Tpa_5823-R
+Tpa_5863-F
+Tpa_5863-R
+Tpa_5951-R
+Tpa_5951-F
+Tpa_6204-R
+Tpa_6204-F
+Tpa_6321-R
+Tpa_6321-F
+Tpa_6453-R
+Tpa_6453-F
+Tpa_6565-R
+Tpa_6565-F
+Tpa_6687-R
+Tpa_6687-F
+Tpa_5609-F
+Tpa_5609-R
+Tpa_5761-F
+Tpa_5761-R
+Tpa_5827-F
+Tpa_5827-R
+Tpa_5868-F
+Tpa_5868-R
+Tpa_5961-R
+Tpa_5961-F
+Tpa_6137-R
+Tpa_6137-F
+Tpa_6220-R
+Tpa_6220-F
+Tpa_6487-R
+Tpa_6487-F
+Tpa_6586-R
+Tpa_6586-F
+Tpa_5623-F
+Tpa_5623-R
+Tpa_5774-F
+Tpa_5774-R
+Tpa_5829-F
+Tpa_5829-R
+Tpa_5878-F
+Tpa_5878-R
+Tpa_5978-R
+Tpa_5978-F
+Tpa_6139-R
+Tpa_6139-F
+Tpa_6222-R
+Tpa_6222-F
+Tpa_6352-R
+Tpa_6352-F
+Tpa_6411-R
+Tpa_6411-F
+Tpa_6493-R
+Tpa_6493-F
+Tpa_6591-R
+Tpa_6591-F
+Tpa_4380-R
+Tpa_4380-F
+Tpa_4467-R
+Tpa_4467-F
+Tpa_4582-F
+Tpa_4582-R
+Tpa_4637-F
+Tpa_4637-R
+Tpa_4804-F
+Tpa_4804-R
+Tpa_4936-F
+Tpa_4936-R
+Tpa_5075-F
+Tpa_5075-R
+Tpa_5241-F
+Tpa_5241-R
+Tpa_5292-F
+Tpa_5292-R
+Tpa_5418-F
+Tpa_5418-R
+Tpa_5501-F
+Tpa_5501-R
+Tpa_4384-R
+Tpa_4384-F
+Tpa_4495-R
+Tpa_4495-F
+Tpa_4590-F
+Tpa_4590-R
+Tpa_4668-F
+Tpa_4668-R
+Tpa_4849-F
+Tpa_4849-R
+Tpa_4985-F
+Tpa_4985-R
+Tpa_5167-F
+Tpa_5167-R
+Tpa_5242-F
+Tpa_5242-R
+Tpa_5298-F
+Tpa_5298-R
+Tpa_5441-F
+Tpa_5441-R
+Tpa_4394-F
+Tpa_4394-R
+Tpa_4506-R
+Tpa_4506-F
+Tpa_4591-F
+Tpa_4591-R
+Tpa_4678-F
+Tpa_4678-R
+Tpa_5002-F
+Tpa_5002-R
+Tpa_5104-F
+Tpa_5104-R
+Tpa_5196-F
+Tpa_5196-R
+Tpa_5244-F
+Tpa_5244-R
+Tpa_5327-F
+Tpa_5327-R
+Tpa_5445-F
+Tpa_5445-R
+Tpa_5525-F
+Tpa_5525-R
+Tpa_4416-R
+Tpa_4416-F
+Tpa_4511-R
+Tpa_4511-F
+Tpa_4592-F
+Tpa_4592-R
+Tpa_4697-F
+Tpa_4697-R
+Tpa_4885-F
+Tpa_4885-R
+Tpa_5015-F
+Tpa_5015-R
+Tpa_5106-F
+Tpa_5106-R
+Tpa_5205-F
+Tpa_5205-R
+Tpa_5249-F
+Tpa_5249-R
+Tpa_5360-F
+Tpa_5360-R
+Tpa_5446-F
+Tpa_5446-R
+Tpa_5538-F
+Tpa_5538-R
+Tpa_4549-R
+Tpa_4549-F
+Tpa_4593-F
+Tpa_4593-R
+Tpa_4713-F
+Tpa_4713-R
+Tpa_4886-F
+Tpa_4886-R
+Tpa_5022-F
+Tpa_5022-R
+Tpa_5206-F
+Tpa_5206-R
+Tpa_5270-F
+Tpa_5270-R
+Tpa_5361-F
+Tpa_5361-R
+Tpa_5454-F
+Tpa_5454-R
+Tpa_5540-F
+Tpa_5540-R
+Tpa_4425-R
+Tpa_4425-F
+Tpa_4595-F
+Tpa_4595-R
+Tpa_4731-F
+Tpa_4731-R
+Tpa_4900-F
+Tpa_4900-R
+Tpa_5057-F
+Tpa_5057-R
+Tpa_5118-F
+Tpa_5118-R
+Tpa_5218-F
+Tpa_5218-R
+Tpa_5278-F
+Tpa_5278-R
+Tpa_5373-F
+Tpa_5373-R
+Tpa_5542-F
+Tpa_5542-R
+Tpa_4443-R
+Tpa_4443-F
+Tpa_4556-R
+Tpa_4556-F
+Tpa_4599-F
+Tpa_4599-R
+Tpa_4747-F
+Tpa_4747-R
+Tpa_4920-R
+Tpa_4920-F
+Tpa_5138-F
+Tpa_5138-R
+Tpa_5222-F
+Tpa_5222-R
+Tpa_5279-F
+Tpa_5279-R
+Tpa_5379-F
+Tpa_5379-R
+Tpa_5471-F
+Tpa_5471-R
+Tpa_4454-R
+Tpa_4454-F
+Tpa_4569-R
+Tpa_4569-F
+Tpa_4633-F
+Tpa_4633-R
+Tpa_4749-F
+Tpa_4749-R
+Tpa_4928-F
+Tpa_4928-R
+Tpa_5144-F
+Tpa_5144-R
+Tpa_5228-F
+Tpa_5228-R
+Tpa_5382-F
+Tpa_5382-R
+Tpa_5485-F
+Tpa_5485-R
+Tpa_5563-F
+Tpa_5563-R
+Tpa_7798-R
+Tpa_7798-F
+Tpa_7799-R
+Tpa_7799-F
+Tpa_7910-F
+Tpa_7910-R
+Tpa_7805-R
+Tpa_7805-F
+Tpa_7807-R
+Tpa_7807-F
+Tpa_7814-R
+Tpa_7814-F
+Tpa_7825-R
+Tpa_7825-F
+Tpa_7848-R
+Tpa_7848-F
+Tpa_2763-R
+Tpa_2763-F
+Tpa_2907-F
+Tpa_2907-R
+Tpa_3047-F
+Tpa_3047-R
+Tpa_3197-F
+Tpa_3197-R
+Tpa_3263-F
+Tpa_3263-R
+Tpa_3439-F
+Tpa_3439-R
+Tpa_3674-F
+Tpa_3674-R
+Tpa_3795-F
+Tpa_3795-R
+Tpa_3962-F
+Tpa_3962-R
+Tpa_4178-F
+Tpa_4178-R
+Tpa_2845-R
+Tpa_2845-F
+Tpa_3055-F
+Tpa_3055-R
+Tpa_3200-F
+Tpa_3200-R
+Tpa_3310-R
+Tpa_3310-F
+Tpa_3502-F
+Tpa_3502-R
+Tpa_3676-R
+Tpa_3676-F
+Tpa_3846-F
+Tpa_3846-R
+Tpa_3974-F
+Tpa_3974-R
+Tpa_4120-F
+Tpa_4120-R
+Tpa_4209-F
+Tpa_4209-R
+Tpa_4268-F
+Tpa_4268-R
+Tpa_2854-R
+Tpa_2854-F
+Tpa_2961-F
+Tpa_2961-R
+Tpa_3063-F
+Tpa_3063-R
+Tpa_3561-F
+Tpa_3561-R
+Tpa_3679-F
+Tpa_3679-R
+Tpa_3862-F
+Tpa_3862-R
+Tpa_4020-F
+Tpa_4020-R
+Tpa_4126-F
+Tpa_4126-R
+Tpa_4221-F
+Tpa_4221-R
+Tpa_4291-F
+Tpa_4291-R
+Tpa_2856-R
+Tpa_2856-F
+Tpa_2970-F
+Tpa_2970-R
+Tpa_3347-R
+Tpa_3347-F
+Tpa_3569-F
+Tpa_3569-R
+Tpa_3684-F
+Tpa_3684-R
+Tpa_3871-F
+Tpa_3871-R
+Tpa_4021-F
+Tpa_4021-R
+Tpa_4137-F
+Tpa_4137-R
+Tpa_4230-F
+Tpa_4230-R
+Tpa_4295-F
+Tpa_4295-R
+Tpa_2861-R
+Tpa_2861-F
+Tpa_3129-F
+Tpa_3129-R
+Tpa_3248-F
+Tpa_3248-R
+Tpa_3354-F
+Tpa_3354-R
+Tpa_3705-F
+Tpa_3705-R
+Tpa_3879-F
+Tpa_3879-R
+Tpa_4022-F
+Tpa_4022-R
+Tpa_4148-R
+Tpa_4148-F
+Tpa_4310-F
+Tpa_4310-R
+Tpa_2868-R
+Tpa_2868-F
+Tpa_3004-F
+Tpa_3004-R
+Tpa_3149-F
+Tpa_3149-R
+Tpa_3254-F
+Tpa_3254-R
+Tpa_3364-F
+Tpa_3364-R
+Tpa_3583-F
+Tpa_3583-R
+Tpa_3723-F
+Tpa_3723-R
+Tpa_3905-F
+Tpa_3905-R
+Tpa_4168-F
+Tpa_4168-R
+Tpa_4245-F
+Tpa_4245-R
+Tpa_4316-F
+Tpa_4316-R
+Tpa_3011-F
+Tpa_3011-R
+Tpa_3385-F
+Tpa_3385-R
+Tpa_3616-F
+Tpa_3616-R
+Tpa_3737-F
+Tpa_3737-R
+Tpa_3926-F
+Tpa_3926-R
+Tpa_4055-F
+Tpa_4055-R
+Tpa_4246-R
+Tpa_4246-F
+Tpa_4353-F
+Tpa_4353-R
+Tpa_2900-F
+Tpa_2900-R
+Tpa_3018-F
+Tpa_3018-R
+Tpa_3193-F
+Tpa_3193-R
+Tpa_3262-F
+Tpa_3262-R
+Tpa_3745-F
+Tpa_3745-R
+Tpa_3937-F
+Tpa_3937-R
+Tpa_4077-F
+Tpa_4077-R
+Tpa_4176-F
+Tpa_4176-R
+Tpa_4247-F
+Tpa_4247-R
+Tpa_4356-F
+Tpa_4356-R
+Tpa_1357-R
+Tpa_1357-F
+Tpa_1585-R
+Tpa_1585-F
+Tpa_1818-R
+Tpa_1818-F
+Tpa_2034-R
+Tpa_2034-F
+Tpa_2157-R
+Tpa_2157-F
+Tpa_2453-R
+Tpa_2453-F
+Tpa_2519-R
+Tpa_2519-F
+Tpa_2639-R
+Tpa_2639-F
+Tpa_1359-R
+Tpa_1359-F
+Tpa_1486-R
+Tpa_1486-F
+Tpa_1593-R
+Tpa_1593-F
+Tpa_1689-R
+Tpa_1689-F
+Tpa_1831-R
+Tpa_1831-F
+Tpa_1930-R
+Tpa_1930-F
+Tpa_2040-R
+Tpa_2040-F
+Tpa_2334-R
+Tpa_2334-F
+Tpa_2458-R
+Tpa_2458-F
+Tpa_2523-R
+Tpa_2523-F
+Tpa_2664-R
+Tpa_2664-F
+Tpa_1515-R
+Tpa_1515-F
+Tpa_1606-R
+Tpa_1606-F
+Tpa_1703-R
+Tpa_1703-F
+Tpa_1832-R
+Tpa_1832-F
+Tpa_2041-R
+Tpa_2041-F
+Tpa_2180-R
+Tpa_2180-F
+Tpa_2344-R
+Tpa_2344-F
+Tpa_2460-R
+Tpa_2460-F
+Tpa_2702-R
+Tpa_2702-F
+Tpa_1394-R
+Tpa_1394-F
+Tpa_1528-R
+Tpa_1528-F
+Tpa_1638-R
+Tpa_1638-F
+Tpa_1731-R
+Tpa_1731-F
+Tpa_1843-R
+Tpa_1843-F
+Tpa_1966-R
+Tpa_1966-F
+Tpa_2194-R
+Tpa_2194-F
+Tpa_2353-R
+Tpa_2353-F
+Tpa_2470-R
+Tpa_2470-F
+Tpa_1646-R
+Tpa_1646-F
+Tpa_2073-R
+Tpa_2073-F
+Tpa_2207-R
+Tpa_2207-F
+Tpa_2483-R
+Tpa_2483-F
+Tpa_2581-R
+Tpa_2581-F
+Tpa_2712-R
+Tpa_2712-F
+Tpa_1542-R
+Tpa_1542-F
+Tpa_1774-R
+Tpa_1774-F
+Tpa_1891-R
+Tpa_1891-F
+Tpa_2006-R
+Tpa_2006-F
+Tpa_2076-R
+Tpa_2076-F
+Tpa_2254-R
+Tpa_2254-F
+Tpa_2368-R
+Tpa_2368-F
+Tpa_2498-R
+Tpa_2498-F
+Tpa_2601-R
+Tpa_2601-F
+Tpa_2734-R
+Tpa_2734-F
+Tpa_1548-R
+Tpa_1548-F
+Tpa_1662-R
+Tpa_1662-F
+Tpa_1775-R
+Tpa_1775-F
+Tpa_1896-R
+Tpa_1896-F
+Tpa_2010-R
+Tpa_2010-F
+Tpa_2096-R
+Tpa_2096-F
+Tpa_2278-R
+Tpa_2278-F
+Tpa_2412-R
+Tpa_2412-F
+Tpa_2509-R
+Tpa_2509-F
+Tpa_2608-R
+Tpa_2608-F
+Tpa_2741-R
+Tpa_2741-F
+Tpa_1443-R
+Tpa_1443-F
+Tpa_1550-R
+Tpa_1550-F
+Tpa_1678-R
+Tpa_1678-F
+Tpa_1917-R
+Tpa_1917-F
+Tpa_2021-R
+Tpa_2021-F
+Tpa_2128-R
+Tpa_2128-F
+Tpa_2417-R
+Tpa_2417-F
+Tpa_2518-R
+Tpa_2518-F
+Tpa_2636-R
+Tpa_2636-F
+Tpa_2745-F
+Tpa_2745-R
+Tpa_6713-R
+Tpa_6713-F
+Tpa_6853-R
+Tpa_6853-F
+Tpa_7080-R
+Tpa_7080-F
+Tpa_7204-R
+Tpa_7204-F
+Tpa_7406-R
+Tpa_7406-F
+Tpa_7461-F
+Tpa_7461-R
+Tpa_7586-R
+Tpa_7586-F
+Tpa_7703-R
+Tpa_7703-F
+Tpa_6733-R
+Tpa_6733-F
+Tpa_6887-R
+Tpa_6887-F
+Tpa_7082-R
+Tpa_7082-F
+Tpa_7210-R
+Tpa_7210-F
+Tpa_7331-R
+Tpa_7331-F
+Tpa_7413-R
+Tpa_7413-F
+Tpa_7477-R
+Tpa_7477-F
+Tpa_7533-R
+Tpa_7533-F
+Tpa_7594-R
+Tpa_7594-F
+Tpa_7652-R
+Tpa_7652-F
+Tpa_6768-R
+Tpa_6768-F
+Tpa_7007-R
+Tpa_7007-F
+Tpa_7090-R
+Tpa_7090-F
+Tpa_7213-R
+Tpa_7213-F
+Tpa_7417-R
+Tpa_7417-F
+Tpa_7479-R
+Tpa_7479-F
+Tpa_7540-R
+Tpa_7540-F
+Tpa_7597-F
+Tpa_7597-R
+Tpa_7653-R
+Tpa_7653-F
+Tpa_6773-R
+Tpa_6773-F
+Tpa_7010-F
+Tpa_7010-R
+Tpa_7221-R
+Tpa_7221-F
+Tpa_7348-R
+Tpa_7348-F
+Tpa_7425-R
+Tpa_7425-F
+Tpa_7483-F
+Tpa_7483-R
+Tpa_7553-R
+Tpa_7553-F
+Tpa_7657-R
+Tpa_7657-F
+Tpa_7757-F
+Tpa_7757-R
+Tpa_6774-R
+Tpa_6774-F
+Tpa_6922-R
+Tpa_6922-F
+Tpa_7018-R
+Tpa_7018-F
+Tpa_7153-R
+Tpa_7153-F
+Tpa_7240-R
+Tpa_7240-F
+Tpa_7352-R
+Tpa_7352-F
+Tpa_7447-R
+Tpa_7447-F
+Tpa_7560-R
+Tpa_7560-F
+Tpa_7601-R
+Tpa_7601-F
+Tpa_7665-R
+Tpa_7665-F
+Tpa_7764-R
+Tpa_7764-F
+Tpa_6786-R
+Tpa_6786-F
+Tpa_6937-R
+Tpa_6937-F
+Tpa_7052-R
+Tpa_7052-F
+Tpa_7157-R
+Tpa_7157-F
+Tpa_7289-R
+Tpa_7289-F
+Tpa_7367-F
+Tpa_7367-R
+Tpa_7450-R
+Tpa_7450-F
+Tpa_7566-R
+Tpa_7566-F
+Tpa_7604-R
+Tpa_7604-F
+Tpa_7686-R
+Tpa_7686-F
+Tpa_7765-R
+Tpa_7765-F
+Tpa_6814-R
+Tpa_6814-F
+Tpa_6963-R
+Tpa_6963-F
+Tpa_7058-R
+Tpa_7058-F
+Tpa_7291-R
+Tpa_7291-F
+Tpa_7375-R
+Tpa_7375-F
+Tpa_7452-R
+Tpa_7452-F
+Tpa_7495-R
+Tpa_7495-F
+Tpa_7567-R
+Tpa_7567-F
+Tpa_7605-F
+Tpa_7605-R
+Tpa_7690-R
+Tpa_7690-F
+Tpa_7769-R
+Tpa_7769-F
+Tpa_6816-R
+Tpa_6816-F
+Tpa_6973-R
+Tpa_6973-F
+Tpa_7062-R
+Tpa_7062-F
+Tpa_7201-R
+Tpa_7201-F
+Tpa_7293-R
+Tpa_7293-F
+Tpa_7454-R
+Tpa_7454-F
+Tpa_7571-R
+Tpa_7571-F
+Tpa_7615-R
+Tpa_7615-F
+Tpa_7691-R
+Tpa_7691-F
+Tpa_7772-R
+Tpa_7772-F
+Tpa_0010-R
+Tpa_0010-F
+Tpa_0186-R
+Tpa_0186-F
+Tpa_0342-R
+Tpa_0342-F
+Tpa_0427-F
+Tpa_0427-R
+Tpa_0500-R
+Tpa_0500-F
+Tpa_0743-R
+Tpa_0743-F
+Tpa_0868-F
+Tpa_0868-R
+Tpa_0929-F
+Tpa_0929-R
+Tpa_1042-R
+Tpa_1042-F
+Tpa_0012-R
+Tpa_0012-F
+Tpa_0215-R
+Tpa_0215-F
+Tpa_0346-R
+Tpa_0346-F
+Tpa_0429-R
+Tpa_0429-F
+Tpa_0540-R
+Tpa_0540-F
+Tpa_0650-R
+Tpa_0650-F
+Tpa_0763-R
+Tpa_0763-F
+Tpa_0882-R
+Tpa_0882-F
+Tpa_0936-R
+Tpa_0936-F
+Tpa_1136-R
+Tpa_1136-F
+Tpa_1304-R
+Tpa_1304-F
+Tpa_0024-R
+Tpa_0024-F
+Tpa_0226-R
+Tpa_0226-F
+Tpa_0358-R
+Tpa_0358-F
+Tpa_0438-R
+Tpa_0438-F
+Tpa_0547-R
+Tpa_0547-F
+Tpa_0768-R
+Tpa_0768-F
+Tpa_0888-R
+Tpa_0888-F
+Tpa_0953-F
+Tpa_0953-R
+Tpa_1144-R
+Tpa_1144-F
+Tpa_1305-R
+Tpa_1305-F
+Tpa_0035-R
+Tpa_0035-F
+Tpa_0228-R
+Tpa_0228-F
+Tpa_0366-R
+Tpa_0366-F
+Tpa_0439-R
+Tpa_0439-F
+Tpa_0556-R
+Tpa_0556-F
+Tpa_0671-R
+Tpa_0671-F
+Tpa_0970-R
+Tpa_0970-F
+Tpa_1071-R
+Tpa_1071-F
+Tpa_1154-R
+Tpa_1154-F
+Tpa_1310-R
+Tpa_1310-F
+Tpa_0037-R
+Tpa_0037-F
+Tpa_0263-R
+Tpa_0263-F
+Tpa_0367-R
+Tpa_0367-F
+Tpa_0569-R
+Tpa_0569-F
+Tpa_0678-R
+Tpa_0678-F
+Tpa_0895-R
+Tpa_0895-F
+Tpa_0973-R
+Tpa_0973-F
+Tpa_1077-R
+Tpa_1077-F
+Tpa_1156-R
+Tpa_1156-F
+Tpa_1312-R
+Tpa_1312-F
+Tpa_0095-R
+Tpa_0095-F
+Tpa_0269-R
+Tpa_0269-F
+Tpa_0371-R
+Tpa_0371-F
+Tpa_0826-R
+Tpa_0826-F
+Tpa_0905-R
+Tpa_0905-F
+Tpa_0979-R
+Tpa_0979-F
+Tpa_1082-R
+Tpa_1082-F
+Tpa_1187-R
+Tpa_1187-F
+Tpa_1320-R
+Tpa_1320-F
+Tpa_0151-R
+Tpa_0151-F
+Tpa_0272-R
+Tpa_0272-F
+Tpa_0395-R
+Tpa_0395-F
+Tpa_0474-R
+Tpa_0474-F
+Tpa_0592-R
+Tpa_0592-F
+Tpa_1007-R
+Tpa_1007-F
+Tpa_1098-R
+Tpa_1098-F
+Tpa_1268-R
+Tpa_1268-F
+Tpa_0183-R
+Tpa_0183-F
+Tpa_0301-R
+Tpa_0301-F
+Tpa_0409-R
+Tpa_0409-F
+Tpa_0492-R
+Tpa_0492-F
+Tpa_0730-F
+Tpa_0730-R
+Tpa_0866-R
+Tpa_0866-F
+Tpa_0912-R
+Tpa_0912-F
+Tpa_1022-R
+Tpa_1022-F
+Tpa_1112-R
+Tpa_1112-F
+Tpa_1290-R
+Tpa_1290-F
+Tpa_1341-R
+Tpa_1341-F
+0 of 952 primers were found in the genome
+Amplicons not found in genome:
+Tpa_5565-F/Tpa_5565-R
+Tpa_5636-F/Tpa_5636-R
+Tpa_5838-F/Tpa_5838-R
+Tpa_5980-F/Tpa_5980-R
+Tpa_6224-F/Tpa_6224-R
+Tpa_6355-F/Tpa_6355-R
+Tpa_6422-F/Tpa_6422-R
+Tpa_6511-F/Tpa_6511-R
+Tpa_6604-F/Tpa_6604-R
+Tpa_5570-F/Tpa_5570-R
+Tpa_5651-F/Tpa_5651-R
+Tpa_5913-F/Tpa_5913-R
+Tpa_6150-F/Tpa_6150-R
+Tpa_6384-F/Tpa_6384-R
+Tpa_6442-F/Tpa_6442-R
+Tpa_6611-F/Tpa_6611-R
+Tpa_5574-F/Tpa_5574-R
+Tpa_5679-F/Tpa_5679-R
+Tpa_5795-F/Tpa_5795-R
+Tpa_5854-F/Tpa_5854-R
+Tpa_6016-F/Tpa_6016-R
+Tpa_6158-F/Tpa_6158-R
+Tpa_6265-F/Tpa_6265-R
+Tpa_6385-F/Tpa_6385-R
+Tpa_6543-F/Tpa_6543-R
+Tpa_6630-F/Tpa_6630-R
+Tpa_5588-F/Tpa_5588-R
+Tpa_5796-F/Tpa_5796-R
+Tpa_5917-F/Tpa_5917-R
+Tpa_6076-F/Tpa_6076-R
+Tpa_6169-F/Tpa_6169-R
+Tpa_6270-F/Tpa_6270-R
+Tpa_6388-F/Tpa_6388-R
+Tpa_6449-F/Tpa_6449-R
+Tpa_6654-F/Tpa_6654-R
+Tpa_5594-F/Tpa_5594-R
+Tpa_5741-F/Tpa_5741-R
+Tpa_5856-F/Tpa_5856-R
+Tpa_5942-F/Tpa_5942-R
+Tpa_6083-F/Tpa_6083-R
+Tpa_6172-F/Tpa_6172-R
+Tpa_6391-F/Tpa_6391-R
+Tpa_6451-F/Tpa_6451-R
+Tpa_6562-F/Tpa_6562-R
+Tpa_6683-F/Tpa_6683-R
+Tpa_5601-F/Tpa_5601-R
+Tpa_5823-F/Tpa_5823-R
+Tpa_5863-F/Tpa_5863-R
+Tpa_5951-F/Tpa_5951-R
+Tpa_6204-F/Tpa_6204-R
+Tpa_6321-F/Tpa_6321-R
+Tpa_6453-F/Tpa_6453-R
+Tpa_6565-F/Tpa_6565-R
+Tpa_6687-F/Tpa_6687-R
+Tpa_5609-F/Tpa_5609-R
+Tpa_5761-F/Tpa_5761-R
+Tpa_5827-F/Tpa_5827-R
+Tpa_5868-F/Tpa_5868-R
+Tpa_5961-F/Tpa_5961-R
+Tpa_6137-F/Tpa_6137-R
+Tpa_6220-F/Tpa_6220-R
+Tpa_6487-F/Tpa_6487-R
+Tpa_6586-F/Tpa_6586-R
+Tpa_5623-F/Tpa_5623-R
+Tpa_5774-F/Tpa_5774-R
+Tpa_5829-F/Tpa_5829-R
+Tpa_5878-F/Tpa_5878-R
+Tpa_5978-F/Tpa_5978-R
+Tpa_6139-F/Tpa_6139-R
+Tpa_6222-F/Tpa_6222-R
+Tpa_6352-F/Tpa_6352-R
+Tpa_6411-F/Tpa_6411-R
+Tpa_6493-F/Tpa_6493-R
+Tpa_6591-F/Tpa_6591-R
+Tpa_4380-F/Tpa_4380-R
+Tpa_4467-F/Tpa_4467-R
+Tpa_4582-F/Tpa_4582-R
+Tpa_4637-F/Tpa_4637-R
+Tpa_4804-F/Tpa_4804-R
+Tpa_4936-F/Tpa_4936-R
+Tpa_5075-F/Tpa_5075-R
+Tpa_5241-F/Tpa_5241-R
+Tpa_5292-F/Tpa_5292-R
+Tpa_5418-F/Tpa_5418-R
+Tpa_5501-F/Tpa_5501-R
+Tpa_4384-F/Tpa_4384-R
+Tpa_4495-F/Tpa_4495-R
+Tpa_4590-F/Tpa_4590-R
+Tpa_4668-F/Tpa_4668-R
+Tpa_4849-F/Tpa_4849-R
+Tpa_4985-F/Tpa_4985-R
+Tpa_5167-F/Tpa_5167-R
+Tpa_5242-F/Tpa_5242-R
+Tpa_5298-F/Tpa_5298-R
+Tpa_5441-F/Tpa_5441-R
+Tpa_4394-F/Tpa_4394-R
+Tpa_4506-F/Tpa_4506-R
+Tpa_4591-F/Tpa_4591-R
+Tpa_4678-F/Tpa_4678-R
+Tpa_5002-F/Tpa_5002-R
+Tpa_5104-F/Tpa_5104-R
+Tpa_5196-F/Tpa_5196-R
+Tpa_5244-F/Tpa_5244-R
+Tpa_5327-F/Tpa_5327-R
+Tpa_5445-F/Tpa_5445-R
+Tpa_5525-F/Tpa_5525-R
+Tpa_4416-F/Tpa_4416-R
+Tpa_4511-F/Tpa_4511-R
+Tpa_4592-F/Tpa_4592-R
+Tpa_4697-F/Tpa_4697-R
+Tpa_4885-F/Tpa_4885-R
+Tpa_5015-F/Tpa_5015-R
+Tpa_5106-F/Tpa_5106-R
+Tpa_5205-F/Tpa_5205-R
+Tpa_5249-F/Tpa_5249-R
+Tpa_5360-F/Tpa_5360-R
+Tpa_5446-F/Tpa_5446-R
+Tpa_5538-F/Tpa_5538-R
+Tpa_4549-F/Tpa_4549-R
+Tpa_4593-F/Tpa_4593-R
+Tpa_4713-F/Tpa_4713-R
+Tpa_4886-F/Tpa_4886-R
+Tpa_5022-F/Tpa_5022-R
+Tpa_5206-F/Tpa_5206-R
+Tpa_5270-F/Tpa_5270-R
+Tpa_5361-F/Tpa_5361-R
+Tpa_5454-F/Tpa_5454-R
+Tpa_5540-F/Tpa_5540-R
+Tpa_4425-F/Tpa_4425-R
+Tpa_4595-F/Tpa_4595-R
+Tpa_4731-F/Tpa_4731-R
+Tpa_4900-F/Tpa_4900-R
+Tpa_5057-F/Tpa_5057-R
+Tpa_5118-F/Tpa_5118-R
+Tpa_5218-F/Tpa_5218-R
+Tpa_5278-F/Tpa_5278-R
+Tpa_5373-F/Tpa_5373-R
+Tpa_5542-F/Tpa_5542-R
+Tpa_4443-F/Tpa_4443-R
+Tpa_4556-F/Tpa_4556-R
+Tpa_4599-F/Tpa_4599-R
+Tpa_4747-F/Tpa_4747-R
+Tpa_4920-F/Tpa_4920-R
+Tpa_5138-F/Tpa_5138-R
+Tpa_5222-F/Tpa_5222-R
+Tpa_5279-F/Tpa_5279-R
+Tpa_5379-F/Tpa_5379-R
+Tpa_5471-F/Tpa_5471-R
+Tpa_4454-F/Tpa_4454-R
+Tpa_4569-F/Tpa_4569-R
+Tpa_4633-F/Tpa_4633-R
+Tpa_4749-F/Tpa_4749-R
+Tpa_4928-F/Tpa_4928-R
+Tpa_5144-F/Tpa_5144-R
+Tpa_5228-F/Tpa_5228-R
+Tpa_5382-F/Tpa_5382-R
+Tpa_5485-F/Tpa_5485-R
+Tpa_5563-F/Tpa_5563-R
+Tpa_7798-F/Tpa_7798-R
+Tpa_7799-F/Tpa_7799-R
+Tpa_7910-F/Tpa_7910-R
+Tpa_7805-F/Tpa_7805-R
+Tpa_7807-F/Tpa_7807-R
+Tpa_7814-F/Tpa_7814-R
+Tpa_7825-F/Tpa_7825-R
+Tpa_7848-F/Tpa_7848-R
+Tpa_2763-F/Tpa_2763-R
+Tpa_2907-F/Tpa_2907-R
+Tpa_3047-F/Tpa_3047-R
+Tpa_3197-F/Tpa_3197-R
+Tpa_3263-F/Tpa_3263-R
+Tpa_3439-F/Tpa_3439-R
+Tpa_3674-F/Tpa_3674-R
+Tpa_3795-F/Tpa_3795-R
+Tpa_3962-F/Tpa_3962-R
+Tpa_4178-F/Tpa_4178-R
+Tpa_2845-F/Tpa_2845-R
+Tpa_3055-F/Tpa_3055-R
+Tpa_3200-F/Tpa_3200-R
+Tpa_3310-F/Tpa_3310-R
+Tpa_3502-F/Tpa_3502-R
+Tpa_3676-F/Tpa_3676-R
+Tpa_3846-F/Tpa_3846-R
+Tpa_3974-F/Tpa_3974-R
+Tpa_4120-F/Tpa_4120-R
+Tpa_4209-F/Tpa_4209-R
+Tpa_4268-F/Tpa_4268-R
+Tpa_2854-F/Tpa_2854-R
+Tpa_2961-F/Tpa_2961-R
+Tpa_3063-F/Tpa_3063-R
+Tpa_3561-F/Tpa_3561-R
+Tpa_3679-F/Tpa_3679-R
+Tpa_3862-F/Tpa_3862-R
+Tpa_4020-F/Tpa_4020-R
+Tpa_4126-F/Tpa_4126-R
+Tpa_4221-F/Tpa_4221-R
+Tpa_4291-F/Tpa_4291-R
+Tpa_2856-F/Tpa_2856-R
+Tpa_2970-F/Tpa_2970-R
+Tpa_3347-F/Tpa_3347-R
+Tpa_3569-F/Tpa_3569-R
+Tpa_3684-F/Tpa_3684-R
+Tpa_3871-F/Tpa_3871-R
+Tpa_4021-F/Tpa_4021-R
+Tpa_4137-F/Tpa_4137-R
+Tpa_4230-F/Tpa_4230-R
+Tpa_4295-F/Tpa_4295-R
+Tpa_2861-F/Tpa_2861-R
+Tpa_3129-F/Tpa_3129-R
+Tpa_3248-F/Tpa_3248-R
+Tpa_3354-F/Tpa_3354-R
+Tpa_3705-F/Tpa_3705-R
+Tpa_3879-F/Tpa_3879-R
+Tpa_4022-F/Tpa_4022-R
+Tpa_4148-F/Tpa_4148-R
+Tpa_4310-F/Tpa_4310-R
+Tpa_2868-F/Tpa_2868-R
+Tpa_3004-F/Tpa_3004-R
+Tpa_3149-F/Tpa_3149-R
+Tpa_3254-F/Tpa_3254-R
+Tpa_3364-F/Tpa_3364-R
+Tpa_3583-F/Tpa_3583-R
+Tpa_3723-F/Tpa_3723-R
+Tpa_3905-F/Tpa_3905-R
+Tpa_4168-F/Tpa_4168-R
+Tpa_4245-F/Tpa_4245-R
+Tpa_4316-F/Tpa_4316-R
+Tpa_3011-F/Tpa_3011-R
+Tpa_3385-F/Tpa_3385-R
+Tpa_3616-F/Tpa_3616-R
+Tpa_3737-F/Tpa_3737-R
+Tpa_3926-F/Tpa_3926-R
+Tpa_4055-F/Tpa_4055-R
+Tpa_4246-F/Tpa_4246-R
+Tpa_4353-F/Tpa_4353-R
+Tpa_2900-F/Tpa_2900-R
+Tpa_3018-F/Tpa_3018-R
+Tpa_3193-F/Tpa_3193-R
+Tpa_3262-F/Tpa_3262-R
+Tpa_3745-F/Tpa_3745-R
+Tpa_3937-F/Tpa_3937-R
+Tpa_4077-F/Tpa_4077-R
+Tpa_4176-F/Tpa_4176-R
+Tpa_4247-F/Tpa_4247-R
+Tpa_4356-F/Tpa_4356-R
+Tpa_1357-F/Tpa_1357-R
+Tpa_1585-F/Tpa_1585-R
+Tpa_1818-F/Tpa_1818-R
+Tpa_2034-F/Tpa_2034-R
+Tpa_2157-F/Tpa_2157-R
+Tpa_2453-F/Tpa_2453-R
+Tpa_2519-F/Tpa_2519-R
+Tpa_2639-F/Tpa_2639-R
+Tpa_1359-F/Tpa_1359-R
+Tpa_1486-F/Tpa_1486-R
+Tpa_1593-F/Tpa_1593-R
+Tpa_1689-F/Tpa_1689-R
+Tpa_1831-F/Tpa_1831-R
+Tpa_1930-F/Tpa_1930-R
+Tpa_2040-F/Tpa_2040-R
+Tpa_2334-F/Tpa_2334-R
+Tpa_2458-F/Tpa_2458-R
+Tpa_2523-F/Tpa_2523-R
+Tpa_2664-F/Tpa_2664-R
+Tpa_1515-F/Tpa_1515-R
+Tpa_1606-F/Tpa_1606-R
+Tpa_1703-F/Tpa_1703-R
+Tpa_1832-F/Tpa_1832-R
+Tpa_2041-F/Tpa_2041-R
+Tpa_2180-F/Tpa_2180-R
+Tpa_2344-F/Tpa_2344-R
+Tpa_2460-F/Tpa_2460-R
+Tpa_2702-F/Tpa_2702-R
+Tpa_1394-F/Tpa_1394-R
+Tpa_1528-F/Tpa_1528-R
+Tpa_1638-F/Tpa_1638-R
+Tpa_1731-F/Tpa_1731-R
+Tpa_1843-F/Tpa_1843-R
+Tpa_1966-F/Tpa_1966-R
+Tpa_2194-F/Tpa_2194-R
+Tpa_2353-F/Tpa_2353-R
+Tpa_2470-F/Tpa_2470-R
+Tpa_1646-F/Tpa_1646-R
+Tpa_2073-F/Tpa_2073-R
+Tpa_2207-F/Tpa_2207-R
+Tpa_2483-F/Tpa_2483-R
+Tpa_2581-F/Tpa_2581-R
+Tpa_2712-F/Tpa_2712-R
+Tpa_1542-F/Tpa_1542-R
+Tpa_1774-F/Tpa_1774-R
+Tpa_1891-F/Tpa_1891-R
+Tpa_2006-F/Tpa_2006-R
+Tpa_2076-F/Tpa_2076-R
+Tpa_2254-F/Tpa_2254-R
+Tpa_2368-F/Tpa_2368-R
+Tpa_2498-F/Tpa_2498-R
+Tpa_2601-F/Tpa_2601-R
+Tpa_2734-F/Tpa_2734-R
+Tpa_1548-F/Tpa_1548-R
+Tpa_1662-F/Tpa_1662-R
+Tpa_1775-F/Tpa_1775-R
+Tpa_1896-F/Tpa_1896-R
+Tpa_2010-F/Tpa_2010-R
+Tpa_2096-F/Tpa_2096-R
+Tpa_2278-F/Tpa_2278-R
+Tpa_2412-F/Tpa_2412-R
+Tpa_2509-F/Tpa_2509-R
+Tpa_2608-F/Tpa_2608-R
+Tpa_2741-F/Tpa_2741-R
+Tpa_1443-F/Tpa_1443-R
+Tpa_1550-F/Tpa_1550-R
+Tpa_1678-F/Tpa_1678-R
+Tpa_1917-F/Tpa_1917-R
+Tpa_2021-F/Tpa_2021-R
+Tpa_2128-F/Tpa_2128-R
+Tpa_2417-F/Tpa_2417-R
+Tpa_2518-F/Tpa_2518-R
+Tpa_2636-F/Tpa_2636-R
+Tpa_2745-F/Tpa_2745-R
+Tpa_6713-F/Tpa_6713-R
+Tpa_6853-F/Tpa_6853-R
+Tpa_7080-F/Tpa_7080-R
+Tpa_7204-F/Tpa_7204-R
+Tpa_7406-F/Tpa_7406-R
+Tpa_7461-F/Tpa_7461-R
+Tpa_7586-F/Tpa_7586-R
+Tpa_7703-F/Tpa_7703-R
+Tpa_6733-F/Tpa_6733-R
+Tpa_6887-F/Tpa_6887-R
+Tpa_7082-F/Tpa_7082-R
+Tpa_7210-F/Tpa_7210-R
+Tpa_7331-F/Tpa_7331-R
+Tpa_7413-F/Tpa_7413-R
+Tpa_7477-F/Tpa_7477-R
+Tpa_7533-F/Tpa_7533-R
+Tpa_7594-F/Tpa_7594-R
+Tpa_7652-F/Tpa_7652-R
+Tpa_6768-F/Tpa_6768-R
+Tpa_7007-F/Tpa_7007-R
+Tpa_7090-F/Tpa_7090-R
+Tpa_7213-F/Tpa_7213-R
+Tpa_7417-F/Tpa_7417-R
+Tpa_7479-F/Tpa_7479-R
+Tpa_7540-F/Tpa_7540-R
+Tpa_7597-F/Tpa_7597-R
+Tpa_7653-F/Tpa_7653-R
+Tpa_6773-F/Tpa_6773-R
+Tpa_7010-F/Tpa_7010-R
+Tpa_7221-F/Tpa_7221-R
+Tpa_7348-F/Tpa_7348-R
+Tpa_7425-F/Tpa_7425-R
+Tpa_7483-F/Tpa_7483-R
+Tpa_7553-F/Tpa_7553-R
+Tpa_7657-F/Tpa_7657-R
+Tpa_7757-F/Tpa_7757-R
+Tpa_6774-F/Tpa_6774-R
+Tpa_6922-F/Tpa_6922-R
+Tpa_7018-F/Tpa_7018-R
+Tpa_7153-F/Tpa_7153-R
+Tpa_7240-F/Tpa_7240-R
+Tpa_7352-F/Tpa_7352-R
+Tpa_7447-F/Tpa_7447-R
+Tpa_7560-F/Tpa_7560-R
+Tpa_7601-F/Tpa_7601-R
+Tpa_7665-F/Tpa_7665-R
+Tpa_7764-F/Tpa_7764-R
+Tpa_6786-F/Tpa_6786-R
+Tpa_6937-F/Tpa_6937-R
+Tpa_7052-F/Tpa_7052-R
+Tpa_7157-F/Tpa_7157-R
+Tpa_7289-F/Tpa_7289-R
+Tpa_7367-F/Tpa_7367-R
+Tpa_7450-F/Tpa_7450-R
+Tpa_7566-F/Tpa_7566-R
+Tpa_7604-F/Tpa_7604-R
+Tpa_7686-F/Tpa_7686-R
+Tpa_7765-F/Tpa_7765-R
+Tpa_6814-F/Tpa_6814-R
+Tpa_6963-F/Tpa_6963-R
+Tpa_7058-F/Tpa_7058-R
+Tpa_7291-F/Tpa_7291-R
+Tpa_7375-F/Tpa_7375-R
+Tpa_7452-F/Tpa_7452-R
+Tpa_7495-F/Tpa_7495-R
+Tpa_7567-F/Tpa_7567-R
+Tpa_7605-F/Tpa_7605-R
+Tpa_7690-F/Tpa_7690-R
+Tpa_7769-F/Tpa_7769-R
+Tpa_6816-F/Tpa_6816-R
+Tpa_6973-F/Tpa_6973-R
+Tpa_7062-F/Tpa_7062-R
+Tpa_7201-F/Tpa_7201-R
+Tpa_7293-F/Tpa_7293-R
+Tpa_7454-F/Tpa_7454-R
+Tpa_7571-F/Tpa_7571-R
+Tpa_7615-F/Tpa_7615-R
+Tpa_7691-F/Tpa_7691-R
+Tpa_7772-F/Tpa_7772-R
+Tpa_0010-F/Tpa_0010-R
+Tpa_0186-F/Tpa_0186-R
+Tpa_0342-F/Tpa_0342-R
+Tpa_0427-F/Tpa_0427-R
+Tpa_0500-F/Tpa_0500-R
+Tpa_0743-F/Tpa_0743-R
+Tpa_0868-F/Tpa_0868-R
+Tpa_0929-F/Tpa_0929-R
+Tpa_1042-F/Tpa_1042-R
+Tpa_0012-F/Tpa_0012-R
+Tpa_0215-F/Tpa_0215-R
+Tpa_0346-F/Tpa_0346-R
+Tpa_0429-F/Tpa_0429-R
+Tpa_0540-F/Tpa_0540-R
+Tpa_0650-F/Tpa_0650-R
+Tpa_0763-F/Tpa_0763-R
+Tpa_0882-F/Tpa_0882-R
+Tpa_0936-F/Tpa_0936-R
+Tpa_1136-F/Tpa_1136-R
+Tpa_1304-F/Tpa_1304-R
+Tpa_0024-F/Tpa_0024-R
+Tpa_0226-F/Tpa_0226-R
+Tpa_0358-F/Tpa_0358-R
+Tpa_0438-F/Tpa_0438-R
+Tpa_0547-F/Tpa_0547-R
+Tpa_0768-F/Tpa_0768-R
+Tpa_0888-F/Tpa_0888-R
+Tpa_0953-F/Tpa_0953-R
+Tpa_1144-F/Tpa_1144-R
+Tpa_1305-F/Tpa_1305-R
+Tpa_0035-F/Tpa_0035-R
+Tpa_0228-F/Tpa_0228-R
+Tpa_0366-F/Tpa_0366-R
+Tpa_0439-F/Tpa_0439-R
+Tpa_0556-F/Tpa_0556-R
+Tpa_0671-F/Tpa_0671-R
+Tpa_0970-F/Tpa_0970-R
+Tpa_1071-F/Tpa_1071-R
+Tpa_1154-F/Tpa_1154-R
+Tpa_1310-F/Tpa_1310-R
+Tpa_0037-F/Tpa_0037-R
+Tpa_0263-F/Tpa_0263-R
+Tpa_0367-F/Tpa_0367-R
+Tpa_0569-F/Tpa_0569-R
+Tpa_0678-F/Tpa_0678-R
+Tpa_0895-F/Tpa_0895-R
+Tpa_0973-F/Tpa_0973-R
+Tpa_1077-F/Tpa_1077-R
+Tpa_1156-F/Tpa_1156-R
+Tpa_1312-F/Tpa_1312-R
+Tpa_0095-F/Tpa_0095-R
+Tpa_0269-F/Tpa_0269-R
+Tpa_0371-F/Tpa_0371-R
+Tpa_0826-F/Tpa_0826-R
+Tpa_0905-F/Tpa_0905-R
+Tpa_0979-F/Tpa_0979-R
+Tpa_1082-F/Tpa_1082-R
+Tpa_1187-F/Tpa_1187-R
+Tpa_1320-F/Tpa_1320-R
+Tpa_0151-F/Tpa_0151-R
+Tpa_0272-F/Tpa_0272-R
+Tpa_0395-F/Tpa_0395-R
+Tpa_0474-F/Tpa_0474-R
+Tpa_0592-F/Tpa_0592-R
+Tpa_1007-F/Tpa_1007-R
+Tpa_1098-F/Tpa_1098-R
+Tpa_1268-F/Tpa_1268-R
+Tpa_0183-F/Tpa_0183-R
+Tpa_0301-F/Tpa_0301-R
+Tpa_0409-F/Tpa_0409-R
+Tpa_0492-F/Tpa_0492-R
+Tpa_0730-F/Tpa_0730-R
+Tpa_0866-F/Tpa_0866-R
+Tpa_0912-F/Tpa_0912-R
+Tpa_1022-F/Tpa_1022-R
+Tpa_1112-F/Tpa_1112-R
+Tpa_1290-F/Tpa_1290-R
+Tpa_1341-F/Tpa_1341-R
+476 of 476 amplicons not found in genome (with length <=1000)
+Longest amplicon found: 0 bp
+0 overlaps found
+This report has also been written to overlap-report-2.txt (1 second)
+SOME PRIMERS WERE NOT FOUND: see start of the above.
+Possible causes:
+  - Mistakes in the primer file?
+  - Wrong reference genome?
+  - Shouldn't be ignoring "variant" chromosome names in reference genome?
+  - Trying to use mRNA primers on a complete genome?
+    (If using mRNA, you'll need an exon-only version of the genome)
+Precalculating dG... done (1 second)
+Preliminary pooling by threshold...
+Computer suggestion is only 1 pool.
+Do you still want to divide into multiple pools? (y/n): n
+
+OK, I'll forget about those primers.
+You have answered 31 questions.  Well done :-)
+Would you like another go? (y/n): y
+
+Please enter the name of the primers file to read.
+I'm expecting a text file in multiple-sequence FASTA format;
+it is allowed to use degenerate bases.
+Names of amplicons' primers should end with F or R, and otherwise match.
+(Optionally include Taq probes etc ending with P/Q/etc.
+All names differing in only the last letter will be kept in the same pool.
+To force a pool choice, put @2: at start of primer name for pool 2.)
+Optionally include tags to apply to all primers: >tagF and >tagR
+(you can change these mid-file if you want to vary your tags)
+Do you want to find the file in Windows instead of typing it here? (y/n): y
+
+OK, I'm starting the Windows file finder.
+If you don't see it, check BEHIND this window
+(some versions of Windows don't put it in front; blame Microsoft not me)
+
+Successfully opened C:\Users\Madison.Betts\Downloads\all_primers_cleaned.fasta
+952 primers + 0 tags
+Shortest primer length is 16 bases; longest is 28
+To sort by deltaG, I'll need temperature and concentration settings.
+Or we can skip it and use score (faster and simpler but less accurate).
+Do you want to use deltaG? (y/n): y
+
+OK, please enter the deltaG settings:
+deltaG temperature (at annealing e.g. 45): 65
+
+Is that C ? (y/n): y
+
+Magnesium concentration mM/L (0 for no correction): 0
+
+Monovalent cation (e.g. sodium) concentration mM/L (e.g. 50): 3
+
+dNTP concentration mM/L (0 for no correction): .25
+
+Shall I count how many pairs have what deltaG range? (y/n): y
+
+OK, just a sec...
+Precalculating dG... done (1 second)
+ 0.0    453627   (score 0-22)
+-0.5    1        (score 4)
+
+Do you want to save this to a file? (y/n): y
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+File name: deltag2
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+That file already exists.  Are you sure you want to overwrite it? (y/n): y
+
+Precalculating dG... done (1 second)
+Do you want to see the highest bonds of the whole file? (y/n): y
+
+What dG threshold shall we go for? 9
+
+You entered a positive number.  Shall I negate it? (y/n): y
+
+Do you want to see the results on the screen now?
+(Answer 'no' if you want to save them to a file instead.)
+Show on screen? (y/n): n
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+Name of new results file: output2
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+That file already exists.  Are you sure you want to overwrite it? (y/n): y
+
+Sorting... done (1 second)
+Outputting... done (1 second)
+Do you want to try another threshold? (y/n): n
+
+Shall I split this into pools for you? (y/n): y
+
+Shall I check the amplicons for overlaps in the genome? (y/n): y
+
+OK, I need to see a genome file in .2bit or .fa format.
+You might be able to find an appropriate file at
+http://hgdownload.cse.ucsc.edu/downloads.html
+Would you like me to point your browser there? (y/n): y
+
+I've tried to open a browser so you can download a file like hg38.2bit
+If the browser doesn't open, please open one yourself and go to
+http://hgdownload.cse.ucsc.edu/downloads.html
+Once downloaded, please tell me where you put it.
+Do you want to find the file in Windows instead of typing it here? (y/n): y
+
+OK, I'm starting the Windows file finder.
+If you don't see it, check BEHIND this window
+(some versions of Windows don't put it in front; blame Microsoft not me)
+
+Successfully opened C:\Users\Madison.Betts\Downloads\ncbi_dataset.zip
+Do you want me to ignore variant chromosomes
+i.e. sequences with _ or - in their names? (y/n): y
+
+Please enter the maximum amplicon length (bp), for example 220
+
+Maximum amplicon length: 500
+
+Do you want to write a file of amplicons for MultiPLX as well? (y/n): y
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+File name for all amplicon locations: ampliconlocation
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+That file already exists.  Are you sure you want to overwrite it? (y/n): y
+
+476 primer-sets found
+Invalid signature (is this really a .2bit genome file?)
+The following primers were not found in the genome:
+Tpa_5565-F
+Tpa_5565-R
+Tpa_5636-R
+Tpa_5636-F
+Tpa_5838-F
+Tpa_5838-R
+Tpa_5980-R
+Tpa_5980-F
+Tpa_6224-R
+Tpa_6224-F
+Tpa_6355-R
+Tpa_6355-F
+Tpa_6422-R
+Tpa_6422-F
+Tpa_6511-F
+Tpa_6511-R
+Tpa_6604-R
+Tpa_6604-F
+Tpa_5570-F
+Tpa_5570-R
+Tpa_5651-F
+Tpa_5651-R
+Tpa_5913-F
+Tpa_5913-R
+Tpa_6150-R
+Tpa_6150-F
+Tpa_6384-R
+Tpa_6384-F
+Tpa_6442-R
+Tpa_6442-F
+Tpa_6611-R
+Tpa_6611-F
+Tpa_5574-F
+Tpa_5574-R
+Tpa_5679-R
+Tpa_5679-F
+Tpa_5795-F
+Tpa_5795-R
+Tpa_5854-F
+Tpa_5854-R
+Tpa_6016-R
+Tpa_6016-F
+Tpa_6158-R
+Tpa_6158-F
+Tpa_6265-R
+Tpa_6265-F
+Tpa_6385-R
+Tpa_6385-F
+Tpa_6543-R
+Tpa_6543-F
+Tpa_6630-R
+Tpa_6630-F
+Tpa_5588-F
+Tpa_5588-R
+Tpa_5796-F
+Tpa_5796-R
+Tpa_5917-R
+Tpa_5917-F
+Tpa_6076-R
+Tpa_6076-F
+Tpa_6169-R
+Tpa_6169-F
+Tpa_6270-R
+Tpa_6270-F
+Tpa_6388-F
+Tpa_6388-R
+Tpa_6449-R
+Tpa_6449-F
+Tpa_6654-R
+Tpa_6654-F
+Tpa_5594-F
+Tpa_5594-R
+Tpa_5741-F
+Tpa_5741-R
+Tpa_5856-F
+Tpa_5856-R
+Tpa_5942-R
+Tpa_5942-F
+Tpa_6083-R
+Tpa_6083-F
+Tpa_6172-R
+Tpa_6172-F
+Tpa_6391-R
+Tpa_6391-F
+Tpa_6451-R
+Tpa_6451-F
+Tpa_6562-R
+Tpa_6562-F
+Tpa_6683-R
+Tpa_6683-F
+Tpa_5601-F
+Tpa_5601-R
+Tpa_5823-F
+Tpa_5823-R
+Tpa_5863-F
+Tpa_5863-R
+Tpa_5951-R
+Tpa_5951-F
+Tpa_6204-R
+Tpa_6204-F
+Tpa_6321-R
+Tpa_6321-F
+Tpa_6453-R
+Tpa_6453-F
+Tpa_6565-R
+Tpa_6565-F
+Tpa_6687-R
+Tpa_6687-F
+Tpa_5609-F
+Tpa_5609-R
+Tpa_5761-F
+Tpa_5761-R
+Tpa_5827-F
+Tpa_5827-R
+Tpa_5868-F
+Tpa_5868-R
+Tpa_5961-R
+Tpa_5961-F
+Tpa_6137-R
+Tpa_6137-F
+Tpa_6220-R
+Tpa_6220-F
+Tpa_6487-R
+Tpa_6487-F
+Tpa_6586-R
+Tpa_6586-F
+Tpa_5623-F
+Tpa_5623-R
+Tpa_5774-F
+Tpa_5774-R
+Tpa_5829-F
+Tpa_5829-R
+Tpa_5878-F
+Tpa_5878-R
+Tpa_5978-R
+Tpa_5978-F
+Tpa_6139-R
+Tpa_6139-F
+Tpa_6222-R
+Tpa_6222-F
+Tpa_6352-R
+Tpa_6352-F
+Tpa_6411-R
+Tpa_6411-F
+Tpa_6493-R
+Tpa_6493-F
+Tpa_6591-R
+Tpa_6591-F
+Tpa_4380-R
+Tpa_4380-F
+Tpa_4467-R
+Tpa_4467-F
+Tpa_4582-F
+Tpa_4582-R
+Tpa_4637-F
+Tpa_4637-R
+Tpa_4804-F
+Tpa_4804-R
+Tpa_4936-F
+Tpa_4936-R
+Tpa_5075-F
+Tpa_5075-R
+Tpa_5241-F
+Tpa_5241-R
+Tpa_5292-F
+Tpa_5292-R
+Tpa_5418-F
+Tpa_5418-R
+Tpa_5501-F
+Tpa_5501-R
+Tpa_4384-R
+Tpa_4384-F
+Tpa_4495-R
+Tpa_4495-F
+Tpa_4590-F
+Tpa_4590-R
+Tpa_4668-F
+Tpa_4668-R
+Tpa_4849-F
+Tpa_4849-R
+Tpa_4985-F
+Tpa_4985-R
+Tpa_5167-F
+Tpa_5167-R
+Tpa_5242-F
+Tpa_5242-R
+Tpa_5298-F
+Tpa_5298-R
+Tpa_5441-F
+Tpa_5441-R
+Tpa_4394-F
+Tpa_4394-R
+Tpa_4506-R
+Tpa_4506-F
+Tpa_4591-F
+Tpa_4591-R
+Tpa_4678-F
+Tpa_4678-R
+Tpa_5002-F
+Tpa_5002-R
+Tpa_5104-F
+Tpa_5104-R
+Tpa_5196-F
+Tpa_5196-R
+Tpa_5244-F
+Tpa_5244-R
+Tpa_5327-F
+Tpa_5327-R
+Tpa_5445-F
+Tpa_5445-R
+Tpa_5525-F
+Tpa_5525-R
+Tpa_4416-R
+Tpa_4416-F
+Tpa_4511-R
+Tpa_4511-F
+Tpa_4592-F
+Tpa_4592-R
+Tpa_4697-F
+Tpa_4697-R
+Tpa_4885-F
+Tpa_4885-R
+Tpa_5015-F
+Tpa_5015-R
+Tpa_5106-F
+Tpa_5106-R
+Tpa_5205-F
+Tpa_5205-R
+Tpa_5249-F
+Tpa_5249-R
+Tpa_5360-F
+Tpa_5360-R
+Tpa_5446-F
+Tpa_5446-R
+Tpa_5538-F
+Tpa_5538-R
+Tpa_4549-R
+Tpa_4549-F
+Tpa_4593-F
+Tpa_4593-R
+Tpa_4713-F
+Tpa_4713-R
+Tpa_4886-F
+Tpa_4886-R
+Tpa_5022-F
+Tpa_5022-R
+Tpa_5206-F
+Tpa_5206-R
+Tpa_5270-F
+Tpa_5270-R
+Tpa_5361-F
+Tpa_5361-R
+Tpa_5454-F
+Tpa_5454-R
+Tpa_5540-F
+Tpa_5540-R
+Tpa_4425-R
+Tpa_4425-F
+Tpa_4595-F
+Tpa_4595-R
+Tpa_4731-F
+Tpa_4731-R
+Tpa_4900-F
+Tpa_4900-R
+Tpa_5057-F
+Tpa_5057-R
+Tpa_5118-F
+Tpa_5118-R
+Tpa_5218-F
+Tpa_5218-R
+Tpa_5278-F
+Tpa_5278-R
+Tpa_5373-F
+Tpa_5373-R
+Tpa_5542-F
+Tpa_5542-R
+Tpa_4443-R
+Tpa_4443-F
+Tpa_4556-R
+Tpa_4556-F
+Tpa_4599-F
+Tpa_4599-R
+Tpa_4747-F
+Tpa_4747-R
+Tpa_4920-R
+Tpa_4920-F
+Tpa_5138-F
+Tpa_5138-R
+Tpa_5222-F
+Tpa_5222-R
+Tpa_5279-F
+Tpa_5279-R
+Tpa_5379-F
+Tpa_5379-R
+Tpa_5471-F
+Tpa_5471-R
+Tpa_4454-R
+Tpa_4454-F
+Tpa_4569-R
+Tpa_4569-F
+Tpa_4633-F
+Tpa_4633-R
+Tpa_4749-F
+Tpa_4749-R
+Tpa_4928-F
+Tpa_4928-R
+Tpa_5144-F
+Tpa_5144-R
+Tpa_5228-F
+Tpa_5228-R
+Tpa_5382-F
+Tpa_5382-R
+Tpa_5485-F
+Tpa_5485-R
+Tpa_5563-F
+Tpa_5563-R
+Tpa_7798-R
+Tpa_7798-F
+Tpa_7799-R
+Tpa_7799-F
+Tpa_7910-F
+Tpa_7910-R
+Tpa_7805-R
+Tpa_7805-F
+Tpa_7807-R
+Tpa_7807-F
+Tpa_7814-R
+Tpa_7814-F
+Tpa_7825-R
+Tpa_7825-F
+Tpa_7848-R
+Tpa_7848-F
+Tpa_2763-R
+Tpa_2763-F
+Tpa_2907-F
+Tpa_2907-R
+Tpa_3047-F
+Tpa_3047-R
+Tpa_3197-F
+Tpa_3197-R
+Tpa_3263-F
+Tpa_3263-R
+Tpa_3439-F
+Tpa_3439-R
+Tpa_3674-F
+Tpa_3674-R
+Tpa_3795-F
+Tpa_3795-R
+Tpa_3962-F
+Tpa_3962-R
+Tpa_4178-F
+Tpa_4178-R
+Tpa_2845-R
+Tpa_2845-F
+Tpa_3055-F
+Tpa_3055-R
+Tpa_3200-F
+Tpa_3200-R
+Tpa_3310-R
+Tpa_3310-F
+Tpa_3502-F
+Tpa_3502-R
+Tpa_3676-R
+Tpa_3676-F
+Tpa_3846-F
+Tpa_3846-R
+Tpa_3974-F
+Tpa_3974-R
+Tpa_4120-F
+Tpa_4120-R
+Tpa_4209-F
+Tpa_4209-R
+Tpa_4268-F
+Tpa_4268-R
+Tpa_2854-R
+Tpa_2854-F
+Tpa_2961-F
+Tpa_2961-R
+Tpa_3063-F
+Tpa_3063-R
+Tpa_3561-F
+Tpa_3561-R
+Tpa_3679-F
+Tpa_3679-R
+Tpa_3862-F
+Tpa_3862-R
+Tpa_4020-F
+Tpa_4020-R
+Tpa_4126-F
+Tpa_4126-R
+Tpa_4221-F
+Tpa_4221-R
+Tpa_4291-F
+Tpa_4291-R
+Tpa_2856-R
+Tpa_2856-F
+Tpa_2970-F
+Tpa_2970-R
+Tpa_3347-R
+Tpa_3347-F
+Tpa_3569-F
+Tpa_3569-R
+Tpa_3684-F
+Tpa_3684-R
+Tpa_3871-F
+Tpa_3871-R
+Tpa_4021-F
+Tpa_4021-R
+Tpa_4137-F
+Tpa_4137-R
+Tpa_4230-F
+Tpa_4230-R
+Tpa_4295-F
+Tpa_4295-R
+Tpa_2861-R
+Tpa_2861-F
+Tpa_3129-F
+Tpa_3129-R
+Tpa_3248-F
+Tpa_3248-R
+Tpa_3354-F
+Tpa_3354-R
+Tpa_3705-F
+Tpa_3705-R
+Tpa_3879-F
+Tpa_3879-R
+Tpa_4022-F
+Tpa_4022-R
+Tpa_4148-R
+Tpa_4148-F
+Tpa_4310-F
+Tpa_4310-R
+Tpa_2868-R
+Tpa_2868-F
+Tpa_3004-F
+Tpa_3004-R
+Tpa_3149-F
+Tpa_3149-R
+Tpa_3254-F
+Tpa_3254-R
+Tpa_3364-F
+Tpa_3364-R
+Tpa_3583-F
+Tpa_3583-R
+Tpa_3723-F
+Tpa_3723-R
+Tpa_3905-F
+Tpa_3905-R
+Tpa_4168-F
+Tpa_4168-R
+Tpa_4245-F
+Tpa_4245-R
+Tpa_4316-F
+Tpa_4316-R
+Tpa_3011-F
+Tpa_3011-R
+Tpa_3385-F
+Tpa_3385-R
+Tpa_3616-F
+Tpa_3616-R
+Tpa_3737-F
+Tpa_3737-R
+Tpa_3926-F
+Tpa_3926-R
+Tpa_4055-F
+Tpa_4055-R
+Tpa_4246-R
+Tpa_4246-F
+Tpa_4353-F
+Tpa_4353-R
+Tpa_2900-F
+Tpa_2900-R
+Tpa_3018-F
+Tpa_3018-R
+Tpa_3193-F
+Tpa_3193-R
+Tpa_3262-F
+Tpa_3262-R
+Tpa_3745-F
+Tpa_3745-R
+Tpa_3937-F
+Tpa_3937-R
+Tpa_4077-F
+Tpa_4077-R
+Tpa_4176-F
+Tpa_4176-R
+Tpa_4247-F
+Tpa_4247-R
+Tpa_4356-F
+Tpa_4356-R
+Tpa_1357-R
+Tpa_1357-F
+Tpa_1585-R
+Tpa_1585-F
+Tpa_1818-R
+Tpa_1818-F
+Tpa_2034-R
+Tpa_2034-F
+Tpa_2157-R
+Tpa_2157-F
+Tpa_2453-R
+Tpa_2453-F
+Tpa_2519-R
+Tpa_2519-F
+Tpa_2639-R
+Tpa_2639-F
+Tpa_1359-R
+Tpa_1359-F
+Tpa_1486-R
+Tpa_1486-F
+Tpa_1593-R
+Tpa_1593-F
+Tpa_1689-R
+Tpa_1689-F
+Tpa_1831-R
+Tpa_1831-F
+Tpa_1930-R
+Tpa_1930-F
+Tpa_2040-R
+Tpa_2040-F
+Tpa_2334-R
+Tpa_2334-F
+Tpa_2458-R
+Tpa_2458-F
+Tpa_2523-R
+Tpa_2523-F
+Tpa_2664-R
+Tpa_2664-F
+Tpa_1515-R
+Tpa_1515-F
+Tpa_1606-R
+Tpa_1606-F
+Tpa_1703-R
+Tpa_1703-F
+Tpa_1832-R
+Tpa_1832-F
+Tpa_2041-R
+Tpa_2041-F
+Tpa_2180-R
+Tpa_2180-F
+Tpa_2344-R
+Tpa_2344-F
+Tpa_2460-R
+Tpa_2460-F
+Tpa_2702-R
+Tpa_2702-F
+Tpa_1394-R
+Tpa_1394-F
+Tpa_1528-R
+Tpa_1528-F
+Tpa_1638-R
+Tpa_1638-F
+Tpa_1731-R
+Tpa_1731-F
+Tpa_1843-R
+Tpa_1843-F
+Tpa_1966-R
+Tpa_1966-F
+Tpa_2194-R
+Tpa_2194-F
+Tpa_2353-R
+Tpa_2353-F
+Tpa_2470-R
+Tpa_2470-F
+Tpa_1646-R
+Tpa_1646-F
+Tpa_2073-R
+Tpa_2073-F
+Tpa_2207-R
+Tpa_2207-F
+Tpa_2483-R
+Tpa_2483-F
+Tpa_2581-R
+Tpa_2581-F
+Tpa_2712-R
+Tpa_2712-F
+Tpa_1542-R
+Tpa_1542-F
+Tpa_1774-R
+Tpa_1774-F
+Tpa_1891-R
+Tpa_1891-F
+Tpa_2006-R
+Tpa_2006-F
+Tpa_2076-R
+Tpa_2076-F
+Tpa_2254-R
+Tpa_2254-F
+Tpa_2368-R
+Tpa_2368-F
+Tpa_2498-R
+Tpa_2498-F
+Tpa_2601-R
+Tpa_2601-F
+Tpa_2734-R
+Tpa_2734-F
+Tpa_1548-R
+Tpa_1548-F
+Tpa_1662-R
+Tpa_1662-F
+Tpa_1775-R
+Tpa_1775-F
+Tpa_1896-R
+Tpa_1896-F
+Tpa_2010-R
+Tpa_2010-F
+Tpa_2096-R
+Tpa_2096-F
+Tpa_2278-R
+Tpa_2278-F
+Tpa_2412-R
+Tpa_2412-F
+Tpa_2509-R
+Tpa_2509-F
+Tpa_2608-R
+Tpa_2608-F
+Tpa_2741-R
+Tpa_2741-F
+Tpa_1443-R
+Tpa_1443-F
+Tpa_1550-R
+Tpa_1550-F
+Tpa_1678-R
+Tpa_1678-F
+Tpa_1917-R
+Tpa_1917-F
+Tpa_2021-R
+Tpa_2021-F
+Tpa_2128-R
+Tpa_2128-F
+Tpa_2417-R
+Tpa_2417-F
+Tpa_2518-R
+Tpa_2518-F
+Tpa_2636-R
+Tpa_2636-F
+Tpa_2745-F
+Tpa_2745-R
+Tpa_6713-R
+Tpa_6713-F
+Tpa_6853-R
+Tpa_6853-F
+Tpa_7080-R
+Tpa_7080-F
+Tpa_7204-R
+Tpa_7204-F
+Tpa_7406-R
+Tpa_7406-F
+Tpa_7461-F
+Tpa_7461-R
+Tpa_7586-R
+Tpa_7586-F
+Tpa_7703-R
+Tpa_7703-F
+Tpa_6733-R
+Tpa_6733-F
+Tpa_6887-R
+Tpa_6887-F
+Tpa_7082-R
+Tpa_7082-F
+Tpa_7210-R
+Tpa_7210-F
+Tpa_7331-R
+Tpa_7331-F
+Tpa_7413-R
+Tpa_7413-F
+Tpa_7477-R
+Tpa_7477-F
+Tpa_7533-R
+Tpa_7533-F
+Tpa_7594-R
+Tpa_7594-F
+Tpa_7652-R
+Tpa_7652-F
+Tpa_6768-R
+Tpa_6768-F
+Tpa_7007-R
+Tpa_7007-F
+Tpa_7090-R
+Tpa_7090-F
+Tpa_7213-R
+Tpa_7213-F
+Tpa_7417-R
+Tpa_7417-F
+Tpa_7479-R
+Tpa_7479-F
+Tpa_7540-R
+Tpa_7540-F
+Tpa_7597-F
+Tpa_7597-R
+Tpa_7653-R
+Tpa_7653-F
+Tpa_6773-R
+Tpa_6773-F
+Tpa_7010-F
+Tpa_7010-R
+Tpa_7221-R
+Tpa_7221-F
+Tpa_7348-R
+Tpa_7348-F
+Tpa_7425-R
+Tpa_7425-F
+Tpa_7483-F
+Tpa_7483-R
+Tpa_7553-R
+Tpa_7553-F
+Tpa_7657-R
+Tpa_7657-F
+Tpa_7757-F
+Tpa_7757-R
+Tpa_6774-R
+Tpa_6774-F
+Tpa_6922-R
+Tpa_6922-F
+Tpa_7018-R
+Tpa_7018-F
+Tpa_7153-R
+Tpa_7153-F
+Tpa_7240-R
+Tpa_7240-F
+Tpa_7352-R
+Tpa_7352-F
+Tpa_7447-R
+Tpa_7447-F
+Tpa_7560-R
+Tpa_7560-F
+Tpa_7601-R
+Tpa_7601-F
+Tpa_7665-R
+Tpa_7665-F
+Tpa_7764-R
+Tpa_7764-F
+Tpa_6786-R
+Tpa_6786-F
+Tpa_6937-R
+Tpa_6937-F
+Tpa_7052-R
+Tpa_7052-F
+Tpa_7157-R
+Tpa_7157-F
+Tpa_7289-R
+Tpa_7289-F
+Tpa_7367-F
+Tpa_7367-R
+Tpa_7450-R
+Tpa_7450-F
+Tpa_7566-R
+Tpa_7566-F
+Tpa_7604-R
+Tpa_7604-F
+Tpa_7686-R
+Tpa_7686-F
+Tpa_7765-R
+Tpa_7765-F
+Tpa_6814-R
+Tpa_6814-F
+Tpa_6963-R
+Tpa_6963-F
+Tpa_7058-R
+Tpa_7058-F
+Tpa_7291-R
+Tpa_7291-F
+Tpa_7375-R
+Tpa_7375-F
+Tpa_7452-R
+Tpa_7452-F
+Tpa_7495-R
+Tpa_7495-F
+Tpa_7567-R
+Tpa_7567-F
+Tpa_7605-F
+Tpa_7605-R
+Tpa_7690-R
+Tpa_7690-F
+Tpa_7769-R
+Tpa_7769-F
+Tpa_6816-R
+Tpa_6816-F
+Tpa_6973-R
+Tpa_6973-F
+Tpa_7062-R
+Tpa_7062-F
+Tpa_7201-R
+Tpa_7201-F
+Tpa_7293-R
+Tpa_7293-F
+Tpa_7454-R
+Tpa_7454-F
+Tpa_7571-R
+Tpa_7571-F
+Tpa_7615-R
+Tpa_7615-F
+Tpa_7691-R
+Tpa_7691-F
+Tpa_7772-R
+Tpa_7772-F
+Tpa_0010-R
+Tpa_0010-F
+Tpa_0186-R
+Tpa_0186-F
+Tpa_0342-R
+Tpa_0342-F
+Tpa_0427-F
+Tpa_0427-R
+Tpa_0500-R
+Tpa_0500-F
+Tpa_0743-R
+Tpa_0743-F
+Tpa_0868-F
+Tpa_0868-R
+Tpa_0929-F
+Tpa_0929-R
+Tpa_1042-R
+Tpa_1042-F
+Tpa_0012-R
+Tpa_0012-F
+Tpa_0215-R
+Tpa_0215-F
+Tpa_0346-R
+Tpa_0346-F
+Tpa_0429-R
+Tpa_0429-F
+Tpa_0540-R
+Tpa_0540-F
+Tpa_0650-R
+Tpa_0650-F
+Tpa_0763-R
+Tpa_0763-F
+Tpa_0882-R
+Tpa_0882-F
+Tpa_0936-R
+Tpa_0936-F
+Tpa_1136-R
+Tpa_1136-F
+Tpa_1304-R
+Tpa_1304-F
+Tpa_0024-R
+Tpa_0024-F
+Tpa_0226-R
+Tpa_0226-F
+Tpa_0358-R
+Tpa_0358-F
+Tpa_0438-R
+Tpa_0438-F
+Tpa_0547-R
+Tpa_0547-F
+Tpa_0768-R
+Tpa_0768-F
+Tpa_0888-R
+Tpa_0888-F
+Tpa_0953-F
+Tpa_0953-R
+Tpa_1144-R
+Tpa_1144-F
+Tpa_1305-R
+Tpa_1305-F
+Tpa_0035-R
+Tpa_0035-F
+Tpa_0228-R
+Tpa_0228-F
+Tpa_0366-R
+Tpa_0366-F
+Tpa_0439-R
+Tpa_0439-F
+Tpa_0556-R
+Tpa_0556-F
+Tpa_0671-R
+Tpa_0671-F
+Tpa_0970-R
+Tpa_0970-F
+Tpa_1071-R
+Tpa_1071-F
+Tpa_1154-R
+Tpa_1154-F
+Tpa_1310-R
+Tpa_1310-F
+Tpa_0037-R
+Tpa_0037-F
+Tpa_0263-R
+Tpa_0263-F
+Tpa_0367-R
+Tpa_0367-F
+Tpa_0569-R
+Tpa_0569-F
+Tpa_0678-R
+Tpa_0678-F
+Tpa_0895-R
+Tpa_0895-F
+Tpa_0973-R
+Tpa_0973-F
+Tpa_1077-R
+Tpa_1077-F
+Tpa_1156-R
+Tpa_1156-F
+Tpa_1312-R
+Tpa_1312-F
+Tpa_0095-R
+Tpa_0095-F
+Tpa_0269-R
+Tpa_0269-F
+Tpa_0371-R
+Tpa_0371-F
+Tpa_0826-R
+Tpa_0826-F
+Tpa_0905-R
+Tpa_0905-F
+Tpa_0979-R
+Tpa_0979-F
+Tpa_1082-R
+Tpa_1082-F
+Tpa_1187-R
+Tpa_1187-F
+Tpa_1320-R
+Tpa_1320-F
+Tpa_0151-R
+Tpa_0151-F
+Tpa_0272-R
+Tpa_0272-F
+Tpa_0395-R
+Tpa_0395-F
+Tpa_0474-R
+Tpa_0474-F
+Tpa_0592-R
+Tpa_0592-F
+Tpa_1007-R
+Tpa_1007-F
+Tpa_1098-R
+Tpa_1098-F
+Tpa_1268-R
+Tpa_1268-F
+Tpa_0183-R
+Tpa_0183-F
+Tpa_0301-R
+Tpa_0301-F
+Tpa_0409-R
+Tpa_0409-F
+Tpa_0492-R
+Tpa_0492-F
+Tpa_0730-F
+Tpa_0730-R
+Tpa_0866-R
+Tpa_0866-F
+Tpa_0912-R
+Tpa_0912-F
+Tpa_1022-R
+Tpa_1022-F
+Tpa_1112-R
+Tpa_1112-F
+Tpa_1290-R
+Tpa_1290-F
+Tpa_1341-R
+Tpa_1341-F
+0 of 952 primers were found in the genome
+Amplicons not found in genome:
+Tpa_5565-F/Tpa_5565-R
+Tpa_5636-F/Tpa_5636-R
+Tpa_5838-F/Tpa_5838-R
+Tpa_5980-F/Tpa_5980-R
+Tpa_6224-F/Tpa_6224-R
+Tpa_6355-F/Tpa_6355-R
+Tpa_6422-F/Tpa_6422-R
+Tpa_6511-F/Tpa_6511-R
+Tpa_6604-F/Tpa_6604-R
+Tpa_5570-F/Tpa_5570-R
+Tpa_5651-F/Tpa_5651-R
+Tpa_5913-F/Tpa_5913-R
+Tpa_6150-F/Tpa_6150-R
+Tpa_6384-F/Tpa_6384-R
+Tpa_6442-F/Tpa_6442-R
+Tpa_6611-F/Tpa_6611-R
+Tpa_5574-F/Tpa_5574-R
+Tpa_5679-F/Tpa_5679-R
+Tpa_5795-F/Tpa_5795-R
+Tpa_5854-F/Tpa_5854-R
+Tpa_6016-F/Tpa_6016-R
+Tpa_6158-F/Tpa_6158-R
+Tpa_6265-F/Tpa_6265-R
+Tpa_6385-F/Tpa_6385-R
+Tpa_6543-F/Tpa_6543-R
+Tpa_6630-F/Tpa_6630-R
+Tpa_5588-F/Tpa_5588-R
+Tpa_5796-F/Tpa_5796-R
+Tpa_5917-F/Tpa_5917-R
+Tpa_6076-F/Tpa_6076-R
+Tpa_6169-F/Tpa_6169-R
+Tpa_6270-F/Tpa_6270-R
+Tpa_6388-F/Tpa_6388-R
+Tpa_6449-F/Tpa_6449-R
+Tpa_6654-F/Tpa_6654-R
+Tpa_5594-F/Tpa_5594-R
+Tpa_5741-F/Tpa_5741-R
+Tpa_5856-F/Tpa_5856-R
+Tpa_5942-F/Tpa_5942-R
+Tpa_6083-F/Tpa_6083-R
+Tpa_6172-F/Tpa_6172-R
+Tpa_6391-F/Tpa_6391-R
+Tpa_6451-F/Tpa_6451-R
+Tpa_6562-F/Tpa_6562-R
+Tpa_6683-F/Tpa_6683-R
+Tpa_5601-F/Tpa_5601-R
+Tpa_5823-F/Tpa_5823-R
+Tpa_5863-F/Tpa_5863-R
+Tpa_5951-F/Tpa_5951-R
+Tpa_6204-F/Tpa_6204-R
+Tpa_6321-F/Tpa_6321-R
+Tpa_6453-F/Tpa_6453-R
+Tpa_6565-F/Tpa_6565-R
+Tpa_6687-F/Tpa_6687-R
+Tpa_5609-F/Tpa_5609-R
+Tpa_5761-F/Tpa_5761-R
+Tpa_5827-F/Tpa_5827-R
+Tpa_5868-F/Tpa_5868-R
+Tpa_5961-F/Tpa_5961-R
+Tpa_6137-F/Tpa_6137-R
+Tpa_6220-F/Tpa_6220-R
+Tpa_6487-F/Tpa_6487-R
+Tpa_6586-F/Tpa_6586-R
+Tpa_5623-F/Tpa_5623-R
+Tpa_5774-F/Tpa_5774-R
+Tpa_5829-F/Tpa_5829-R
+Tpa_5878-F/Tpa_5878-R
+Tpa_5978-F/Tpa_5978-R
+Tpa_6139-F/Tpa_6139-R
+Tpa_6222-F/Tpa_6222-R
+Tpa_6352-F/Tpa_6352-R
+Tpa_6411-F/Tpa_6411-R
+Tpa_6493-F/Tpa_6493-R
+Tpa_6591-F/Tpa_6591-R
+Tpa_4380-F/Tpa_4380-R
+Tpa_4467-F/Tpa_4467-R
+Tpa_4582-F/Tpa_4582-R
+Tpa_4637-F/Tpa_4637-R
+Tpa_4804-F/Tpa_4804-R
+Tpa_4936-F/Tpa_4936-R
+Tpa_5075-F/Tpa_5075-R
+Tpa_5241-F/Tpa_5241-R
+Tpa_5292-F/Tpa_5292-R
+Tpa_5418-F/Tpa_5418-R
+Tpa_5501-F/Tpa_5501-R
+Tpa_4384-F/Tpa_4384-R
+Tpa_4495-F/Tpa_4495-R
+Tpa_4590-F/Tpa_4590-R
+Tpa_4668-F/Tpa_4668-R
+Tpa_4849-F/Tpa_4849-R
+Tpa_4985-F/Tpa_4985-R
+Tpa_5167-F/Tpa_5167-R
+Tpa_5242-F/Tpa_5242-R
+Tpa_5298-F/Tpa_5298-R
+Tpa_5441-F/Tpa_5441-R
+Tpa_4394-F/Tpa_4394-R
+Tpa_4506-F/Tpa_4506-R
+Tpa_4591-F/Tpa_4591-R
+Tpa_4678-F/Tpa_4678-R
+Tpa_5002-F/Tpa_5002-R
+Tpa_5104-F/Tpa_5104-R
+Tpa_5196-F/Tpa_5196-R
+Tpa_5244-F/Tpa_5244-R
+Tpa_5327-F/Tpa_5327-R
+Tpa_5445-F/Tpa_5445-R
+Tpa_5525-F/Tpa_5525-R
+Tpa_4416-F/Tpa_4416-R
+Tpa_4511-F/Tpa_4511-R
+Tpa_4592-F/Tpa_4592-R
+Tpa_4697-F/Tpa_4697-R
+Tpa_4885-F/Tpa_4885-R
+Tpa_5015-F/Tpa_5015-R
+Tpa_5106-F/Tpa_5106-R
+Tpa_5205-F/Tpa_5205-R
+Tpa_5249-F/Tpa_5249-R
+Tpa_5360-F/Tpa_5360-R
+Tpa_5446-F/Tpa_5446-R
+Tpa_5538-F/Tpa_5538-R
+Tpa_4549-F/Tpa_4549-R
+Tpa_4593-F/Tpa_4593-R
+Tpa_4713-F/Tpa_4713-R
+Tpa_4886-F/Tpa_4886-R
+Tpa_5022-F/Tpa_5022-R
+Tpa_5206-F/Tpa_5206-R
+Tpa_5270-F/Tpa_5270-R
+Tpa_5361-F/Tpa_5361-R
+Tpa_5454-F/Tpa_5454-R
+Tpa_5540-F/Tpa_5540-R
+Tpa_4425-F/Tpa_4425-R
+Tpa_4595-F/Tpa_4595-R
+Tpa_4731-F/Tpa_4731-R
+Tpa_4900-F/Tpa_4900-R
+Tpa_5057-F/Tpa_5057-R
+Tpa_5118-F/Tpa_5118-R
+Tpa_5218-F/Tpa_5218-R
+Tpa_5278-F/Tpa_5278-R
+Tpa_5373-F/Tpa_5373-R
+Tpa_5542-F/Tpa_5542-R
+Tpa_4443-F/Tpa_4443-R
+Tpa_4556-F/Tpa_4556-R
+Tpa_4599-F/Tpa_4599-R
+Tpa_4747-F/Tpa_4747-R
+Tpa_4920-F/Tpa_4920-R
+Tpa_5138-F/Tpa_5138-R
+Tpa_5222-F/Tpa_5222-R
+Tpa_5279-F/Tpa_5279-R
+Tpa_5379-F/Tpa_5379-R
+Tpa_5471-F/Tpa_5471-R
+Tpa_4454-F/Tpa_4454-R
+Tpa_4569-F/Tpa_4569-R
+Tpa_4633-F/Tpa_4633-R
+Tpa_4749-F/Tpa_4749-R
+Tpa_4928-F/Tpa_4928-R
+Tpa_5144-F/Tpa_5144-R
+Tpa_5228-F/Tpa_5228-R
+Tpa_5382-F/Tpa_5382-R
+Tpa_5485-F/Tpa_5485-R
+Tpa_5563-F/Tpa_5563-R
+Tpa_7798-F/Tpa_7798-R
+Tpa_7799-F/Tpa_7799-R
+Tpa_7910-F/Tpa_7910-R
+Tpa_7805-F/Tpa_7805-R
+Tpa_7807-F/Tpa_7807-R
+Tpa_7814-F/Tpa_7814-R
+Tpa_7825-F/Tpa_7825-R
+Tpa_7848-F/Tpa_7848-R
+Tpa_2763-F/Tpa_2763-R
+Tpa_2907-F/Tpa_2907-R
+Tpa_3047-F/Tpa_3047-R
+Tpa_3197-F/Tpa_3197-R
+Tpa_3263-F/Tpa_3263-R
+Tpa_3439-F/Tpa_3439-R
+Tpa_3674-F/Tpa_3674-R
+Tpa_3795-F/Tpa_3795-R
+Tpa_3962-F/Tpa_3962-R
+Tpa_4178-F/Tpa_4178-R
+Tpa_2845-F/Tpa_2845-R
+Tpa_3055-F/Tpa_3055-R
+Tpa_3200-F/Tpa_3200-R
+Tpa_3310-F/Tpa_3310-R
+Tpa_3502-F/Tpa_3502-R
+Tpa_3676-F/Tpa_3676-R
+Tpa_3846-F/Tpa_3846-R
+Tpa_3974-F/Tpa_3974-R
+Tpa_4120-F/Tpa_4120-R
+Tpa_4209-F/Tpa_4209-R
+Tpa_4268-F/Tpa_4268-R
+Tpa_2854-F/Tpa_2854-R
+Tpa_2961-F/Tpa_2961-R
+Tpa_3063-F/Tpa_3063-R
+Tpa_3561-F/Tpa_3561-R
+Tpa_3679-F/Tpa_3679-R
+Tpa_3862-F/Tpa_3862-R
+Tpa_4020-F/Tpa_4020-R
+Tpa_4126-F/Tpa_4126-R
+Tpa_4221-F/Tpa_4221-R
+Tpa_4291-F/Tpa_4291-R
+Tpa_2856-F/Tpa_2856-R
+Tpa_2970-F/Tpa_2970-R
+Tpa_3347-F/Tpa_3347-R
+Tpa_3569-F/Tpa_3569-R
+Tpa_3684-F/Tpa_3684-R
+Tpa_3871-F/Tpa_3871-R
+Tpa_4021-F/Tpa_4021-R
+Tpa_4137-F/Tpa_4137-R
+Tpa_4230-F/Tpa_4230-R
+Tpa_4295-F/Tpa_4295-R
+Tpa_2861-F/Tpa_2861-R
+Tpa_3129-F/Tpa_3129-R
+Tpa_3248-F/Tpa_3248-R
+Tpa_3354-F/Tpa_3354-R
+Tpa_3705-F/Tpa_3705-R
+Tpa_3879-F/Tpa_3879-R
+Tpa_4022-F/Tpa_4022-R
+Tpa_4148-F/Tpa_4148-R
+Tpa_4310-F/Tpa_4310-R
+Tpa_2868-F/Tpa_2868-R
+Tpa_3004-F/Tpa_3004-R
+Tpa_3149-F/Tpa_3149-R
+Tpa_3254-F/Tpa_3254-R
+Tpa_3364-F/Tpa_3364-R
+Tpa_3583-F/Tpa_3583-R
+Tpa_3723-F/Tpa_3723-R
+Tpa_3905-F/Tpa_3905-R
+Tpa_4168-F/Tpa_4168-R
+Tpa_4245-F/Tpa_4245-R
+Tpa_4316-F/Tpa_4316-R
+Tpa_3011-F/Tpa_3011-R
+Tpa_3385-F/Tpa_3385-R
+Tpa_3616-F/Tpa_3616-R
+Tpa_3737-F/Tpa_3737-R
+Tpa_3926-F/Tpa_3926-R
+Tpa_4055-F/Tpa_4055-R
+Tpa_4246-F/Tpa_4246-R
+Tpa_4353-F/Tpa_4353-R
+Tpa_2900-F/Tpa_2900-R
+Tpa_3018-F/Tpa_3018-R
+Tpa_3193-F/Tpa_3193-R
+Tpa_3262-F/Tpa_3262-R
+Tpa_3745-F/Tpa_3745-R
+Tpa_3937-F/Tpa_3937-R
+Tpa_4077-F/Tpa_4077-R
+Tpa_4176-F/Tpa_4176-R
+Tpa_4247-F/Tpa_4247-R
+Tpa_4356-F/Tpa_4356-R
+Tpa_1357-F/Tpa_1357-R
+Tpa_1585-F/Tpa_1585-R
+Tpa_1818-F/Tpa_1818-R
+Tpa_2034-F/Tpa_2034-R
+Tpa_2157-F/Tpa_2157-R
+Tpa_2453-F/Tpa_2453-R
+Tpa_2519-F/Tpa_2519-R
+Tpa_2639-F/Tpa_2639-R
+Tpa_1359-F/Tpa_1359-R
+Tpa_1486-F/Tpa_1486-R
+Tpa_1593-F/Tpa_1593-R
+Tpa_1689-F/Tpa_1689-R
+Tpa_1831-F/Tpa_1831-R
+Tpa_1930-F/Tpa_1930-R
+Tpa_2040-F/Tpa_2040-R
+Tpa_2334-F/Tpa_2334-R
+Tpa_2458-F/Tpa_2458-R
+Tpa_2523-F/Tpa_2523-R
+Tpa_2664-F/Tpa_2664-R
+Tpa_1515-F/Tpa_1515-R
+Tpa_1606-F/Tpa_1606-R
+Tpa_1703-F/Tpa_1703-R
+Tpa_1832-F/Tpa_1832-R
+Tpa_2041-F/Tpa_2041-R
+Tpa_2180-F/Tpa_2180-R
+Tpa_2344-F/Tpa_2344-R
+Tpa_2460-F/Tpa_2460-R
+Tpa_2702-F/Tpa_2702-R
+Tpa_1394-F/Tpa_1394-R
+Tpa_1528-F/Tpa_1528-R
+Tpa_1638-F/Tpa_1638-R
+Tpa_1731-F/Tpa_1731-R
+Tpa_1843-F/Tpa_1843-R
+Tpa_1966-F/Tpa_1966-R
+Tpa_2194-F/Tpa_2194-R
+Tpa_2353-F/Tpa_2353-R
+Tpa_2470-F/Tpa_2470-R
+Tpa_1646-F/Tpa_1646-R
+Tpa_2073-F/Tpa_2073-R
+Tpa_2207-F/Tpa_2207-R
+Tpa_2483-F/Tpa_2483-R
+Tpa_2581-F/Tpa_2581-R
+Tpa_2712-F/Tpa_2712-R
+Tpa_1542-F/Tpa_1542-R
+Tpa_1774-F/Tpa_1774-R
+Tpa_1891-F/Tpa_1891-R
+Tpa_2006-F/Tpa_2006-R
+Tpa_2076-F/Tpa_2076-R
+Tpa_2254-F/Tpa_2254-R
+Tpa_2368-F/Tpa_2368-R
+Tpa_2498-F/Tpa_2498-R
+Tpa_2601-F/Tpa_2601-R
+Tpa_2734-F/Tpa_2734-R
+Tpa_1548-F/Tpa_1548-R
+Tpa_1662-F/Tpa_1662-R
+Tpa_1775-F/Tpa_1775-R
+Tpa_1896-F/Tpa_1896-R
+Tpa_2010-F/Tpa_2010-R
+Tpa_2096-F/Tpa_2096-R
+Tpa_2278-F/Tpa_2278-R
+Tpa_2412-F/Tpa_2412-R
+Tpa_2509-F/Tpa_2509-R
+Tpa_2608-F/Tpa_2608-R
+Tpa_2741-F/Tpa_2741-R
+Tpa_1443-F/Tpa_1443-R
+Tpa_1550-F/Tpa_1550-R
+Tpa_1678-F/Tpa_1678-R
+Tpa_1917-F/Tpa_1917-R
+Tpa_2021-F/Tpa_2021-R
+Tpa_2128-F/Tpa_2128-R
+Tpa_2417-F/Tpa_2417-R
+Tpa_2518-F/Tpa_2518-R
+Tpa_2636-F/Tpa_2636-R
+Tpa_2745-F/Tpa_2745-R
+Tpa_6713-F/Tpa_6713-R
+Tpa_6853-F/Tpa_6853-R
+Tpa_7080-F/Tpa_7080-R
+Tpa_7204-F/Tpa_7204-R
+Tpa_7406-F/Tpa_7406-R
+Tpa_7461-F/Tpa_7461-R
+Tpa_7586-F/Tpa_7586-R
+Tpa_7703-F/Tpa_7703-R
+Tpa_6733-F/Tpa_6733-R
+Tpa_6887-F/Tpa_6887-R
+Tpa_7082-F/Tpa_7082-R
+Tpa_7210-F/Tpa_7210-R
+Tpa_7331-F/Tpa_7331-R
+Tpa_7413-F/Tpa_7413-R
+Tpa_7477-F/Tpa_7477-R
+Tpa_7533-F/Tpa_7533-R
+Tpa_7594-F/Tpa_7594-R
+Tpa_7652-F/Tpa_7652-R
+Tpa_6768-F/Tpa_6768-R
+Tpa_7007-F/Tpa_7007-R
+Tpa_7090-F/Tpa_7090-R
+Tpa_7213-F/Tpa_7213-R
+Tpa_7417-F/Tpa_7417-R
+Tpa_7479-F/Tpa_7479-R
+Tpa_7540-F/Tpa_7540-R
+Tpa_7597-F/Tpa_7597-R
+Tpa_7653-F/Tpa_7653-R
+Tpa_6773-F/Tpa_6773-R
+Tpa_7010-F/Tpa_7010-R
+Tpa_7221-F/Tpa_7221-R
+Tpa_7348-F/Tpa_7348-R
+Tpa_7425-F/Tpa_7425-R
+Tpa_7483-F/Tpa_7483-R
+Tpa_7553-F/Tpa_7553-R
+Tpa_7657-F/Tpa_7657-R
+Tpa_7757-F/Tpa_7757-R
+Tpa_6774-F/Tpa_6774-R
+Tpa_6922-F/Tpa_6922-R
+Tpa_7018-F/Tpa_7018-R
+Tpa_7153-F/Tpa_7153-R
+Tpa_7240-F/Tpa_7240-R
+Tpa_7352-F/Tpa_7352-R
+Tpa_7447-F/Tpa_7447-R
+Tpa_7560-F/Tpa_7560-R
+Tpa_7601-F/Tpa_7601-R
+Tpa_7665-F/Tpa_7665-R
+Tpa_7764-F/Tpa_7764-R
+Tpa_6786-F/Tpa_6786-R
+Tpa_6937-F/Tpa_6937-R
+Tpa_7052-F/Tpa_7052-R
+Tpa_7157-F/Tpa_7157-R
+Tpa_7289-F/Tpa_7289-R
+Tpa_7367-F/Tpa_7367-R
+Tpa_7450-F/Tpa_7450-R
+Tpa_7566-F/Tpa_7566-R
+Tpa_7604-F/Tpa_7604-R
+Tpa_7686-F/Tpa_7686-R
+Tpa_7765-F/Tpa_7765-R
+Tpa_6814-F/Tpa_6814-R
+Tpa_6963-F/Tpa_6963-R
+Tpa_7058-F/Tpa_7058-R
+Tpa_7291-F/Tpa_7291-R
+Tpa_7375-F/Tpa_7375-R
+Tpa_7452-F/Tpa_7452-R
+Tpa_7495-F/Tpa_7495-R
+Tpa_7567-F/Tpa_7567-R
+Tpa_7605-F/Tpa_7605-R
+Tpa_7690-F/Tpa_7690-R
+Tpa_7769-F/Tpa_7769-R
+Tpa_6816-F/Tpa_6816-R
+Tpa_6973-F/Tpa_6973-R
+Tpa_7062-F/Tpa_7062-R
+Tpa_7201-F/Tpa_7201-R
+Tpa_7293-F/Tpa_7293-R
+Tpa_7454-F/Tpa_7454-R
+Tpa_7571-F/Tpa_7571-R
+Tpa_7615-F/Tpa_7615-R
+Tpa_7691-F/Tpa_7691-R
+Tpa_7772-F/Tpa_7772-R
+Tpa_0010-F/Tpa_0010-R
+Tpa_0186-F/Tpa_0186-R
+Tpa_0342-F/Tpa_0342-R
+Tpa_0427-F/Tpa_0427-R
+Tpa_0500-F/Tpa_0500-R
+Tpa_0743-F/Tpa_0743-R
+Tpa_0868-F/Tpa_0868-R
+Tpa_0929-F/Tpa_0929-R
+Tpa_1042-F/Tpa_1042-R
+Tpa_0012-F/Tpa_0012-R
+Tpa_0215-F/Tpa_0215-R
+Tpa_0346-F/Tpa_0346-R
+Tpa_0429-F/Tpa_0429-R
+Tpa_0540-F/Tpa_0540-R
+Tpa_0650-F/Tpa_0650-R
+Tpa_0763-F/Tpa_0763-R
+Tpa_0882-F/Tpa_0882-R
+Tpa_0936-F/Tpa_0936-R
+Tpa_1136-F/Tpa_1136-R
+Tpa_1304-F/Tpa_1304-R
+Tpa_0024-F/Tpa_0024-R
+Tpa_0226-F/Tpa_0226-R
+Tpa_0358-F/Tpa_0358-R
+Tpa_0438-F/Tpa_0438-R
+Tpa_0547-F/Tpa_0547-R
+Tpa_0768-F/Tpa_0768-R
+Tpa_0888-F/Tpa_0888-R
+Tpa_0953-F/Tpa_0953-R
+Tpa_1144-F/Tpa_1144-R
+Tpa_1305-F/Tpa_1305-R
+Tpa_0035-F/Tpa_0035-R
+Tpa_0228-F/Tpa_0228-R
+Tpa_0366-F/Tpa_0366-R
+Tpa_0439-F/Tpa_0439-R
+Tpa_0556-F/Tpa_0556-R
+Tpa_0671-F/Tpa_0671-R
+Tpa_0970-F/Tpa_0970-R
+Tpa_1071-F/Tpa_1071-R
+Tpa_1154-F/Tpa_1154-R
+Tpa_1310-F/Tpa_1310-R
+Tpa_0037-F/Tpa_0037-R
+Tpa_0263-F/Tpa_0263-R
+Tpa_0367-F/Tpa_0367-R
+Tpa_0569-F/Tpa_0569-R
+Tpa_0678-F/Tpa_0678-R
+Tpa_0895-F/Tpa_0895-R
+Tpa_0973-F/Tpa_0973-R
+Tpa_1077-F/Tpa_1077-R
+Tpa_1156-F/Tpa_1156-R
+Tpa_1312-F/Tpa_1312-R
+Tpa_0095-F/Tpa_0095-R
+Tpa_0269-F/Tpa_0269-R
+Tpa_0371-F/Tpa_0371-R
+Tpa_0826-F/Tpa_0826-R
+Tpa_0905-F/Tpa_0905-R
+Tpa_0979-F/Tpa_0979-R
+Tpa_1082-F/Tpa_1082-R
+Tpa_1187-F/Tpa_1187-R
+Tpa_1320-F/Tpa_1320-R
+Tpa_0151-F/Tpa_0151-R
+Tpa_0272-F/Tpa_0272-R
+Tpa_0395-F/Tpa_0395-R
+Tpa_0474-F/Tpa_0474-R
+Tpa_0592-F/Tpa_0592-R
+Tpa_1007-F/Tpa_1007-R
+Tpa_1098-F/Tpa_1098-R
+Tpa_1268-F/Tpa_1268-R
+Tpa_0183-F/Tpa_0183-R
+Tpa_0301-F/Tpa_0301-R
+Tpa_0409-F/Tpa_0409-R
+Tpa_0492-F/Tpa_0492-R
+Tpa_0730-F/Tpa_0730-R
+Tpa_0866-F/Tpa_0866-R
+Tpa_0912-F/Tpa_0912-R
+Tpa_1022-F/Tpa_1022-R
+Tpa_1112-F/Tpa_1112-R
+Tpa_1290-F/Tpa_1290-R
+Tpa_1341-F/Tpa_1341-R
+476 of 476 amplicons not found in genome (with length <=500)
+Longest amplicon found: 0 bp
+0 overlaps found
+This report has also been written to overlap-report-3.txt (1 second)
+SOME PRIMERS WERE NOT FOUND: see start of the above.
+Possible causes:
+  - Mistakes in the primer file?
+  - Wrong reference genome?
+  - Shouldn't be ignoring "variant" chromosome names in reference genome?
+  - Trying to use mRNA primers on a complete genome?
+    (If using mRNA, you'll need an exon-only version of the genome)
+Precalculating dG... done (1 second)
+Preliminary pooling by threshold...
+Computer suggestion is only 1 pool.
+Do you still want to divide into multiple pools? (y/n): n
+
+OK, I'll forget about those primers.
+You have answered 32 questions.  Well done :-)
+Would you like another go? (y/n): y
+
+Please enter the name of the primers file to read.
+I'm expecting a text file in multiple-sequence FASTA format;
+it is allowed to use degenerate bases.
+Names of amplicons' primers should end with F or R, and otherwise match.
+(Optionally include Taq probes etc ending with P/Q/etc.
+All names differing in only the last letter will be kept in the same pool.
+To force a pool choice, put @2: at start of primer name for pool 2.)
+Optionally include tags to apply to all primers: >tagF and >tagR
+(you can change these mid-file if you want to vary your tags)
+Do you want to find the file in Windows instead of typing it here? (y/n): y
+
+OK, I'm starting the Windows file finder.
+If you don't see it, check BEHIND this window
+(some versions of Windows don't put it in front; blame Microsoft not me)
+
+Successfully opened C:\Users\Madison.Betts\Downloads\all_primers_cleaned.fasta
+952 primers + 0 tags
+Shortest primer length is 16 bases; longest is 28
+To sort by deltaG, I'll need temperature and concentration settings.
+Or we can skip it and use score (faster and simpler but less accurate).
+Do you want to use deltaG? (y/n): y
+
+OK, please enter the deltaG settings:
+deltaG temperature (at annealing e.g. 45): 65
+
+Is that C ? (y/n): y
+
+Magnesium concentration mM/L (0 for no correction): 0
+
+Monovalent cation (e.g. sodium) concentration mM/L (e.g. 50): 3
+
+dNTP concentration mM/L (0 for no correction): .25
+
+Shall I count how many pairs have what deltaG range? (y/n): y
+
+OK, just a sec...
+Precalculating dG... done (1 second)
+ 0.0    453627   (score 0-22)
+-0.5    1        (score 4)
+
+Do you want to save this to a file? (y/n): y
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+File name: deltag2
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+That file already exists.  Are you sure you want to overwrite it? (y/n): y
+
+Precalculating dG... done (1 second)
+Do you want to see the highest bonds of the whole file? (y/n): y
+
+What dG threshold shall we go for? 9
+
+You entered a positive number.  Shall I negate it? (y/n): y
+
+Do you want to see the results on the screen now?
+(Answer 'no' if you want to save them to a file instead.)
+Show on screen? (y/n): n
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\
+Name of new results file: output2
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+That file already exists.  Are you sure you want to overwrite it? (y/n): y
+
+Sorting... done (1 second)
+Outputting... done (1 second)
+Do you want to try another threshold? (y/n): n
+
+Shall I split this into pools for you? (y/n): y
+
+Shall I check the amplicons for overlaps in the genome? (y/n): y
+
+OK, I need to see a genome file in .2bit or .fa format.
+You might be able to find an appropriate file at
+http://hgdownload.cse.ucsc.edu/downloads.html
+Would you like me to point your browser there? (y/n): y
+
+I've tried to open a browser so you can download a file like hg38.2bit
+If the browser doesn't open, please open one yourself and go to
+http://hgdownload.cse.ucsc.edu/downloads.html
+Once downloaded, please tell me where you put it.
+Do you want to find the file in Windows instead of typing it here? (y/n): y
+
+OK, I'm starting the Windows file finder.
+If you don't see it, check BEHIND this window
+(some versions of Windows don't put it in front; blame Microsoft not me)
+
+Successfully opened C:\Users\Madison.Betts\Downloads\ncbi_dataset\ncbi_dataset\data\GCA_023658055.1\GCA_023658055.1_Tpac_2.0_genomic.fna
+Do you want me to ignore variant chromosomes
+i.e. sequences with _ or - in their names? (y/n): y
+
+Please enter the maximum amplicon length (bp), for example 220
+
+Maximum amplicon length: 500
+
+Do you want to write a file of amplicons for MultiPLX as well? (y/n): y
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\ncbi_dataset\ncbi_dataset\data\GCA_023658055.1\
+File name for all amplicon locations: ampliconlocation
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+476 primer-sets found
+Reading genome from FASTA file
+(slower than .2bit; may take time)
+CM042852.1
+CM042853.1
+CM042854.1
+CM042855.1
+CM042856.1
+CM042857.1
+CM042858.1
+CM042859.1
+CM042860.1
+CM042861.1
+CM042862.1
+CM042863.1
+CM042864.1
+CM042865.1
+CM042866.1
+CM042867.1
+CM042868.1
+CM042869.1
+CM042870.1
+CM042871.1
+CM042872.1
+CM042873.1
+CM042874.1
+CM042875.1
+CM042876.1
+CM042877.1
+CM042878.1
+CM042879.1
+JAMDYH010000029.1
+JAMDYH010000030.1
+JAMDYH010000031.1
+JAMDYH010000032.1
+JAMDYH010000033.1
+JAMDYH010000034.1
+JAMDYH010000035.1
+JAMDYH010000036.1
+JAMDYH010000037.1
+JAMDYH010000038.1
+JAMDYH010000039.1
+JAMDYH010000040.1
+JAMDYH010000041.1
+JAMDYH010000042.1
+JAMDYH010000043.1
+JAMDYH010000044.1
+JAMDYH010000045.1
+JAMDYH010000046.1
+JAMDYH010000047.1
+JAMDYH010000048.1
+JAMDYH010000049.1
+JAMDYH010000050.1
+JAMDYH010000051.1
+JAMDYH010000052.1
+JAMDYH010000053.1
+JAMDYH010000054.1
+JAMDYH010000055.1
+JAMDYH010000056.1
+JAMDYH010000057.1
+JAMDYH010000058.1
+JAMDYH010000059.1
+JAMDYH010000060.1
+JAMDYH010000061.1
+JAMDYH010000062.1
+JAMDYH010000063.1
+JAMDYH010000064.1
+JAMDYH010000065.1
+JAMDYH010000066.1
+JAMDYH010000067.1
+JAMDYH010000068.1
+JAMDYH010000069.1
+JAMDYH010000070.1
+JAMDYH010000071.1
+JAMDYH010000072.1
+JAMDYH010000073.1
+JAMDYH010000074.1
+JAMDYH010000075.1
+JAMDYH010000076.1
+JAMDYH010000077.1
+JAMDYH010000078.1
+JAMDYH010000079.1
+JAMDYH010000080.1
+JAMDYH010000081.1
+JAMDYH010000082.1
+JAMDYH010000083.1
+JAMDYH010000084.1
+JAMDYH010000085.1
+JAMDYH010000086.1
+JAMDYH010000087.1
+JAMDYH010000088.1
+JAMDYH010000089.1
+JAMDYH010000090.1
+JAMDYH010000091.1
+JAMDYH010000092.1
+JAMDYH010000093.1
+JAMDYH010000094.1
+JAMDYH010000095.1
+JAMDYH010000096.1
+JAMDYH010000097.1
+JAMDYH010000098.1
+JAMDYH010000099.1
+JAMDYH010000100.1
+JAMDYH010000101.1
+JAMDYH010000102.1
+JAMDYH010000103.1
+JAMDYH010000104.1
+JAMDYH010000105.1
+JAMDYH010000106.1
+JAMDYH010000107.1
+JAMDYH010000108.1
+JAMDYH010000109.1
+JAMDYH010000110.1
+JAMDYH010000111.1
+JAMDYH010000112.1
+JAMDYH010000113.1
+JAMDYH010000114.1
+JAMDYH010000115.1
+JAMDYH010000116.1
+JAMDYH010000117.1
+JAMDYH010000118.1
+JAMDYH010000119.1
+JAMDYH010000120.1
+JAMDYH010000121.1
+JAMDYH010000122.1
+JAMDYH010000123.1
+JAMDYH010000124.1
+JAMDYH010000125.1
+JAMDYH010000126.1
+JAMDYH010000127.1
+JAMDYH010000128.1
+JAMDYH010000129.1
+JAMDYH010000130.1
+JAMDYH010000131.1
+JAMDYH010000132.1
+JAMDYH010000133.1
+JAMDYH010000134.1
+JAMDYH010000135.1
+JAMDYH010000136.1
+JAMDYH010000137.1
+JAMDYH010000138.1
+JAMDYH010000139.1
+JAMDYH010000140.1
+JAMDYH010000141.1
+JAMDYH010000142.1
+JAMDYH010000143.1
+JAMDYH010000144.1
+JAMDYH010000145.1
+JAMDYH010000146.1
+JAMDYH010000147.1
+JAMDYH010000148.1
+JAMDYH010000149.1
+JAMDYH010000150.1
+JAMDYH010000151.1
+JAMDYH010000152.1
+JAMDYH010000153.1
+JAMDYH010000154.1
+JAMDYH010000155.1
+JAMDYH010000156.1
+JAMDYH010000157.1
+JAMDYH010000158.1
+JAMDYH010000159.1
+JAMDYH010000160.1
+JAMDYH010000161.1
+JAMDYH010000162.1
+JAMDYH010000163.1
+JAMDYH010000164.1
+JAMDYH010000165.1
+JAMDYH010000166.1
+JAMDYH010000167.1
+JAMDYH010000168.1
+JAMDYH010000169.1
+JAMDYH010000170.1
+JAMDYH010000171.1
+JAMDYH010000172.1
+JAMDYH010000173.1
+JAMDYH010000174.1
+JAMDYH010000175.1
+JAMDYH010000176.1
+JAMDYH010000177.1
+JAMDYH010000178.1
+JAMDYH010000179.1
+JAMDYH010000180.1
+JAMDYH010000181.1
+JAMDYH010000182.1
+JAMDYH010000183.1
+JAMDYH010000184.1
+JAMDYH010000185.1
+JAMDYH010000186.1
+JAMDYH010000187.1
+JAMDYH010000188.1
+JAMDYH010000189.1
+JAMDYH010000190.1
+JAMDYH010000191.1
+JAMDYH010000192.1
+JAMDYH010000193.1
+JAMDYH010000194.1
+JAMDYH010000195.1
+JAMDYH010000196.1
+JAMDYH010000197.1
+JAMDYH010000198.1
+JAMDYH010000199.1
+JAMDYH010000200.1
+JAMDYH010000201.1
+JAMDYH010000202.1
+JAMDYH010000203.1
+JAMDYH010000204.1
+JAMDYH010000205.1
+JAMDYH010000206.1
+JAMDYH010000207.1
+JAMDYH010000208.1
+JAMDYH010000209.1
+JAMDYH010000210.1
+JAMDYH010000211.1
+JAMDYH010000212.1
+JAMDYH010000213.1
+JAMDYH010000214.1
+JAMDYH010000215.1
+JAMDYH010000216.1
+JAMDYH010000217.1
+JAMDYH010000218.1
+JAMDYH010000219.1
+JAMDYH010000220.1
+JAMDYH010000221.1
+JAMDYH010000222.1
+JAMDYH010000223.1
+JAMDYH010000224.1
+JAMDYH010000225.1
+JAMDYH010000226.1
+JAMDYH010000227.1
+JAMDYH010000228.1
+JAMDYH010000229.1
+JAMDYH010000230.1
+JAMDYH010000231.1
+JAMDYH010000232.1
+JAMDYH010000233.1
+JAMDYH010000234.1
+JAMDYH010000235.1
+JAMDYH010000236.1
+JAMDYH010000237.1
+JAMDYH010000238.1
+JAMDYH010000239.1
+JAMDYH010000240.1
+JAMDYH010000241.1
+JAMDYH010000242.1
+JAMDYH010000243.1
+JAMDYH010000244.1
+JAMDYH010000245.1
+JAMDYH010000246.1
+JAMDYH010000247.1
+JAMDYH010000248.1
+JAMDYH010000249.1
+JAMDYH010000250.1
+JAMDYH010000251.1
+JAMDYH010000252.1
+JAMDYH010000253.1
+JAMDYH010000254.1
+JAMDYH010000255.1
+JAMDYH010000256.1
+JAMDYH010000257.1
+JAMDYH010000258.1
+JAMDYH010000259.1
+JAMDYH010000260.1
+JAMDYH010000261.1
+JAMDYH010000262.1
+JAMDYH010000263.1
+JAMDYH010000264.1
+JAMDYH010000265.1
+JAMDYH010000266.1
+JAMDYH010000267.1
+JAMDYH010000268.1
+JAMDYH010000269.1
+JAMDYH010000270.1
+JAMDYH010000271.1
+JAMDYH010000272.1
+JAMDYH010000273.1
+JAMDYH010000274.1
+JAMDYH010000275.1
+JAMDYH010000276.1
+JAMDYH010000277.1
+JAMDYH010000278.1
+JAMDYH010000279.1
+JAMDYH010000280.1
+JAMDYH010000281.1
+JAMDYH010000282.1
+JAMDYH010000283.1
+JAMDYH010000284.1
+JAMDYH010000285.1
+JAMDYH010000286.1
+JAMDYH010000287.1
+JAMDYH010000288.1
+JAMDYH010000289.1
+JAMDYH010000290.1
+JAMDYH010000291.1
+JAMDYH010000292.1
+JAMDYH010000293.1
+JAMDYH010000294.1
+JAMDYH010000295.1
+JAMDYH010000296.1
+JAMDYH010000297.1
+JAMDYH010000298.1
+JAMDYH010000299.1
+JAMDYH010000300.1
+JAMDYH010000301.1
+JAMDYH010000302.1
+JAMDYH010000303.1
+JAMDYH010000304.1
+JAMDYH010000305.1
+JAMDYH010000306.1
+JAMDYH010000307.1
+JAMDYH010000308.1
+JAMDYH010000309.1
+JAMDYH010000310.1
+JAMDYH010000311.1
+JAMDYH010000312.1
+JAMDYH010000313.1
+JAMDYH010000314.1
+JAMDYH010000315.1
+JAMDYH010000316.1
+JAMDYH010000317.1
+JAMDYH010000318.1
+JAMDYH010000319.1
+JAMDYH010000320.1
+JAMDYH010000321.1
+JAMDYH010000322.1
+JAMDYH010000323.1
+JAMDYH010000324.1
+JAMDYH010000325.1
+JAMDYH010000326.1
+JAMDYH010000327.1
+JAMDYH010000328.1
+JAMDYH010000329.1
+JAMDYH010000330.1
+JAMDYH010000331.1
+JAMDYH010000332.1
+JAMDYH010000333.1
+JAMDYH010000334.1
+JAMDYH010000335.1
+JAMDYH010000336.1
+JAMDYH010000337.1
+JAMDYH010000338.1
+JAMDYH010000339.1
+JAMDYH010000340.1
+JAMDYH010000341.1
+JAMDYH010000342.1
+JAMDYH010000343.1
+JAMDYH010000344.1
+JAMDYH010000345.1
+JAMDYH010000346.1
+JAMDYH010000347.1
+JAMDYH010000348.1
+JAMDYH010000349.1
+JAMDYH010000350.1
+JAMDYH010000351.1
+JAMDYH010000352.1
+JAMDYH010000353.1
+JAMDYH010000354.1
+JAMDYH010000355.1
+JAMDYH010000356.1
+JAMDYH010000357.1
+JAMDYH010000358.1
+JAMDYH010000359.1
+JAMDYH010000360.1
+JAMDYH010000361.1
+JAMDYH010000362.1
+JAMDYH010000363.1
+JAMDYH010000364.1
+JAMDYH010000365.1
+JAMDYH010000366.1
+JAMDYH010000367.1
+JAMDYH010000368.1
+JAMDYH010000369.1
+JAMDYH010000370.1
+JAMDYH010000371.1
+JAMDYH010000372.1
+JAMDYH010000373.1
+JAMDYH010000374.1
+JAMDYH010000375.1
+JAMDYH010000376.1
+JAMDYH010000377.1
+JAMDYH010000378.1
+JAMDYH010000379.1
+JAMDYH010000380.1
+JAMDYH010000381.1
+JAMDYH010000382.1
+JAMDYH010000383.1
+JAMDYH010000384.1
+JAMDYH010000385.1
+JAMDYH010000386.1
+JAMDYH010000387.1
+JAMDYH010000388.1
+JAMDYH010000389.1
+JAMDYH010000390.1
+JAMDYH010000391.1
+JAMDYH010000392.1
+JAMDYH010000393.1
+JAMDYH010000394.1
+JAMDYH010000395.1
+JAMDYH010000396.1
+JAMDYH010000397.1
+JAMDYH010000398.1
+JAMDYH010000399.1
+JAMDYH010000400.1
+JAMDYH010000401.1
+JAMDYH010000402.1
+JAMDYH010000403.1
+JAMDYH010000404.1
+JAMDYH010000405.1
+JAMDYH010000406.1
+JAMDYH010000407.1
+JAMDYH010000408.1
+JAMDYH010000409.1
+JAMDYH010000410.1
+JAMDYH010000411.1
+JAMDYH010000412.1
+JAMDYH010000413.1
+JAMDYH010000414.1
+JAMDYH010000415.1
+JAMDYH010000416.1
+JAMDYH010000417.1
+JAMDYH010000418.1
+JAMDYH010000419.1
+JAMDYH010000420.1
+JAMDYH010000421.1
+JAMDYH010000422.1
+JAMDYH010000423.1
+JAMDYH010000424.1
+JAMDYH010000425.1
+JAMDYH010000426.1
+JAMDYH010000427.1
+JAMDYH010000428.1
+JAMDYH010000429.1
+JAMDYH010000430.1
+JAMDYH010000431.1
+JAMDYH010000432.1
+JAMDYH010000433.1
+JAMDYH010000434.1
+JAMDYH010000435.1
+JAMDYH010000436.1
+JAMDYH010000437.1
+JAMDYH010000438.1
+JAMDYH010000439.1
+JAMDYH010000440.1
+JAMDYH010000441.1
+JAMDYH010000442.1
+JAMDYH010000443.1
+JAMDYH010000444.1
+JAMDYH010000445.1
+JAMDYH010000446.1
+JAMDYH010000447.1
+JAMDYH010000448.1
+JAMDYH010000449.1
+JAMDYH010000450.1
+JAMDYH010000451.1
+JAMDYH010000452.1
+JAMDYH010000453.1
+JAMDYH010000454.1
+JAMDYH010000455.1
+JAMDYH010000456.1
+JAMDYH010000457.1
+JAMDYH010000458.1
+JAMDYH010000459.1
+JAMDYH010000460.1
+JAMDYH010000461.1
+JAMDYH010000462.1
+JAMDYH010000463.1
+JAMDYH010000464.1
+JAMDYH010000465.1
+JAMDYH010000466.1
+JAMDYH010000467.1
+JAMDYH010000468.1
+JAMDYH010000469.1
+JAMDYH010000470.1
+JAMDYH010000471.1
+JAMDYH010000472.1
+JAMDYH010000473.1
+JAMDYH010000474.1
+JAMDYH010000475.1
+JAMDYH010000476.1
+JAMDYH010000477.1
+JAMDYH010000478.1
+JAMDYH010000479.1
+JAMDYH010000480.1
+JAMDYH010000481.1
+JAMDYH010000482.1
+JAMDYH010000483.1
+JAMDYH010000484.1
+JAMDYH010000485.1
+JAMDYH010000486.1
+JAMDYH010000487.1
+JAMDYH010000488.1
+JAMDYH010000489.1
+JAMDYH010000490.1
+JAMDYH010000491.1
+JAMDYH010000492.1
+JAMDYH010000493.1
+JAMDYH010000494.1
+JAMDYH010000495.1
+JAMDYH010000496.1
+JAMDYH010000497.1
+JAMDYH010000498.1
+JAMDYH010000499.1
+JAMDYH010000500.1
+JAMDYH010000501.1
+JAMDYH010000502.1
+JAMDYH010000503.1
+JAMDYH010000504.1
+JAMDYH010000505.1
+JAMDYH010000506.1
+JAMDYH010000507.1
+JAMDYH010000508.1
+JAMDYH010000509.1
+JAMDYH010000510.1
+JAMDYH010000511.1
+JAMDYH010000512.1
+JAMDYH010000513.1
+JAMDYH010000514.1
+JAMDYH010000515.1
+JAMDYH010000516.1
+JAMDYH010000517.1
+JAMDYH010000518.1
+JAMDYH010000519.1
+JAMDYH010000520.1
+JAMDYH010000521.1
+JAMDYH010000522.1
+JAMDYH010000523.1
+JAMDYH010000524.1
+JAMDYH010000525.1
+JAMDYH010000526.1
+JAMDYH010000527.1
+JAMDYH010000528.1
+JAMDYH010000529.1
+JAMDYH010000530.1
+JAMDYH010000531.1
+JAMDYH010000532.1
+JAMDYH010000533.1
+JAMDYH010000534.1
+JAMDYH010000535.1
+JAMDYH010000536.1
+JAMDYH010000537.1
+JAMDYH010000538.1
+JAMDYH010000539.1
+JAMDYH010000540.1
+JAMDYH010000541.1
+JAMDYH010000542.1
+JAMDYH010000543.1
+JAMDYH010000544.1
+JAMDYH010000545.1
+JAMDYH010000546.1
+JAMDYH010000547.1
+JAMDYH010000548.1
+JAMDYH010000549.1
+JAMDYH010000550.1
+JAMDYH010000551.1
+JAMDYH010000552.1
+JAMDYH010000553.1
+JAMDYH010000554.1
+JAMDYH010000555.1
+JAMDYH010000556.1
+JAMDYH010000557.1
+JAMDYH010000558.1
+JAMDYH010000559.1
+JAMDYH010000560.1
+JAMDYH010000561.1
+JAMDYH010000562.1
+JAMDYH010000563.1
+JAMDYH010000564.1
+JAMDYH010000565.1
+JAMDYH010000566.1
+JAMDYH010000567.1
+JAMDYH010000568.1
+JAMDYH010000569.1
+JAMDYH010000570.1
+JAMDYH010000571.1
+JAMDYH010000572.1
+JAMDYH010000573.1
+JAMDYH010000574.1
+JAMDYH010000575.1
+JAMDYH010000576.1
+JAMDYH010000577.1
+JAMDYH010000578.1
+JAMDYH010000579.1
+JAMDYH010000580.1
+JAMDYH010000581.1
+JAMDYH010000582.1
+JAMDYH010000583.1
+JAMDYH010000584.1
+JAMDYH010000585.1
+JAMDYH010000586.1
+JAMDYH010000587.1
+JAMDYH010000588.1
+JAMDYH010000589.1
+JAMDYH010000590.1
+JAMDYH010000591.1
+JAMDYH010000592.1
+JAMDYH010000593.1
+JAMDYH010000594.1
+JAMDYH010000595.1
+JAMDYH010000596.1
+JAMDYH010000597.1
+JAMDYH010000598.1
+JAMDYH010000599.1
+JAMDYH010000600.1
+JAMDYH010000601.1
+JAMDYH010000602.1
+JAMDYH010000603.1
+JAMDYH010000604.1
+JAMDYH010000605.1
+JAMDYH010000606.1
+JAMDYH010000607.1
+JAMDYH010000608.1
+JAMDYH010000609.1
+JAMDYH010000610.1
+JAMDYH010000611.1
+JAMDYH010000612.1
+JAMDYH010000613.1
+JAMDYH010000614.1
+JAMDYH010000615.1
+JAMDYH010000616.1
+JAMDYH010000617.1
+JAMDYH010000618.1
+JAMDYH010000619.1
+JAMDYH010000620.1
+JAMDYH010000621.1
+JAMDYH010000622.1
+JAMDYH010000623.1
+JAMDYH010000624.1
+JAMDYH010000625.1
+JAMDYH010000626.1
+JAMDYH010000627.1
+JAMDYH010000628.1
+JAMDYH010000629.1
+JAMDYH010000630.1
+JAMDYH010000631.1
+JAMDYH010000632.1
+JAMDYH010000633.1
+JAMDYH010000634.1
+JAMDYH010000635.1
+JAMDYH010000636.1
+JAMDYH010000637.1
+JAMDYH010000638.1
+JAMDYH010000639.1
+JAMDYH010000640.1
+JAMDYH010000641.1
+JAMDYH010000642.1
+JAMDYH010000643.1
+JAMDYH010000644.1
+JAMDYH010000645.1
+JAMDYH010000646.1
+JAMDYH010000647.1
+JAMDYH010000648.1
+JAMDYH010000649.1
+JAMDYH010000650.1
+JAMDYH010000651.1
+JAMDYH010000652.1
+JAMDYH010000653.1
+JAMDYH010000654.1
+JAMDYH010000655.1
+JAMDYH010000656.1
+JAMDYH010000657.1
+JAMDYH010000658.1
+JAMDYH010000659.1
+JAMDYH010000660.1
+JAMDYH010000661.1
+JAMDYH010000662.1
+JAMDYH010000663.1
+JAMDYH010000664.1
+JAMDYH010000665.1
+JAMDYH010000666.1
+JAMDYH010000667.1
+JAMDYH010000668.1
+JAMDYH010000669.1
+JAMDYH010000670.1
+JAMDYH010000671.1
+JAMDYH010000672.1
+JAMDYH010000673.1
+JAMDYH010000674.1
+JAMDYH010000675.1
+JAMDYH010000676.1
+JAMDYH010000677.1
+JAMDYH010000678.1
+JAMDYH010000679.1
+JAMDYH010000680.1
+JAMDYH010000681.1
+JAMDYH010000682.1
+JAMDYH010000683.1
+JAMDYH010000684.1
+JAMDYH010000685.1
+JAMDYH010000686.1
+JAMDYH010000687.1
+JAMDYH010000688.1
+JAMDYH010000689.1
+JAMDYH010000690.1
+JAMDYH010000691.1
+JAMDYH010000692.1
+JAMDYH010000693.1
+JAMDYH010000694.1
+JAMDYH010000695.1
+JAMDYH010000696.1
+JAMDYH010000697.1
+JAMDYH010000698.1
+JAMDYH010000699.1
+JAMDYH010000700.1
+JAMDYH010000701.1
+JAMDYH010000702.1
+JAMDYH010000703.1
+JAMDYH010000704.1
+JAMDYH010000705.1
+JAMDYH010000706.1
+JAMDYH010000707.1
+JAMDYH010000708.1
+JAMDYH010000709.1
+JAMDYH010000710.1
+JAMDYH010000711.1
+JAMDYH010000712.1
+JAMDYH010000713.1
+JAMDYH010000714.1
+JAMDYH010000715.1
+JAMDYH010000716.1
+JAMDYH010000717.1
+JAMDYH010000718.1
+JAMDYH010000719.1
+JAMDYH010000720.1
+JAMDYH010000721.1
+JAMDYH010000722.1
+JAMDYH010000723.1
+JAMDYH010000724.1
+JAMDYH010000725.1
+JAMDYH010000726.1
+JAMDYH010000727.1
+JAMDYH010000728.1
+JAMDYH010000729.1
+JAMDYH010000730.1
+JAMDYH010000731.1
+JAMDYH010000732.1
+JAMDYH010000733.1
+JAMDYH010000734.1
+JAMDYH010000735.1
+JAMDYH010000736.1
+JAMDYH010000737.1
+JAMDYH010000738.1
+JAMDYH010000739.1
+JAMDYH010000740.1
+JAMDYH010000741.1
+JAMDYH010000742.1
+JAMDYH010000743.1
+JAMDYH010000744.1
+JAMDYH010000745.1
+JAMDYH010000746.1
+JAMDYH010000747.1
+JAMDYH010000748.1
+JAMDYH010000749.1
+JAMDYH010000750.1
+JAMDYH010000751.1
+JAMDYH010000752.1
+JAMDYH010000753.1
+JAMDYH010000754.1
+JAMDYH010000755.1
+JAMDYH010000756.1
+JAMDYH010000757.1
+JAMDYH010000758.1
+JAMDYH010000759.1
+JAMDYH010000760.1
+JAMDYH010000761.1
+JAMDYH010000762.1
+JAMDYH010000763.1
+JAMDYH010000764.1
+JAMDYH010000765.1
+JAMDYH010000766.1
+JAMDYH010000767.1
+JAMDYH010000768.1
+JAMDYH010000769.1
+JAMDYH010000770.1
+JAMDYH010000771.1
+JAMDYH010000772.1
+JAMDYH010000773.1
+JAMDYH010000774.1
+JAMDYH010000775.1
+JAMDYH010000776.1
+JAMDYH010000777.1
+JAMDYH010000778.1
+JAMDYH010000779.1
+JAMDYH010000780.1
+JAMDYH010000781.1
+JAMDYH010000782.1
+JAMDYH010000783.1
+JAMDYH010000784.1
+JAMDYH010000785.1
+JAMDYH010000786.1
+JAMDYH010000787.1
+JAMDYH010000788.1
+JAMDYH010000789.1
+JAMDYH010000790.1
+JAMDYH010000791.1
+JAMDYH010000792.1
+JAMDYH010000793.1
+JAMDYH010000794.1
+JAMDYH010000795.1
+JAMDYH010000796.1
+JAMDYH010000797.1
+JAMDYH010000798.1
+JAMDYH010000799.1
+JAMDYH010000800.1
+JAMDYH010000801.1
+JAMDYH010000802.1
+JAMDYH010000803.1
+JAMDYH010000804.1
+JAMDYH010000805.1
+JAMDYH010000806.1
+JAMDYH010000807.1
+JAMDYH010000808.1
+JAMDYH010000809.1
+JAMDYH010000810.1
+JAMDYH010000811.1
+JAMDYH010000812.1
+JAMDYH010000813.1
+JAMDYH010000814.1
+JAMDYH010000815.1
+JAMDYH010000816.1
+JAMDYH010000817.1
+JAMDYH010000818.1
+JAMDYH010000819.1
+JAMDYH010000820.1
+JAMDYH010000821.1
+JAMDYH010000822.1
+JAMDYH010000823.1
+JAMDYH010000824.1
+JAMDYH010000825.1
+JAMDYH010000826.1
+JAMDYH010000827.1
+JAMDYH010000828.1
+JAMDYH010000829.1
+JAMDYH010000830.1
+JAMDYH010000831.1
+JAMDYH010000832.1
+JAMDYH010000833.1
+JAMDYH010000834.1
+JAMDYH010000835.1
+JAMDYH010000836.1
+JAMDYH010000837.1
+JAMDYH010000838.1
+JAMDYH010000839.1
+JAMDYH010000840.1
+JAMDYH010000841.1
+JAMDYH010000842.1
+JAMDYH010000843.1
+JAMDYH010000844.1
+JAMDYH010000845.1
+JAMDYH010000846.1
+JAMDYH010000847.1
+JAMDYH010000848.1
+JAMDYH010000849.1
+JAMDYH010000850.1
+JAMDYH010000851.1
+JAMDYH010000852.1
+JAMDYH010000853.1
+JAMDYH010000854.1
+JAMDYH010000855.1
+JAMDYH010000856.1
+JAMDYH010000857.1
+JAMDYH010000858.1
+JAMDYH010000859.1
+JAMDYH010000860.1
+JAMDYH010000861.1
+JAMDYH010000862.1
+JAMDYH010000863.1
+JAMDYH010000864.1
+JAMDYH010000865.1
+JAMDYH010000866.1
+JAMDYH010000867.1
+JAMDYH010000868.1
+JAMDYH010000869.1
+JAMDYH010000870.1
+JAMDYH010000871.1
+JAMDYH010000872.1
+JAMDYH010000873.1
+JAMDYH010000874.1
+JAMDYH010000875.1
+JAMDYH010000876.1
+JAMDYH010000877.1
+JAMDYH010000878.1
+JAMDYH010000879.1
+JAMDYH010000880.1
+JAMDYH010000881.1
+JAMDYH010000882.1
+JAMDYH010000883.1
+JAMDYH010000884.1
+JAMDYH010000885.1
+JAMDYH010000886.1
+JAMDYH010000887.1
+JAMDYH010000888.1
+JAMDYH010000889.1
+JAMDYH010000890.1
+JAMDYH010000891.1
+JAMDYH010000892.1
+JAMDYH010000893.1
+JAMDYH010000894.1
+JAMDYH010000895.1
+JAMDYH010000896.1
+JAMDYH010000897.1
+JAMDYH010000898.1
+JAMDYH010000899.1
+JAMDYH010000900.1
+JAMDYH010000901.1
+JAMDYH010000902.1
+JAMDYH010000903.1
+JAMDYH010000904.1
+JAMDYH010000905.1
+JAMDYH010000906.1
+JAMDYH010000907.1
+JAMDYH010000908.1
+JAMDYH010000909.1
+JAMDYH010000910.1
+JAMDYH010000911.1
+JAMDYH010000912.1
+JAMDYH010000913.1
+JAMDYH010000914.1
+JAMDYH010000915.1
+JAMDYH010000916.1
+JAMDYH010000917.1
+JAMDYH010000918.1
+JAMDYH010000919.1
+JAMDYH010000920.1
+JAMDYH010000921.1
+JAMDYH010000922.1
+JAMDYH010000923.1
+JAMDYH010000924.1
+JAMDYH010000925.1
+JAMDYH010000926.1
+JAMDYH010000927.1
+JAMDYH010000928.1
+JAMDYH010000929.1
+JAMDYH010000930.1
+JAMDYH010000931.1
+JAMDYH010000932.1
+JAMDYH010000933.1
+JAMDYH010000934.1
+JAMDYH010000935.1
+JAMDYH010000936.1
+JAMDYH010000937.1
+JAMDYH010000938.1
+JAMDYH010000939.1
+JAMDYH010000940.1
+JAMDYH010000941.1
+JAMDYH010000942.1
+JAMDYH010000943.1
+JAMDYH010000944.1
+JAMDYH010000945.1
+JAMDYH010000946.1
+JAMDYH010000947.1
+JAMDYH010000948.1
+JAMDYH010000949.1
+JAMDYH010000950.1
+JAMDYH010000951.1
+JAMDYH010000952.1
+JAMDYH010000953.1
+JAMDYH010000954.1
+JAMDYH010000955.1
+JAMDYH010000956.1
+JAMDYH010000957.1
+JAMDYH010000958.1
+JAMDYH010000959.1
+JAMDYH010000960.1
+JAMDYH010000961.1
+JAMDYH010000962.1
+JAMDYH010000963.1
+JAMDYH010000964.1
+JAMDYH010000965.1
+JAMDYH010000966.1
+JAMDYH010000967.1
+JAMDYH010000968.1
+JAMDYH010000969.1
+JAMDYH010000970.1
+JAMDYH010000971.1
+JAMDYH010000972.1
+JAMDYH010000973.1
+JAMDYH010000974.1
+JAMDYH010000975.1
+JAMDYH010000976.1
+JAMDYH010000977.1
+JAMDYH010000978.1
+JAMDYH010000979.1
+JAMDYH010000980.1
+JAMDYH010000981.1
+JAMDYH010000982.1
+JAMDYH010000983.1
+JAMDYH010000984.1
+JAMDYH010000985.1
+JAMDYH010000986.1
+JAMDYH010000987.1
+JAMDYH010000988.1
+JAMDYH010000989.1
+JAMDYH010000990.1
+JAMDYH010000991.1
+JAMDYH010000992.1
+JAMDYH010000993.1
+JAMDYH010000994.1
+JAMDYH010000995.1
+JAMDYH010000996.1
+JAMDYH010000997.1
+JAMDYH010000998.1
+JAMDYH010000999.1
+JAMDYH010001000.1
+JAMDYH010001001.1
+JAMDYH010001002.1
+JAMDYH010001003.1
+JAMDYH010001004.1
+JAMDYH010001005.1
+JAMDYH010001006.1
+JAMDYH010001007.1
+JAMDYH010001008.1
+JAMDYH010001009.1
+JAMDYH010001010.1
+JAMDYH010001011.1
+JAMDYH010001012.1
+JAMDYH010001013.1
+JAMDYH010001014.1
+JAMDYH010001015.1
+JAMDYH010001016.1
+JAMDYH010001017.1
+JAMDYH010001018.1
+JAMDYH010001019.1
+JAMDYH010001020.1
+JAMDYH010001021.1
+JAMDYH010001022.1
+JAMDYH010001023.1
+JAMDYH010001024.1
+JAMDYH010001025.1
+JAMDYH010001026.1
+JAMDYH010001027.1
+JAMDYH010001028.1
+JAMDYH010001029.1
+JAMDYH010001030.1
+JAMDYH010001031.1
+JAMDYH010001032.1
+JAMDYH010001033.1
+JAMDYH010001034.1
+JAMDYH010001035.1
+JAMDYH010001036.1
+JAMDYH010001037.1
+JAMDYH010001038.1
+JAMDYH010001039.1
+JAMDYH010001040.1
+JAMDYH010001041.1
+JAMDYH010001042.1
+JAMDYH010001043.1
+JAMDYH010001044.1
+JAMDYH010001045.1
+JAMDYH010001046.1
+JAMDYH010001047.1
+JAMDYH010001048.1
+JAMDYH010001049.1
+JAMDYH010001050.1
+JAMDYH010001051.1
+JAMDYH010001052.1
+JAMDYH010001053.1
+JAMDYH010001054.1
+JAMDYH010001055.1
+JAMDYH010001056.1
+JAMDYH010001057.1
+JAMDYH010001058.1
+JAMDYH010001059.1
+JAMDYH010001060.1
+JAMDYH010001061.1
+JAMDYH010001062.1
+JAMDYH010001063.1
+JAMDYH010001064.1
+JAMDYH010001065.1
+JAMDYH010001066.1
+JAMDYH010001067.1
+JAMDYH010001068.1
+JAMDYH010001069.1
+JAMDYH010001070.1
+JAMDYH010001071.1
+JAMDYH010001072.1
+JAMDYH010001073.1
+JAMDYH010001074.1
+JAMDYH010001075.1
+JAMDYH010001076.1
+JAMDYH010001077.1
+JAMDYH010001078.1
+JAMDYH010001079.1
+JAMDYH010001080.1
+JAMDYH010001081.1
+JAMDYH010001082.1
+JAMDYH010001083.1
+JAMDYH010001084.1
+JAMDYH010001085.1
+JAMDYH010001086.1
+JAMDYH010001087.1
+JAMDYH010001088.1
+JAMDYH010001089.1
+JAMDYH010001090.1
+JAMDYH010001091.1
+JAMDYH010001092.1
+JAMDYH010001093.1
+JAMDYH010001094.1
+JAMDYH010001095.1
+JAMDYH010001096.1
+JAMDYH010001097.1
+JAMDYH010001098.1
+JAMDYH010001099.1
+JAMDYH010001100.1
+JAMDYH010001101.1
+JAMDYH010001102.1
+JAMDYH010001103.1
+JAMDYH010001104.1
+JAMDYH010001105.1
+JAMDYH010001106.1
+JAMDYH010001107.1
+JAMDYH010001108.1
+JAMDYH010001109.1
+JAMDYH010001110.1
+JAMDYH010001111.1
+JAMDYH010001112.1
+JAMDYH010001113.1
+JAMDYH010001114.1
+JAMDYH010001115.1
+JAMDYH010001116.1
+JAMDYH010001117.1
+JAMDYH010001118.1
+JAMDYH010001119.1
+JAMDYH010001120.1
+JAMDYH010001121.1
+JAMDYH010001122.1
+JAMDYH010001123.1
+JAMDYH010001124.1
+JAMDYH010001125.1
+JAMDYH010001126.1
+JAMDYH010001127.1
+JAMDYH010001128.1
+JAMDYH010001129.1
+JAMDYH010001130.1
+JAMDYH010001131.1
+JAMDYH010001132.1
+JAMDYH010001133.1
+JAMDYH010001134.1
+JAMDYH010001135.1
+JAMDYH010001136.1
+JAMDYH010001137.1
+JAMDYH010001138.1
+JAMDYH010001139.1
+JAMDYH010001140.1
+JAMDYH010001141.1
+JAMDYH010001142.1
+JAMDYH010001143.1
+JAMDYH010001144.1
+JAMDYH010001145.1
+JAMDYH010001146.1
+JAMDYH010001147.1
+JAMDYH010001148.1
+JAMDYH010001149.1
+JAMDYH010001150.1
+JAMDYH010001151.1
+JAMDYH010001152.1
+JAMDYH010001153.1
+JAMDYH010001154.1
+JAMDYH010001155.1
+JAMDYH010001156.1
+JAMDYH010001157.1
+JAMDYH010001158.1
+JAMDYH010001159.1
+JAMDYH010001160.1
+JAMDYH010001161.1
+JAMDYH010001162.1
+JAMDYH010001163.1
+JAMDYH010001164.1
+JAMDYH010001165.1
+JAMDYH010001166.1
+JAMDYH010001167.1
+JAMDYH010001168.1
+JAMDYH010001169.1
+JAMDYH010001170.1
+JAMDYH010001171.1
+JAMDYH010001172.1
+JAMDYH010001173.1
+JAMDYH010001174.1
+JAMDYH010001175.1
+JAMDYH010001176.1
+JAMDYH010001177.1
+JAMDYH010001178.1
+JAMDYH010001179.1
+JAMDYH010001180.1
+JAMDYH010001181.1
+JAMDYH010001182.1
+JAMDYH010001183.1
+JAMDYH010001184.1
+JAMDYH010001185.1
+JAMDYH010001186.1
+JAMDYH010001187.1
+JAMDYH010001188.1
+JAMDYH010001189.1
+JAMDYH010001190.1
+JAMDYH010001191.1
+JAMDYH010001192.1
+JAMDYH010001193.1
+JAMDYH010001194.1
+JAMDYH010001195.1
+JAMDYH010001196.1
+JAMDYH010001197.1
+JAMDYH010001198.1
+JAMDYH010001199.1
+JAMDYH010001200.1
+JAMDYH010001201.1
+JAMDYH010001202.1
+JAMDYH010001203.1
+JAMDYH010001204.1
+JAMDYH010001205.1
+JAMDYH010001206.1
+JAMDYH010001207.1
+JAMDYH010001208.1
+JAMDYH010001209.1
+JAMDYH010001210.1
+JAMDYH010001211.1
+JAMDYH010001212.1
+JAMDYH010001213.1
+JAMDYH010001214.1
+JAMDYH010001215.1
+JAMDYH010001216.1
+JAMDYH010001217.1
+JAMDYH010001218.1
+JAMDYH010001219.1
+JAMDYH010001220.1
+JAMDYH010001221.1
+JAMDYH010001222.1
+JAMDYH010001223.1
+JAMDYH010001224.1
+JAMDYH010001225.1
+JAMDYH010001226.1
+JAMDYH010001227.1
+JAMDYH010001228.1
+JAMDYH010001229.1
+JAMDYH010001230.1
+JAMDYH010001231.1
+JAMDYH010001232.1
+JAMDYH010001233.1
+JAMDYH010001234.1
+JAMDYH010001235.1
+JAMDYH010001236.1
+JAMDYH010001237.1
+JAMDYH010001238.1
+JAMDYH010001239.1
+JAMDYH010001240.1
+JAMDYH010001241.1
+JAMDYH010001242.1
+JAMDYH010001243.1
+JAMDYH010001244.1
+JAMDYH010001245.1
+JAMDYH010001246.1
+JAMDYH010001247.1
+JAMDYH010001248.1
+JAMDYH010001249.1
+JAMDYH010001250.1
+JAMDYH010001251.1
+JAMDYH010001252.1
+JAMDYH010001253.1
+JAMDYH010001254.1
+JAMDYH010001255.1
+JAMDYH010001256.1
+JAMDYH010001257.1
+JAMDYH010001258.1
+JAMDYH010001259.1
+JAMDYH010001260.1
+JAMDYH010001261.1
+JAMDYH010001262.1
+JAMDYH010001263.1
+JAMDYH010001264.1
+JAMDYH010001265.1
+JAMDYH010001266.1
+JAMDYH010001267.1
+JAMDYH010001268.1
+JAMDYH010001269.1
+JAMDYH010001270.1
+JAMDYH010001271.1
+JAMDYH010001272.1
+JAMDYH010001273.1
+JAMDYH010001274.1
+JAMDYH010001275.1
+JAMDYH010001276.1
+JAMDYH010001277.1
+JAMDYH010001278.1
+JAMDYH010001279.1
+JAMDYH010001280.1
+JAMDYH010001281.1
+JAMDYH010001282.1
+JAMDYH010001283.1
+JAMDYH010001284.1
+JAMDYH010001285.1
+JAMDYH010001286.1
+JAMDYH010001287.1
+JAMDYH010001288.1
+JAMDYH010001289.1
+JAMDYH010001290.1
+JAMDYH010001291.1
+JAMDYH010001292.1
+JAMDYH010001293.1
+JAMDYH010001294.1
+JAMDYH010001295.1
+JAMDYH010001296.1
+JAMDYH010001297.1
+JAMDYH010001298.1
+JAMDYH010001299.1
+JAMDYH010001300.1
+JAMDYH010001301.1
+JAMDYH010001302.1
+JAMDYH010001303.1
+JAMDYH010001304.1
+JAMDYH010001305.1
+JAMDYH010001306.1
+JAMDYH010001307.1
+JAMDYH010001308.1
+JAMDYH010001309.1
+JAMDYH010001310.1
+JAMDYH010001311.1
+JAMDYH010001312.1
+JAMDYH010001313.1
+JAMDYH010001314.1
+JAMDYH010001315.1
+JAMDYH010001316.1
+JAMDYH010001317.1
+JAMDYH010001318.1
+JAMDYH010001319.1
+JAMDYH010001320.1
+JAMDYH010001321.1
+JAMDYH010001322.1
+JAMDYH010001323.1
+JAMDYH010001324.1
+JAMDYH010001325.1
+JAMDYH010001326.1
+JAMDYH010001327.1
+JAMDYH010001328.1
+JAMDYH010001329.1
+JAMDYH010001330.1
+JAMDYH010001331.1
+JAMDYH010001332.1
+JAMDYH010001333.1
+JAMDYH010001334.1
+JAMDYH010001335.1
+JAMDYH010001336.1
+JAMDYH010001337.1
+JAMDYH010001338.1
+JAMDYH010001339.1
+JAMDYH010001340.1
+JAMDYH010001341.1
+JAMDYH010001342.1
+JAMDYH010001343.1
+JAMDYH010001344.1
+JAMDYH010001345.1
+JAMDYH010001346.1
+JAMDYH010001347.1
+JAMDYH010001348.1
+JAMDYH010001349.1
+JAMDYH010001350.1
+JAMDYH010001351.1
+JAMDYH010001352.1
+JAMDYH010001353.1
+JAMDYH010001354.1
+JAMDYH010001355.1
+JAMDYH010001356.1
+JAMDYH010001357.1
+JAMDYH010001358.1
+JAMDYH010001359.1
+JAMDYH010001360.1
+JAMDYH010001361.1
+JAMDYH010001362.1
+JAMDYH010001363.1
+JAMDYH010001364.1
+JAMDYH010001365.1
+JAMDYH010001366.1
+JAMDYH010001367.1
+JAMDYH010001368.1
+JAMDYH010001369.1
+JAMDYH010001370.1
+JAMDYH010001371.1
+JAMDYH010001372.1
+JAMDYH010001373.1
+JAMDYH010001374.1
+JAMDYH010001375.1
+JAMDYH010001376.1
+JAMDYH010001377.1
+JAMDYH010001378.1
+JAMDYH010001379.1
+JAMDYH010001380.1
+JAMDYH010001381.1
+JAMDYH010001382.1
+JAMDYH010001383.1
+JAMDYH010001384.1
+JAMDYH010001385.1
+JAMDYH010001386.1
+JAMDYH010001387.1
+JAMDYH010001388.1
+JAMDYH010001389.1
+JAMDYH010001390.1
+JAMDYH010001391.1
+JAMDYH010001392.1
+JAMDYH010001393.1
+JAMDYH010001394.1
+JAMDYH010001395.1
+JAMDYH010001396.1
+JAMDYH010001397.1
+JAMDYH010001398.1
+JAMDYH010001399.1
+JAMDYH010001400.1
+JAMDYH010001401.1
+JAMDYH010001402.1
+JAMDYH010001403.1
+JAMDYH010001404.1
+JAMDYH010001405.1
+JAMDYH010001406.1
+JAMDYH010001407.1
+JAMDYH010001408.1
+JAMDYH010001409.1
+JAMDYH010001410.1
+JAMDYH010001411.1
+JAMDYH010001412.1
+JAMDYH010001413.1
+JAMDYH010001414.1
+JAMDYH010001415.1
+JAMDYH010001416.1
+JAMDYH010001417.1
+JAMDYH010001418.1
+JAMDYH010001419.1
+JAMDYH010001420.1
+JAMDYH010001421.1
+JAMDYH010001422.1
+JAMDYH010001423.1
+JAMDYH010001424.1
+JAMDYH010001425.1
+JAMDYH010001426.1
+JAMDYH010001427.1
+JAMDYH010001428.1
+JAMDYH010001429.1
+JAMDYH010001430.1
+JAMDYH010001431.1
+JAMDYH010001432.1
+JAMDYH010001433.1
+JAMDYH010001434.1
+JAMDYH010001435.1
+JAMDYH010001436.1
+JAMDYH010001437.1
+JAMDYH010001438.1
+JAMDYH010001439.1
+JAMDYH010001440.1
+JAMDYH010001441.1
+JAMDYH010001442.1
+JAMDYH010001443.1
+JAMDYH010001444.1
+JAMDYH010001445.1
+JAMDYH010001446.1
+JAMDYH010001447.1
+JAMDYH010001448.1
+JAMDYH010001449.1
+JAMDYH010001450.1
+JAMDYH010001451.1
+JAMDYH010001452.1
+JAMDYH010001453.1
+JAMDYH010001454.1
+JAMDYH010001455.1
+JAMDYH010001456.1
+JAMDYH010001457.1
+JAMDYH010001458.1
+JAMDYH010001459.1
+JAMDYH010001460.1
+JAMDYH010001461.1
+JAMDYH010001462.1
+JAMDYH010001463.1
+JAMDYH010001464.1
+CM042914.1
+End of FASTA genome scan
+The following primers were not found in the genome:
+Tpa_6422-R
+Tpa_6422-F
+Tpa_6016-R
+Tpa_6451-R
+Tpa_6220-R
+Tpa_6220-F
+Tpa_5441-R
+Tpa_4506-R
+Tpa_5196-F
+Tpa_5196-R
+Tpa_5360-F
+Tpa_4549-R
+Tpa_4549-F
+Tpa_5540-F
+Tpa_5540-R
+Tpa_4731-F
+Tpa_7848-R
+Tpa_7848-F
+Tpa_2854-R
+Tpa_3679-F
+Tpa_4291-F
+Tpa_4291-R
+Tpa_4230-F
+Tpa_3248-F
+Tpa_3248-R
+Tpa_3879-F
+Tpa_4055-F
+Tpa_1703-R
+Tpa_1703-F
+Tpa_1891-R
+Tpa_1891-F
+Tpa_2006-R
+Tpa_2412-F
+Tpa_7652-R
+Tpa_7652-F
+Tpa_7597-R
+Tpa_7757-F
+Tpa_7757-R
+Tpa_7240-R
+Tpa_6937-R
+Tpa_7367-F
+Tpa_7367-R
+Tpa_7604-R
+Tpa_7690-R
+Tpa_7690-F
+Tpa_1042-R
+Tpa_1042-F
+Tpa_0650-R
+Tpa_0569-F
+Tpa_1098-F
+902 of 952 primers were found in the genome
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Overlapping amplicons:
+Tpa_3862-F:Tpa_3862-R (CM042853.1:16513759+16513859) / Tpa_7293-R:Tpa_7293-F (16513692-16513791)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Tpa_7352-F:Tpa_7352-R (CM042873.1:6444669+6444760) / Tpa_7406-R:Tpa_7406-F (6444583-6444688)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Tpa_2741-F:Tpa_2741-R (CM042877.1:1907003+1907113) / Tpa_5854-R:Tpa_5854-F (1906887-1907023)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Invalid signature (is this really a .2bit genome file?)
+Amplicons not found in genome:
+Tpa_5636-F/Tpa_5636-R
+Tpa_6422-F/Tpa_6422-R
+Tpa_6016-F/Tpa_6016-R
+Tpa_6451-F/Tpa_6451-R
+Tpa_6220-F/Tpa_6220-R
+Tpa_5441-F/Tpa_5441-R
+Tpa_4506-F/Tpa_4506-R
+Tpa_5196-F/Tpa_5196-R
+Tpa_5360-F/Tpa_5360-R
+Tpa_4549-F/Tpa_4549-R
+Tpa_5540-F/Tpa_5540-R
+Tpa_4731-F/Tpa_4731-R
+Tpa_7848-F/Tpa_7848-R
+Tpa_2854-F/Tpa_2854-R
+Tpa_3679-F/Tpa_3679-R
+Tpa_4291-F/Tpa_4291-R
+Tpa_4230-F/Tpa_4230-R
+Tpa_3248-F/Tpa_3248-R
+Tpa_3879-F/Tpa_3879-R
+Tpa_4055-F/Tpa_4055-R
+Tpa_1703-F/Tpa_1703-R
+Tpa_1891-F/Tpa_1891-R
+Tpa_2006-F/Tpa_2006-R
+Tpa_2412-F/Tpa_2412-R
+Tpa_7652-F/Tpa_7652-R
+Tpa_7597-F/Tpa_7597-R
+Tpa_7757-F/Tpa_7757-R
+Tpa_7240-F/Tpa_7240-R
+Tpa_6937-F/Tpa_6937-R
+Tpa_7367-F/Tpa_7367-R
+Tpa_7604-F/Tpa_7604-R
+Tpa_7690-F/Tpa_7690-R
+Tpa_1042-F/Tpa_1042-R
+Tpa_0650-F/Tpa_0650-R
+Tpa_0569-F/Tpa_0569-R
+Tpa_1098-F/Tpa_1098-R
+36 of 476 amplicons not found in genome (with length <=500)
+Longest amplicon found: 151 bp
+3 overlaps found
+This report has also been written to overlap-report-1.txt (34 seconds)
+SOME PRIMERS WERE NOT FOUND: see start of the above.
+Possible causes:
+  - Mistakes in the primer file?
+  - Wrong reference genome?
+  - Shouldn't be ignoring "variant" chromosome names in reference genome?
+  - Trying to use mRNA primers on a complete genome?
+    (If using mRNA, you'll need an exon-only version of the genome)
+Precalculating dG... done (1 second)
+Preliminary pooling by threshold...
+Computer suggestion is 2 pools.
+You can go with this, or you can pick your own number.
+How many pools? 2
+
+Primer-group count is 476
+Setting a maximum size of each pool can make the pools more even.
+With these parameters, we must allow at least 238 per pool, so:
+For max difference 68 (13%), set max/pool=510
+For max difference 88 (16%), set max/pool=520
+For max difference 108 (20%), set max/pool=530
+For max difference 128 (23%), set max/pool=540
+Do you want to set a maximum? (y/n): n
+
+Do you want to give me a time limit? (y/n): n
+
+Do you want my "random" choices to be 100% reproducible for demonstrations? (y/n): y
+
+NOT parallelising the pool trials, as you asked for predictability.
+OK, here goes... (press Control-C to stop)
+0       227196  Pool sizes: 232|244 products
+12 moves (1 second) = 12/sec
+Do you want to see the statistics of each pool? (y/n): y
+
+Do you want to see the results on the screen now?
+(Answer 'no' if you want to save them to a file instead.)
+Show on screen? (y/n): n
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\ncbi_dataset\ncbi_dataset\data\GCA_023658055.1\
+Name of new results file: resultsofpooling
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+Do you want to see the highest bonds of these pools? (y/n): y
+
+What dG threshold shall we go for? -9
+
+Do you want to see the results on the screen now?
+(Answer 'no' if you want to save them to a file instead.)
+Show on screen? (y/n): n
+
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\ncbi_dataset\ncbi_dataset\data\GCA_023658055.1\
+Name of new results file: twopools
+You didn't specify an extension.  Shall I add ".txt"? (y/n): y
+
+Sorting... done (1 second)
+Outputting... done (1 second)
+Do you want to try another threshold? (y/n): n
+
+Shall I write each pool to a different result file? (y/n): y
+
+OK, let's call them file1.txt, file2.txt etc.
+But what prefix shall I use instead of 'file'?
+Current directory (folder) is: C:\Users\Madison.Betts\Downloads\ncbi_dataset\ncbi_dataset\data\GCA_023658055.1\
+Prefix: pool
+Wrote pool1.txt
+Wrote pool2.txt
+Do you want to try a different number of pools? (y/n):
