@@ -3,6 +3,7 @@
 *fastq.gz
 *xml
 *csv
+*fna
 
 # basecalls folders
 **/basecalls
