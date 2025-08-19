@@ -1,0 +1,95 @@
+The following primers were not found in the genome:
+Tpa_6422-R
+Tpa_6422-F
+Tpa_6016-R
+Tpa_6451-R
+Tpa_6220-R
+Tpa_6220-F
+Tpa_5441-R
+Tpa_4506-R
+Tpa_5196-F
+Tpa_5196-R
+Tpa_5360-F
+Tpa_4549-R
+Tpa_4549-F
+Tpa_5540-F
+Tpa_5540-R
+Tpa_4731-F
+Tpa_7848-R
+Tpa_7848-F
+Tpa_2854-R
+Tpa_3679-F
+Tpa_4291-F
+Tpa_4291-R
+Tpa_4230-F
+Tpa_3248-F
+Tpa_3248-R
+Tpa_3879-F
+Tpa_4055-F
+Tpa_1703-R
+Tpa_1703-F
+Tpa_1891-R
+Tpa_1891-F
+Tpa_2006-R
+Tpa_2412-F
+Tpa_7652-R
+Tpa_7652-F
+Tpa_7597-R
+Tpa_7757-F
+Tpa_7757-R
+Tpa_7240-R
+Tpa_6937-R
+Tpa_7367-F
+Tpa_7367-R
+Tpa_7604-R
+Tpa_7690-R
+Tpa_7690-F
+Tpa_1042-R
+Tpa_1042-F
+Tpa_0650-R
+Tpa_0569-F
+Tpa_1098-F
+902 of 952 primers were found in the genome
+Overlapping amplicons:
+Tpa_3862-F:Tpa_3862-R (CM042853.1:16513759+16513859) / Tpa_7293-R:Tpa_7293-F (16513692-16513791)
+Tpa_7352-F:Tpa_7352-R (CM042873.1:6444669+6444760) / Tpa_7406-R:Tpa_7406-F (6444583-6444688)
+Tpa_2741-F:Tpa_2741-R (CM042877.1:1907003+1907113) / Tpa_5854-R:Tpa_5854-F (1906887-1907023)
+Amplicons not found in genome:
+Tpa_5636-F/Tpa_5636-R
+Tpa_6422-F/Tpa_6422-R
+Tpa_6016-F/Tpa_6016-R
+Tpa_6451-F/Tpa_6451-R
+Tpa_6220-F/Tpa_6220-R
+Tpa_5441-F/Tpa_5441-R
+Tpa_4506-F/Tpa_4506-R
+Tpa_5196-F/Tpa_5196-R
+Tpa_5360-F/Tpa_5360-R
+Tpa_4549-F/Tpa_4549-R
+Tpa_5540-F/Tpa_5540-R
+Tpa_4731-F/Tpa_4731-R
+Tpa_7848-F/Tpa_7848-R
+Tpa_2854-F/Tpa_2854-R
+Tpa_3679-F/Tpa_3679-R
+Tpa_4291-F/Tpa_4291-R
+Tpa_4230-F/Tpa_4230-R
+Tpa_3248-F/Tpa_3248-R
+Tpa_3879-F/Tpa_3879-R
+Tpa_4055-F/Tpa_4055-R
+Tpa_1703-F/Tpa_1703-R
+Tpa_1891-F/Tpa_1891-R
+Tpa_2006-F/Tpa_2006-R
+Tpa_2412-F/Tpa_2412-R
+Tpa_7652-F/Tpa_7652-R
+Tpa_7597-F/Tpa_7597-R
+Tpa_7757-F/Tpa_7757-R
+Tpa_7240-F/Tpa_7240-R
+Tpa_6937-F/Tpa_6937-R
+Tpa_7367-F/Tpa_7367-R
+Tpa_7604-F/Tpa_7604-R
+Tpa_7690-F/Tpa_7690-R
+Tpa_1042-F/Tpa_1042-R
+Tpa_0650-F/Tpa_0650-R
+Tpa_0569-F/Tpa_0569-R
+Tpa_1098-F/Tpa_1098-R
+36 of 476 amplicons not found in genome (with length <=500)
+3 overlaps found
