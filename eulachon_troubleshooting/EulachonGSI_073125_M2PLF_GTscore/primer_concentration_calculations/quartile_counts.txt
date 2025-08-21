@@ -1,0 +1,7 @@
+group	count
+depth_top	119
+depth_bottom	119
+geno_top	124
+geno_bottom	119
+overlap_top	108
+overlap_bottom	105

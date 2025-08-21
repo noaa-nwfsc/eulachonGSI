@@ -182,3 +182,38 @@ print(primers_no_alignment)
 # Optional: save to CSV
 write_csv(data.frame(primer = primers_no_alignment),
           "primers_no_alignment.csv")
+
+## Now i want to create a new column in primers_cleaned.csv that identifies if a
+#primer is in pool1 or pool2 according to PrimerPooler
+
+# Function to read primer names from a pool file
+read_pool <- function(file) {
+  lines <- readLines(file)
+  primers <- gsub("^>", "", lines[grepl("^>", lines)]) # remove ">" from headers
+  return(primers)
+}
+
+pool1 <- read_pool("pool1.txt")
+pool2 <- read_pool("pool2.txt")
+
+check_pool <- function(primer) {
+  in_pool1 <- primer %in% pool1
+  in_pool2 <- primer %in% pool2
+  
+  if (in_pool1 && in_pool2) {
+    return("both")
+  } else if (in_pool1) {
+    return("pool1")
+  } else if (in_pool2) {
+    return("pool2")
+  } else {
+    return("none")
+  }
+}
+
+# Create a new dataframe with pool assignments
+primers_with_pools <- cleanedprimers %>%
+  mutate(Pool_Assignment = sapply(.[[21]], check_pool))
+
+# Save as a new CSV (original primers_cleaned.csv stays the same)
+write_csv(primers_with_pools, "primers_with_pools.csv")

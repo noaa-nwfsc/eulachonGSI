@@ -1,0 +1,5 @@
+Metric	Quartile	Min	Max
+AvgReadDepth	top	246.733333333333	3155.1473684210496
+AvgReadDepth	bottom	1	30.857142857142897
+GenotypeRate	top	0.8947368421052629	1
+GenotypeRate	bottom	0	0.5894736842105259
