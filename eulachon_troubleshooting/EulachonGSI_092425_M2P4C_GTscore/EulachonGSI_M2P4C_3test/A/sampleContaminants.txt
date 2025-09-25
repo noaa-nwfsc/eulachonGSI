@@ -1,0 +1,1 @@
+Sample	Total.Reads	Off.target.Reads	Primer.Only.Reads	Primer.Probe.Reads	Off.target.Proportion	Primer.Only.Proportion	Primer.Probe.Proportion	GenotypeRate	Heterozygosity	conScore

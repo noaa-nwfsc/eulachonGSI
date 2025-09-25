@@ -1,0 +1,366 @@
+---
+title: "eulachongsi_M2P4C_B"
+author: "MB"
+date: "2025-09-25"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#Create output directories
+dir.create("QCplots")
+dir.create("scatterPlots_loci")
+dir.create("scatterPlots_samples")
+
+#ensure you have following files in the directory along with all fastq files: 
+#primerProbeFile.txt
+#AmpliconReadCounter.pl
+#sampleList.txt
+#run the perl script from R
+
+#The code below would run AmpliconReadCounter from this Rmd file if you use a mac, but with PC this is done in perl, hence the # which eliminates this from running. 
+#system2("perl", args="AmpliconReadCounter.pl -p primerProbeFile.txt --files sampleList.txt --alleleOrder original")
+ #took 91 s 
+
+#Load McKinney's GTscore functions and tools
+#Be sure you have the latest version of this file, when in doubt, re-download from Garrett's github page:
+#https://github.com/gjmckinney/GTscore/blob/master/GTscore.R
+#source("GTscore.R")
+source("GTscore.R")
+
+
+#load libraries
+library(tidyverse)
+library(msa)
+library(pbapply)
+library(BiocGenerics)
+library(Biostrings)
+library(BiocManager)
+
+```
+
+```{r}
+#------------------------------------#
+##READ THE OUTPUT FILES FROM AmpliconReadCounter.pl 
+#------------------------------------#
+#Read in single-SNP locus table 
+#and allele read-count files from AmpliconReadCounter.pl
+#Single SNPs
+singleSNP_locusTable<-read.delim("LocusTable_singleSNPs.txt",header=TRUE,stringsAsFactors=FALSE,check.names=FALSE)
+singleSNP_alleleReads<-read.delim("AlleleReads_singleSNPs.txt",header=TRUE,row.names=1,stringsAsFactors=FALSE,check.names=FALSE)
+
+#we don't have any correction factors to apply, but run this code anyways to keep file name consistency
+#Adjust read counts
+singleSNP_alleleReads_adjusted<-correctReads(singleSNP_locusTable,singleSNP_alleleReads)
+#02s on the Mac20
+
+#singleSNP_alleleReads_adjusted[1:5,1:5]
+#write adjusted counts to file
+write.table(singleSNP_alleleReads_adjusted,"singleSNP_alleleReads_adjusted.txt",quote=FALSE,sep="\t")
+```
+```{r}
+#------------------------------------#
+##GENOTYPING
+#------------------------------------#
+#Optional args for polyGen():  
+# p_thresh - threshold p-value for likelihood ratio test (default 0.05)
+# epsilon - error rate for genotyping model (default 0.01)
+
+
+#generate single-SNP genotypes using the polyGen function
+polyGenResults_singleSNP<-polyGen(singleSNP_locusTable,singleSNP_alleleReads_adjusted)
+#15s on the Mac20
+
+#view first five rows and columns of single-SNP genotypes
+polyGenResults_singleSNP[1:5,1:5]
+#write results to file
+write.table(polyGenResults_singleSNP,"polyGenResults_singleSNP.txt",quote=FALSE,sep="\t")
+
+##Genotype Plots
+#Scatter Plots--samples
+plotGenotypes_sample(singleSNP_locusTable, singleSNP_alleleReads_adjusted, polyGenResults_singleSNP, type='scatter', savePlot="Y", saveDir="scatterPlots_samples")
+#46s on Mac20
+
+#Scatter Plots--loci
+plotGenotypes(singleSNP_locusTable, singleSNP_alleleReads_adjusted, polyGenResults_singleSNP, type='scatter', savePlot="Y", saveDir="scatterPlots_loci")
+#01m 32s on Mac20
+
+singleSNP_summary<-summarizeGTscore(singleSNP_alleleReads, singleSNP_locusTable, polyGenResults_singleSNP)
+
+write.table(singleSNP_summary, "singleSNP_summary.txt", quote=FALSE,sep="\t")
+```
+
+
+
+```{r}
+#------------------------------------#
+##SAMPLE SUMMARIES
+#------------------------------------#
+#Might be useful to characterize the run as a proportion of failed samples, 
+#followed by summary stats for the remaining samples only.
+#The 2-step approach will help dissect run quality from sample quality.
+
+#load sample summary from AmpliconReadCounter
+GTscore_individualSummary<-read.delim("GTscore_individualSummary.txt",header=TRUE,stringsAsFactors=FALSE) %>% 
+  mutate_if(is.numeric, round, digits = 3)
+head(GTscore_individualSummary)
+
+#summarize single SNP results for samples
+singleSNP_sampleSummary<-summarizeSamples(polyGenResults_singleSNP,singleSNP_alleleReads_adjusted) %>% 
+  mutate_if(is.numeric, round, digits = 3)
+head(singleSNP_sampleSummary)
+#write results to file
+write.table(singleSNP_sampleSummary,"singleSNP_sampleSummary.txt",quote=FALSE,sep="\t")
+summary(singleSNP_sampleSummary)
+write.table(summary(singleSNP_sampleSummary),"singleSNP_sampleSummaryTable.txt",quote=FALSE,sep="\t")
+
+#combine GTscore_individualSummary (sample read counts) with singleSNP_sampleSummary (GTrate, Ho, and conScore)
+
+GTscore_individualSummary<-merge(GTscore_individualSummary,singleSNP_sampleSummary,by.x="Sample",by.y="sample")
+
+#Didn't work until check.name=FALSE for reading "AlleleReads_singleSNPs.txt" output from AmpliconReadCounter
+#overwrite output file from AmpliconReadCounter with merged singleSNP_sampleSummary
+write.table(GTscore_individualSummary,"GTscore_individualSummary.txt",quote=FALSE,sep="\t")
+#Write out the sample read summary table
+write.table(summary(GTscore_individualSummary),"GTscore_individualSummaryTable.txt",quote=FALSE,sep="\t")
+
+
+#"GTscore_individualSummary.txt" contains all the essential parameters for QA/QC of samples
+#"GTscore_locusSummary.txt" will contain all parameters for QA/QC of loci (see below)
+
+
+##QA/QC--SAMPLES
+#Garrett's general troubleshooting steps (thresholds are dataset dependent)
+# Missing data reflecting poor sample quality (eg, GenotypeRate <0.7)
+# Excess heterozygosity per sample could be cross contaminated (0.35 max)
+# Contamination score/Heterozygosity by sample (0.4 / 0.35)
+# Duplicate genotypes (0.8 matching and 0.75 in common) - check for plate patterns if many pairs
+#  If relevant metadata match, eliminate one sample
+#  If not, eliminate both samples
+# GTrate/on-target reads by sample 
+# GTrate/off-target reads by sample 
+# Excess homozygosity by sample (wrong spp)
+
+##Sample filters - again, these are panel and population specific. Use the plots to evaluate.
+#remove likely poor quality samples, more prone to genotyping errors
+#minGenotypeRate <- 0.73
+minGenotypeRate <- 0.8
+#remove likely wrong species
+minHeterozygosity <- 0.1
+#remove likely cross-contaminated samples
+maxHeterozygosity <- 0.35
+maxconScore <- 0.3
+#remove very low conScores that are invariably failed samples
+minconScore <- 0.01
+#flag likely duplicated samples (matching multilocus genotypes)
+#setting to 0, since I have a lot of duplication in this first run of samples (same sample, different library prep conditions)
+matchThresh <- 0.8
+commonThresh <- 0.6
+#ie, if two tissue samples were genotyped for 60% or more loci in common - how many loci were they both genotyped at successfully
+# and if genotypes matched at 80% of those loci, then the two samples - of common loci, how many loci w same genotype
+# likely came from the same individual but also in our case where whales can be closely related. 
+#most likely will raise these numbers, .75 for match thresh, match at 0.8 
+
+##GENERATE INDIVIDUAL PLOTS FOR SINGLE SNP RESULTS
+##Missing data
+#histogram of genotype rate
+ggplot(data=GTscore_individualSummary)+
+  geom_histogram(aes(x=GenotypeRate),binwidth=0.03)+xlim(-0.01,1.01)+
+  geom_vline(xintercept=minGenotypeRate,lty="dashed")+
+  labs(title="Sample Genotyping Rate", x="Genotype Rate", y="Count")+
+  theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))
+ggsave("hist-SampleGTrateSNP.pdf",path="./QCplots",width=30,height=20,units="cm")
+
+#table samples with genotype rates <minGenotypeRate--likely poor quality
+sampleFails<-GTscore_individualSummary %>% 
+  filter(GenotypeRate<=minGenotypeRate)
+head(sampleFails)
+write.table(format(sampleFails, digits=4, scientific=F),"sampleFails.txt",quote=FALSE,sep="\t",row.names=FALSE)
+
+#histogram of total read depth
+ggplot(data=GTscore_individualSummary)+
+  geom_histogram(aes(x=Total.Reads))+
+  labs(title="Sample Read Depth", x="Total reads", y="Count")+
+  theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))
+ggsave("hist-SampleReadDepthSNP.pdf",path="./QCplots",width=30,height=20,units="cm")
+
+#histogram for average proportion of total reads on target
+ggplot(data=GTscore_individualSummary)+
+  geom_histogram(aes(x=Primer.Probe.Proportion),binwidth=0.08)+
+  labs(title="Proportion of Sample Reads On-target", x="On-target proportion", y="Count")+
+  theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))
+ggsave("hist-SampleOn-targetReadsSNP.pdf",path="./QCplots",width=30,height=20,units="cm")
+
+#plot genotype rate vs primer probe reads (on-target)
+GTscore_individualSummary %>% mutate(plate=str_split_fixed(Sample,"_",2)[,1]) %>%
+  ggplot(data=.)+geom_point(aes(x=Primer.Probe.Reads,y=GenotypeRate))+
+  geom_hline(yintercept=minGenotypeRate,lty="dashed")+
+  labs(title="Sample Genotype Rate vs On-target Reads", x="Primer Probe Reads", y="Genotype Rate")+
+  theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))
+ggsave("GTrate-PrimerProbeReads.pdf",path="./QCplots",width=30,height=20,units="cm")
+
+
+##Wrong species (eg, coho field identified as Chinook)
+#extreme low heterozygosity (<minHeterozygosity)
+#And Cross-contaminated samples (below) with
+#excess Heterozygosity above threshold (>maxHeterozygosity)
+ggplot(data=GTscore_individualSummary)+
+  geom_histogram(aes(x=Heterozygosity),binwidth=0.02)+
+  geom_vline(xintercept=maxHeterozygosity,lty="dashed")+
+  geom_vline(xintercept=minHeterozygosity,lty="dashed")+
+  labs(title="Sample Heterozygosity", x="Heterozygosity", y="Count")+
+  theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))
+ggsave("hist-HetPerSample.pdf", path="./QCplots",width=30,height=20,units="cm")
+
+#write table of potential wrong species below minHeterozygosity
+sampleWrongSpp<-GTscore_individualSummary %>% filter(Heterozygosity<minHeterozygosity)
+sampleWrongSpp
+write.table(sampleWrongSpp,"sampleWrongSpp.txt",quote=FALSE,sep="\t",row.names=FALSE)
+
+
+##Cross-contaminated samples
+#review Heterozygosity per Sample for greater than maxHeterozygosity (tabled below with high conScore)
+#plot heterozygosity vs primer probe reads
+ggplot()+geom_point(data=GTscore_individualSummary,aes(x=Primer.Probe.Reads,y=Heterozygosity))+
+  geom_hline(yintercept=maxHeterozygosity, lty="dashed")+
+  geom_hline(yintercept=minHeterozygosity, lty="dashed")+
+  labs(title="Sample Heterozygosity vs Primer Probe Reads", x="Primer Probe Reads", y="Heterozygosity")+
+  theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))
+ggsave("Het-PrimerProbe.pdf",path="./QCplots",width=30,height=20,units="cm")
+
+#plot sample Heterozygosity vs GTrate
+ggplot(data=GTscore_individualSummary)+
+  geom_point(aes(x=GenotypeRate,y=Heterozygosity))+
+  geom_vline(xintercept=minGenotypeRate,lty="dashed")+
+  geom_hline(yintercept=maxHeterozygosity,lty="dashed")+
+  geom_hline(yintercept=minHeterozygosity,lty="dashed")+
+  labs(title="Sample Heterozygosity vs GTrate", x="GenotypeRate", y="Heterozygosity")+
+  theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))
+ggsave("Heterozygosity-GTrate.pdf",path="./QCplots",width=30,height=20,units="cm")
+
+#High and low conScore thresholds (>maxconScore, see Sample filters above)
+#plot histogram of contamination score
+ggplot(data=GTscore_individualSummary)+
+  geom_histogram(data=GTscore_individualSummary,aes(x=conScore),binwidth=0.02)+
+  geom_vline(xintercept=maxconScore, lty="dashed")+
+  geom_vline(xintercept=minconScore, lty="dashed")+
+  labs(title="Sample Contamination Score", x="ConScore", y="Count")+
+  theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))
+ggsave("hist-conScore.pdf",path="./QCplots",width=30,height=20,units="cm")
+
+#plot sample Heterozygosity vs conScore
+ggplot(data=GTscore_individualSummary)+
+  geom_point(aes(x=conScore,y=Heterozygosity))+
+  geom_vline(xintercept=maxconScore,lty="dashed")+
+  geom_vline(xintercept=minconScore,lty="dashed")+
+  geom_hline(yintercept=maxHeterozygosity,lty="dashed")+
+  labs(title="Heterozygosity vs conScore", x="Contamination Score", y="Heterozygosity")+
+  theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))
+ggsave("Het-conScore.pdf",path="./QCplots",width=30,height=20,units="cm")
+
+#identify likely contaminated samples with high Heterozygosity or high conScore
+sampleContaminants<-GTscore_individualSummary %>%
+  filter(Heterozygosity>=maxHeterozygosity|conScore>=maxconScore)
+#table potentially cross-contaminated samples
+write.table(sampleContaminants,"sampleContaminants.txt",quote=FALSE,sep="\t",row.names=FALSE)
+
+
+##Duplicate multilocus genotypes for pairs of tissue samples purported to represent different fish
+#run IDduplicateSamples() function to return proportionMatch (of loci) and proportionCommon 
+polyGenResults_singleSNP_NA<-polyGenResults_singleSNP
+polyGenResults_singleSNP_NA[polyGenResults_singleSNP_NA=="0"]<-NA
+polyGenResults_dupTest<-IDduplicateSamples(polyGenResults_singleSNP_NA)
+#3s on Mac20 (rubias is faster if needed)
+
+#table full output for all matches===Only for extended troubleshooting
+write.table(polyGenResults_dupTest[,],"polyGenResults_dupTest.txt")
+
+#plot proportion loci with matching genotypes versus proportion loci in common, thresholds above
+ggplot(data=polyGenResults_dupTest)+
+  geom_point(aes(x=proportionCommon,y=proportionMatch))+
+  geom_segment(aes(x=commonThresh,xend=1,y=matchThresh,yend=matchThresh),lty="dashed")+
+  geom_segment(aes(x=commonThresh,xend=commonThresh,y=matchThresh,yend=1),lty="dashed")
+ggsave("proprortionMatch-proportionCommon.pdf", path="./QCplots",width=30,height=20,units="cm")
+#Need to zoom in on the rejection zone, xlim and ylim 0.5-1
+
+#write table of potential duplicates using thresholds from sample filters above
+sampleDups<-polyGenResults_dupTest %>% 
+  filter(proportionMatch>=matchThresh&proportionCommon>=commonThresh) %>% 
+  mutate_if(is.numeric, round, digits = 3)
+sampleDups
+write.table(sampleDups,"sampleDuplicates.txt",quote=FALSE,sep="\t",row.names=FALSE)
+
+#apparent pairs of duplicated multilocus genotypes, 
+#these are likely samples obtained from the same fish
+#USER INTERVENTION REQUIRED - one or both members of the pair might be removed
+View(sampleDups)
+
+
+#summarize problem samples for blacklisting
+
+#skipping combining the problem samples for now, since we expect the duplicates, only eliminating samples with <50% genotyping rate 
+
+sampleBlacklist <- sampleFails
+#combine all problem samples
+#sampleBlacklist<-full_join(sampleFails,sampleContaminants)
+#sampleBlacklist<-full_join(sampleBlacklist,sampleWrongSpp)
+#review 
+View(sampleFails)
+View(sampleContaminants)
+View(sampleWrongSpp)
+#all problem samples combined
+View(sampleBlacklist)
+
+#write sampleBlacklist to a text file
+write.table(format(sampleBlacklist, digits=4, scientific=FALSE),"sampleBlacklist.txt",quote=FALSE,sep="\t",row.names=FALSE)
+
+
+#remove problem samples for QA/QC re-analysis if needed
+#then repeat read-count plots for samples and loci
+#===Or jump to code chunk "##OUTPUT polyGenResults GENOTYPES"
+GTscore_individualSummary_cleaned <- anti_join(GTscore_individualSummary,sampleBlacklist)
+#write sampleBlacklist to a text file
+write.table(format(sampleBlacklist, digits=4, scientific=FALSE),"sampleBlacklist.txt",quote=FALSE,sep="\t",row.names=FALSE)
+#write out the cleaned sample summary
+write.table(GTscore_individualSummary_cleaned,"GTscore_individualSummary_cleaned.txt",quote=FALSE,sep="\t")
+#write out the cleaned sample read summary table
+write.table(summary(GTscore_individualSummary_cleaned),"GTscore_individualSummaryTable_cleaned.txt",quote=FALSE,sep="\t")
+
+
+
+# ##READ COUNT SECTION NEEDS WORK--MUST CHANGE DATA REFS
+# 
+# #Read-count plots
+ #plot histogram of Primer.Probe.Reads
+ GTscore_individualSummary %>% mutate(plate=str_split_fixed(Sample,"_",2)[,1]) %>%
+   ggplot(data=.)+geom_histogram(aes(x=Primer.Probe.Reads),position="dodge",binwidth=10000)
+ ggsave("hist-PrimerProbeReads.pdf", path="./QCplots",width=30,height=20,units="cm")
+# 
+# #plot density of Primer.Probe.Reads
+ GTscore_individualSummary %>% mutate(plate=str_split_fixed(Sample,"_",2)[,1]) %>%
+   ggplot(data=.)+geom_density(aes(x=Primer.Probe.Reads))
+ ggsave("density-PrimerProbeReads.pdf", path="./QCplots",width=30,height=20,units="cm")
+# 
+# 
+# #plot average read depth for single SNP data
+# ggplot()+geom_histogram(data=singleSNP_sampleSummary,aes(x=AvgReadDepth),binwidth=20)+
+#   labs(title="Average Read Depth per SNP", x="Average Read Depth", y="Count")+
+#   theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))
+# ggsave("hist-AveReadDepthSNP.pdf", path="./QCplots",width=30,height=20,units="cm")
+# 
+# #zoom in to 0-100x read depth
+# ggplot()+geom_histogram(data=singleSNP_sampleSummary,aes(x=AvgReadDepth),binwidth=5)+
+#   labs(title="Average Read Depth per SNP", x="Average Read Depth", y="Count")+
+#   theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))+xlim(-1,100)
+# ggsave("hist-AveReadDepthSNP0-100.pdf", path="./QCplots",width=30,height=20,units="cm")
+# 
+# #plot genotype rate relative to average depth
+# ggplot()+geom_point(data=singleSNP_sampleSummary,aes(x=AvgReadDepth,y=GenotypeRate))+ylim(0,1)+
+#   labs(title="Genotype Rate vs Average Depth per SNP", x="Average Depth", y="Genotype Rate")+
+#   theme_bw()+theme(plot.title=element_text(hjust=0.5),plot.subtitle=element_text(hjust=0.5))
+# ggsave("GTrate-AveDepthSNP.pdf", path="./QCplots",width=30,height=20,units="cm")
+```
+
