@@ -1,0 +1,7 @@
+   sample	 GenotypeRate	Heterozygosity	   conScore
+	Length:32         	Min.   :0.0040  	Min.   :0.00200  	Min.   :0.00000  
+	Class :character  	1st Qu.:0.0840  	1st Qu.:0.01650  	1st Qu.:0.00000  
+	Mode  :character  	Median :0.1965  	Median :0.02800  	Median :0.07350  
+	NA	Mean   :0.2165  	Mean   :0.03506  	Mean   :0.08516  
+	NA	3rd Qu.:0.2940  	3rd Qu.:0.05300  	3rd Qu.:0.12500  
+	NA	Max.   :0.6450  	Max.   :0.10300  	Max.   :0.33300  

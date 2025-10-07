@@ -1,0 +1,2 @@
+Sample	Total.Reads	Off.target.Reads	Primer.Only.Reads	Primer.Probe.Reads	Off.target.Proportion	Primer.Only.Proportion	Primer.Probe.Proportion	GenotypeRate	Heterozygosity	conScore
+1	90763_236B_S35_L001_R1_001	307623	7270	147186	153167	0.02	0.48	0.5	0.887	0.132	0.349
