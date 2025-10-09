@@ -15,7 +15,15 @@ In collaboration with Fisheries and Oceans Canada (DFO), the primary objective o
 
 ### 1. Sample Selection and Preparation for Sequencing
 
-We selected 1,632 eulachon bycatch fin clip samples from a total of --- samples collected between 2013 and 2022. Samples were preserved in 95% ethanol. Samples were extracted using the DNeasy Blood and Tissue kit on a QIAcube high-throughput automated extraction machine. DNA was eluted in 200 uL EB and stored at -20 degrees C. 
+We selected 1,632 eulachon bycatch fin clip samples from a total of several thousand samples collected between 2013 and 2025. Samples were preserved in 95% ethanol. Samples were extracted using the DNeasy Blood and Tissue kit on a QIAcube high-throughput automated extraction machine. DNA was eluted in 200 uL EB and stored at -20 degrees C. 
+
+### 2. GTseq 
+
+Samples were sequenced on an Illumina MiSeq using the Genotyping-by-Thousands (GTseq) method developed by Nate Campbell. We utilized and optimized a panel of loci originally developed by DFO for sequencing - the final panel used contained 475 loci.
+
+### 3. GTscore
+
+Completed runs were demultiplexed and then analyzed using the GTscore pipeline originally developed by Garrett McKinney (see his github [here](https://github.com/gjmckinney/GTscore)). 
 
 ## Disclaimer
 
