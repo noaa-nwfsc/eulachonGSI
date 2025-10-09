@@ -19,11 +19,15 @@ We selected 1,632 eulachon bycatch fin clip samples from a total of several thou
 
 ### 2. GTseq 
 
-Samples were sequenced on an Illumina MiSeq using the [Genotyping-by-Thousands] (https://pubmed.ncbi.nlm.nih.gov/25476721/) (GTseq) method developed by Nate Campbell. We utilized and optimized a panel of loci originally developed by DFO for sequencing - the final panel used contained 475 loci.
+Samples were sequenced on an Illumina MiSeq using the [Genotyping-by-Thousands](https://pubmed.ncbi.nlm.nih.gov/25476721/) (GTseq) method developed by Nate Campbell. We utilized and optimized a panel of loci originally developed by DFO for sequencing - the final panel used contained 475 loci.
 
 ### 3. GTscore
 
-Completed runs were demultiplexed and then analyzed using the GTscore pipeline originally developed by Garrett McKinney (see his github [here](https://github.com/gjmckinney/GTscore)). 
+.fastq files from completed runs were demultiplexed and then analyzed using the GTscore pipeline originally developed by Garrett McKinney (see his github [here](https://github.com/gjmckinney/GTscore)). 
+
+### 4. GSI Analysis
+
+Samples were identified with a genetic stock ID using additional bioinformatics pipelines. 
 
 ## Disclaimer
 
